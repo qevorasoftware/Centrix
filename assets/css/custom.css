@@ -4740,15 +4740,6 @@ footer.footer-fixed-position {
    Projects page (pages/projects.html)
    ========================================================================== */
 
-/* Full-bleed banner: remove default content padding, pad the body instead */
-.page-projects #main #content {
-    padding: 0;
-}
-
-.page-projects #main #content .body_part {
-    padding: 30px;
-}
-
 /* Banner: icon + title on one row */
 .breadcrumb .breadcrumb-wrapper .breadcrumb-title {
     display: flex;
