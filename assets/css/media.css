@@ -1,0 +1,609 @@
+@media screen and (max-width:1550px) {
+    .page-statistics #main #content .body_part .box_wrapper .statistics_container .statistics_type {
+        flex-wrap: wrap;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item {
+        max-width: calc(50% - 15px);
+        width: 100%;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item {
+        max-width: calc(50% - 15px);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .project-wrapper .project-list .card {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .widget-breadcrumb {
+        padding: 30px;
+    }
+
+    .page-color-themes #main #content .body_part .pc_container .box_wrapper {
+        gap: 30px 30px;
+    }
+
+    .page-color-themes #main #content .body_part .pc_container .box_wrapper .box_item {
+        max-width: calc(25% - 22.5px);
+    }
+
+    .page-color-themes #main #content .body_part .pc_container .box_wrapper .box_item .c_name {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper {
+        gap: 15px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper .box_item {
+        padding: 30px 15px;
+        max-width: calc(33.33% - 10px);
+        gap: 15px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item .profile_img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item .profile_box {
+        gap: 15px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item .profile_content h6 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 6px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item .sales_box {
+        gap: 6px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item .sales_box h6 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .tiles .widget-wrapper .widget-box .widget-items .widget-item,
+    .statistics .widget-wrapper .widget-box .widget-items .widget-item {
+        padding: 60px 15px;
+    }
+
+    #main #content,
+    .widget-breadcrumb {
+        padding: 20px 15px;
+    }
+
+    .widget-breadcrumb .breadcrumb-wrapper h2,
+    .layout-breadcrumb .breadcrumb-wrapper h2,
+    .elemets-breadcrumb .breadcrumb-wrapper h2,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-title h2,
+    .tiles .widget-wrapper .widget-box .widget-items .widget-item h2,
+    .statistics .widget-wrapper .widget-box .widget-items .widget-item h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .overview h4,
+    .description .job-similar .job-similar-title h4,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-content h4,
+    .description .job-description-box .job-description-title h4 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .statistics .statistics-wrapper .statistics-title h5,
+    .description .job-description-box .job-description-content h5,
+    .overview .overview-items .overview-card .overview-content h5,
+    .description .job-similar .job-similar-content .job-similar-card .similar-content .similar-content-title h5 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .ecl .ecl-items .ecl-item .ecl-number span,
+    .edo .edo-items .edo-card .edo-header .title h3,
+    .eds .eds-items .eds-card .eds-header .title h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .preview-color .color-items .color-card {
+        flex: 0 0 calc(33.33% - 40px);
+    }
+
+    .layout-space .space-title h6,
+    .preview-color .color-title h6,
+    .layout-center .center-title h6,
+    .layout-fullwidth .fullwidth-title h6,
+    .ecp .eco .eco-person .eco-person-name h6,
+    .layout-breadcrumb .breadcrumb-wrapper h6,
+    .widget-breadcrumb .breadcrumb-wrapper h6,
+    .elemets-breadcrumb .breadcrumb-wrapper h6,
+    .ecl .ecl-items .ecl-item .ecl-content .title h6,
+    .tiles .widget-wrapper .widget-box .widget-title h6,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-title h6,
+    .statistics .widget-wrapper .widget-box .widget-title h6,
+    .eal .eal-items .eal-item .eal-author-content .eal-authorname h6,
+    .layout-left-sidebar .sidebar-header .sidebar-header-wrapper .sidebar-title h6,
+    .layout-right-sidebar .sidebar-header .sidebar-header-wrapper .sidebar-title h6 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper .box_item .c_name {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper .box_item .c_disc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper .box_item .c_btn {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 28px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type .type_item {
+        gap: 8px;
+        padding: 15px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type .type_item h5 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type .type_item p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .icon_based .tiles_type i,
+    .page-tiles #main #content .body_part .box_wrapper .detailed_based .tiles_type i {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .detailed_based .tiles_container .tiles_type .type_item {
+        gap: 15px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .detailed_based .tiles_container .tiles_type .type_item .infobox h5 {
+        margin-bottom: 5px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item.detailed_based .type_item .infobox .info_item h6 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    .eds .eds-items {
+        gap: 20px;
+    }
+
+    .eds .eds-items .eds-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header .mobile-sidebar-toggle {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    header,
+    footer,
+    #main {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+
+    .expandable-sidebar .sidebar {
+        width: 260px;
+    }
+
+    .layout-breadcrumb .breadcrumb-wrapper h2,
+    .widget-breadcrumb .breadcrumb-wrapper h2,
+    .elemets-breadcrumb .breadcrumb-wrapper h2,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-title h2,
+    .tiles .widget-wrapper .widget-box .widget-items .widget-item h2,
+    .statistics .widget-wrapper .widget-box .widget-items .widget-item h2 {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .overview h4,
+    .description .job-similar .job-similar-title h4,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-content h4,
+    .description .job-description-box .job-description-title h4 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .tiles .tiles-wrapper .tiles-title h5,
+    .statistics .statistics-wrapper .statistics-title h5,
+    .overview .overview-items .overview-card .overview-content h5,
+    .description .job-description-box .job-description-content h5,
+    .theme-option .theme-option-content .option-box .option-title p,
+    .description .job-similar .job-similar-content .job-similar-card .similar-content .similar-content-title h5 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .ecl .ecl-items .ecl-item .ecl-number span,
+    .edo .edo-items .edo-card .edo-header .title h3,
+    .eds .eds-items .eds-card .eds-header .title h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .layout-center {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #main #content .body_head,
+    .page-backgrounds #main #content .body_part .pc_container .box_wrapper .box_item,
+    .page-backgrounds #main #content .body_part .pc_container .box_wrapper .box_item.image2 {
+        padding: 30px 15px;
+    }
+
+    #main #content .body_head .page_title,
+    .page-backgrounds #main #content .body_part .pc_container .box_wrapper .box_item .bg_name {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    #main #content .body_head .page_parent,
+    .page-backgrounds #main #content .body_part .pc_container .box_wrapper .box_item .bg_type {
+        font-size: 16px;
+        line-height: 16px;
+        text-align: right;
+    }
+
+    .page-backgrounds #main #content .body_part .pc_title h6 {
+        padding-left: 15px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper .box_item {
+        padding: 30px 15px;
+        max-width: calc(50% - 7.5px) !important;
+    }
+
+    .page-img-overlay #main #content .body_part {
+        padding: 30px 15px;
+    }
+
+    .page-authors #main #content .body_part {
+        padding: 20px 15px;
+    }
+
+    .page-tiles #main #content .body_part {
+        padding: 30px 15px;
+    }
+
+    .page-statistics #main #content .body_part {
+        padding: 30px 15px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item .infobox h5 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item .infobox p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .page-media #main #content .body_part {
+        padding: 30px 15px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item .iconbox i {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item .iconbox p {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 8px 0 0 0;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item .infobox h5,
+    .page-media #main #content .body_part .box_wrapper .box_item.detailed_based .type_item .iconbox p {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item .infobox p {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 6px 0 0 0;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type {
+        gap: 15px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item.detailed_based .type_item .infobox .info_item h6 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item {
+        max-width: calc(50% - 7.5px);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header .header-nav {
+        padding: 15px 20px;
+    }
+
+    header .header-nav .header-nav-list {
+        gap: 20px;
+    }
+
+    .breadcrumb {
+        padding: 40px 20px;
+    }
+
+    .elemets-breadcrumb .breadcrumb-wrapper h2,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-title h2,
+    .widget-breadcrumb .breadcrumb-wrapper h2,
+    .layout-breadcrumb .breadcrumb-wrapper h2,
+    .tiles .widget-wrapper .widget-box .widget-items .widget-item h2,
+    .statistics .widget-wrapper .widget-box .widget-items .widget-item h2 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .overview h4,
+    .description .job-similar .job-similar-title h4,
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-content h4,
+    .description .job-description-box .job-description-title h4 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .breadcrumb .breadcrumb-wrapper .breadcrumb-content .centrix-button {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 15px;
+    }
+
+    .theme-option {
+        width: 280px;
+    }
+
+    .theme-option .theme-option-header {
+        padding: 15px;
+    }
+
+    .theme-option .theme-option-content {
+        padding: 20px 15px;
+    }
+
+    .theme-option .theme-option-content .option-box .option-title {
+        padding: 12px 15px;
+    }
+
+    .theme-option .theme-option-content .option-box .option-title p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .theme-option .theme-option-content .option-box .option-item .option-btn-item .option-btn {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 10px 20px;
+    }
+
+    .theme-option .theme-option-content .option-box .option-item .option-btn-item .mode-light,
+    .theme-option .theme-option-content .option-box .option-item .option-btn-item .mode-dark {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .ecl .ecl-items .ecl-item .ecl-number span,
+    .edo .edo-items .edo-card .edo-header .title h3,
+    .eds .eds-items .eds-card .eds-header .title h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .preview-color .color-items .color-card {
+        flex: 0 0 calc(50% - 40px);
+    }
+
+    .tiles .widget-wrapper .widget-box .widget-items .widget-item,
+    .statistics .widget-wrapper .widget-box .widget-items .widget-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .layout-space,
+    .layout-center {
+        padding: 0;
+    }
+
+    .layout-right-sidebar,
+    .layout-left-sidebar {
+        width: 280px;
+    }
+
+    .page-color-themes #main #content .body_part {
+        padding: 20px 15px;
+    }
+
+    .page-color-themes #main #content .body_part .pc_container .box_wrapper {
+        gap: 20px 15px !important;
+        padding: 15px !important;
+    }
+
+    .page-color-themes #main #content .body_part .pc_container .box_wrapper .box_item {
+        max-width: calc(50% - 7.5px) !important;
+        gap: 10px;
+    }
+
+    .page-color-themes #main #content .body_part .pc_container .pc_title {
+        background-color: #F6F6F6;
+        padding: 15px;
+    }
+
+    .page-img-overlay #main #content .body_part .pc_container .box_wrapper .box_item {
+        padding: 30px 15px;
+        max-width: 100% !important;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper {
+        gap: 15px;
+    }
+
+    .page-authors #main #content .body_part .box_wrapper .box_item .profile_img {
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    .page-authors #main #content .body_head {
+        background: url(../images/bgimg2.png) no-repeat center / cover;
+        padding: 60px 15px;
+        gap: 10px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type .type_item {
+        max-width: calc(50% - 10px);
+        width: 100%;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_container .statistics_type {
+        gap: 15px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item .statistics_icon {
+        max-width: 40px;
+        height: 40px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item .infobox h5 {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type .type_item .infobox p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type.dir_vertical .type_item {
+        gap: 16px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type.progress_box .type_item .progress-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type.progress_box .type_item .progress-circle::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page-statistics #main #content .body_part .box_wrapper .statistics_type.progress_box .type_item .progress-circle span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item .media_type .type_item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item.detailed_based .iconbox {
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item.detailed_based .type_item .iconbox p {
+        margin: 0;
+    }
+
+    .page-media #main #content .body_part .box_wrapper .box_item.detailed_based .type_item .infobox {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .preview-color .color-items .color-card {
+        flex: 0 0 100%;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type .type_item h5 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .tiles_container .tiles_type .type_item p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .page-tiles #main #content .body_part .box_wrapper .icon_based .tiles_type i,
+    .page-tiles #main #content .body_part .box_wrapper .detailed_based .tiles_type i {
+        font-size: 25px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .tiles .widget-wrapper .widget-box .widget-items .widget-item,
+    .statistics .widget-wrapper .widget-box .widget-items .widget-item {
+        flex: 0 0 100%;
+    }
+}
