@@ -1288,7 +1288,7 @@ footer.footer-fixed-position {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 80px 60px;
+    padding: 30px 60px;
 }
 
 .breadcrumb .breadcrumb-wrapper {
@@ -1300,6 +1300,10 @@ footer.footer-fixed-position {
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    /* Bootstrap's .breadcrumb is display:flex, so this flex item would only
+       be as wide as its content - force full width so space-between works
+       (title left, action button right) */
+    width: 100%;
 }
 
 .breadcrumb .breadcrumb-wrapper .breadcrumb-title h2 {
