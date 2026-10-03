@@ -4735,3 +4735,131 @@ footer.footer-fixed-position {
 
 
 
+
+/* ==========================================================================
+   Projects page (pages/projects.html)
+   ========================================================================== */
+
+/* Full-bleed banner: remove default content padding, pad the body instead */
+.page-projects #main #content {
+    padding: 0;
+}
+
+.page-projects #main #content .body_part {
+    padding: 30px;
+}
+
+/* Banner: icon + title on one row */
+.breadcrumb .breadcrumb-wrapper .breadcrumb-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.breadcrumb .breadcrumb-wrapper .breadcrumb-title h2 {
+    margin: 0;
+}
+
+.breadcrumb .breadcrumb-wrapper .breadcrumb-content .centrix-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Outlined card action buttons: brand-blue label + icon (per design) */
+.card .card-content .card-button .card-view-btn {
+    color: #1677FF;
+}
+
+.card .card-content .card-button .card-view-btn img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(76%) saturate(2872%) hue-rotate(203deg) brightness(102%) contrast(101%);
+}
+
+.card .card-content .card-button .card-view-btn:hover,
+.card .card-content .card-button .card-view-btn:focus {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.card .card-content .card-button .card-view-btn:hover img,
+.card .card-content .card-button .card-view-btn:focus img {
+    filter: brightness(0) invert(1);
+}
+
+/* Empty state (search / filter with no results) */
+.project-list-empty {
+    display: none;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project-list-empty p {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #5A5A5A;
+    margin: 0;
+}
+
+/* ---------- Projects page: dark mode ---------- */
+.dark-mode .project-list-empty p {
+    color: #B7B7B7;
+}
+
+.dark-mode .filter-header .filter-search .header-search .form-control {
+    background: #1F1F1F;
+    border-color: #3D3D3D;
+    color: #ffffff;
+}
+
+.dark-mode .filter-header .filter-search .header-search .form-control::placeholder {
+    color: #B7B7B7;
+}
+
+.dark-mode .filter-header .filter-search .header-search .search-icon img {
+    filter: invert(1);
+}
+
+.dark-mode .filter-header .filter-dropdown .select_wrap .default_option li {
+    background-color: #1F1F1F;
+}
+
+.dark-mode .filter-header .filter-dropdown .select_wrap .default_option li .option p {
+    color: #ffffff;
+}
+
+.dark-mode .filter-header .filter-dropdown .select_wrap .select_ul {
+    background: #1F1F1F;
+}
+
+.dark-mode .card {
+    background: #1F1F1F;
+    border-color: #1F1F1F;
+}
+
+.dark-mode .card .card-header {
+    background: #252525;
+}
+
+.dark-mode .card .card-header .calender span {
+    color: #ffffff;
+}
+
+.dark-mode .card .card-header a img {
+    filter: invert(1);
+}
+
+.dark-mode .card .card-content .card-title .card-tag p {
+    color: #ffffff;
+}
+
+.dark-mode .card .card-content .member {
+    background: #252525;
+}
+
+.dark-mode .card .card-content .card-button .card-view-btn {
+    background: transparent;
+}

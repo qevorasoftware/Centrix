@@ -366,21 +366,22 @@ class centrixHeader extends HTMLElement {
 
     `;
 
-        // Highlight current page
-        const currentPage = window.location.pathname.split("/").pop();
+        // Highlight current page and expand its tree path
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
         this.querySelectorAll(".treeview-link").forEach(link => {
             const href = link.getAttribute("href");
             if (href && href === currentPage) {
                 link.classList.add("active");
 
-                let parent = link.closest("ul.treeview-menu");
-                while (parent) {
-                    const parentLink = parent.previousElementSibling;
-                    if (parentLink && parentLink.classList.contains("treeview-link")) {
-                        parentLink.classList.add("active-parent");
+                let item = link.closest("li.treeview");
+                while (item) {
+                    item.classList.add("active", "menu-open");
+                    const menu = item.querySelector(":scope > ul.treeview-menu");
+                    if (menu) {
+                        menu.style.display = "block";
                     }
-                    parent = parent.parentElement.closest("ul.treeview-menu");
+                    item = item.parentElement ? item.parentElement.closest("li.treeview") : null;
                 }
             }
         });
