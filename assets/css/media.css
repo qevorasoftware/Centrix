@@ -672,7 +672,7 @@
         margin: 0;
         border-left: none;
         border-top: 1px solid #e6e8ec;
-        padding: 24px 0 0;
+        padding: 24px 15px 10px;
     }
 }
 
@@ -688,5 +688,32 @@
     .page-project-tasks .breadcrumb .breadcrumb-wrapper .breadcrumb-title h6 {
         font-size: 16px;
         line-height: 16px;
+    }
+}
+
+/* ==========================================================================
+   Project Tasks page: mobile banner + panel spacing
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+    /* icon + title on one row, subtitle drops to its own line */
+    .page-project-tasks .breadcrumb .breadcrumb-wrapper .breadcrumb-title {
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    .page-project-tasks .breadcrumb .breadcrumb-wrapper .breadcrumb-title h6 {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* action button full width under the title block */
+    .page-project-tasks .breadcrumb .breadcrumb-wrapper .breadcrumb-content {
+        width: 100%;
+    }
+
+    .page-project-tasks .breadcrumb .breadcrumb-wrapper .breadcrumb-content .centrix-button {
+        width: 100%;
+        justify-content: center;
     }
 }
