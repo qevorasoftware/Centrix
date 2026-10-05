@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Projects | Centrix">
+    <meta name="description"
+        content="All Projects — track every Centrix project at a glance: task type, status, team members and quick actions.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates, Projects">
+    <meta name="author" content="Centrix">
+    <meta name="theme-color" content="#000000">
+    <title>Projects | Centrix</title>
+    <meta property="og:title" content="Projects | Centrix">
+    <meta property="og:description"
+        content="All Projects — track every Centrix project at a glance: task type, status, team members and quick actions.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-projects light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+
+        <!-- Page banner: full-width, kept OUTSIDE #content so the standard
+             #content padding applies only to the page body -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <img src="../assets/images/icon/title-icon.svg" alt="projects">
+                    <h2>All Projects</h2>
+                </div>
+                <div class="breadcrumb-content">
+                    <a href="create.html" class="centrix-button">
+                        <img src="../assets/images/icon/plus-icon.svg" alt="add">
+                        New Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+
+                <!-- Search + filter -->
+                <div class="filter-header">
+                    <div class="filter-search">
+                        <div class="header-search">
+                            <input type="search" class="form-control" id="project-search" placeholder="Search"
+                                aria-label="Search projects">
+                            <div class="search-icon">
+                                <img src="../assets/images/icon/search.svg" alt="search">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-dropdown">
+                        <div class="select_wrap">
+                            <ul class="default_option">
+                                <li>
+                                    <div class="option">
+                                        <p>Filter</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="select_ul">
+                                <li data-filter="all">
+                                    <div class="option">
+                                        <p>All</p>
+                                    </div>
+                                </li>
+                                <li data-filter="active">
+                                    <div class="option">
+                                        <p>Active</p>
+                                    </div>
+                                </li>
+                                <li data-filter="pending">
+                                    <div class="option">
+                                        <p>Pending</p>
+                                    </div>
+                                </li>
+                                <li data-filter="planing">
+                                    <div class="option">
+                                        <p>Planning</p>
+                                    </div>
+                                </li>
+                                <li data-filter="cancel">
+                                    <div class="option">
+                                        <p>Canceled</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project cards -->
+                <div class="project-wrapper">
+                    <div class="project-list" id="project-list">
+
+                        <!-- 1 -->
+                        <div class="card" data-status="active">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Design Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Ui/Ux Design</p>
+                                        <span class="status">Active</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/allen-mata.png" alt="Allen Mata">
+                                        <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                        <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                        <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn primary">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="card" data-status="pending">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Design Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Web Design</p>
+                                        <span class="status pending">Pending</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                        <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                        <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                        <img src="../assets/images/Profileimg/janet-woodham.png" alt="Janet Woodham">
+                                        <img src="../assets/images/Profileimg/paula-chapman.png" alt="Paula Chapman">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="card" data-status="planing">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Development Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>App Development</p>
+                                        <span class="status planing">Planning</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/allen-mata.png" alt="Allen Mata">
+                                        <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                        <img src="../assets/images/Profileimg/janet-woodham.png" alt="Janet Woodham">
+                                        <img src="../assets/images/Profileimg/phillip-lopez.png" alt="Phillip Lopez">
+                                        <img src="../assets/images/Profileimg/sean-ingram.png" alt="Sean Ingram">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="card" data-status="cancel">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Development Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Web Development</p>
+                                        <span class="status cancel">Canceled</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/allen-mata.png" alt="Allen Mata">
+                                        <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                        <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                        <img src="../assets/images/Profileimg/janet-woodham.png" alt="Janet Woodham">
+                                        <img src="../assets/images/Profileimg/paula-chapman.png" alt="Paula Chapman">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="card" data-status="planing">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Marketing Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Digital Marketing</p>
+                                        <span class="status planing">Planning</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                        <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                        <img src="../assets/images/Profileimg/paula-chapman.png" alt="Paula Chapman">
+                                        <img src="../assets/images/Profileimg/richard-wolfe.png" alt="Richard Wolfe">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="card" data-status="active">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Design Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Web Design</p>
+                                        <span class="status">Active</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/allen-mata.png" alt="Allen Mata">
+                                        <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                        <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                        <img src="../assets/images/Profileimg/phillip-lopez.png" alt="Phillip Lopez">
+                                        <img src="../assets/images/Profileimg/shay-kelly.png" alt="Shay Kelly">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="card" data-status="planing">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Marketing Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Social Media Marketing</p>
+                                        <span class="status planing">Planning</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                        <img src="../assets/images/Profileimg/janet-woodham.png" alt="Janet Woodham">
+                                        <img src="../assets/images/Profileimg/sean-ingram.png" alt="Sean Ingram">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="card" data-status="cancel">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Development Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>App Development</p>
+                                        <span class="status cancel">Canceled</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/allen-mata.png" alt="Allen Mata">
+                                        <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                        <img src="../assets/images/Profileimg/richard-wolfe.png" alt="Richard Wolfe">
+                                        <img src="../assets/images/Profileimg/shay-kelly.png" alt="Shay Kelly">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 9 -->
+                        <div class="card" data-status="pending">
+                            <div class="card-header">
+                                <div class="calender">
+                                    <img src="../assets/images/icon/calender.svg" alt="date">
+                                    <span>March 25</span>
+                                </div>
+                                <a href="#" aria-label="More options"><img class="d-block"
+                                        src="../assets/images/icon/more-option.svg" alt="more options"></a>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <h6><a href="#">Design Task</a></h6>
+                                    <div class="card-tag">
+                                        <p>Ui/Ux Design</p>
+                                        <span class="status pending">Pending</span>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <div class="member-list">
+                                        <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                        <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                        <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                        <img src="../assets/images/Profileimg/paula-chapman.png" alt="Paula Chapman">
+                                        <img src="../assets/images/Profileimg/phillip-lopez.png" alt="Phillip Lopez">
+                                    </div>
+                                </div>
+                                <div class="card-button">
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-eye.svg" alt=""> View
+                                    </button>
+                                    <button type="button" class="card-view-btn">
+                                        <img src="../assets/images/icon/button-archive.svg" alt=""> Archive
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-list-empty" id="project-list-empty">
+                        <p>No projects found matching your search.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        /* Projects page: live search + status filter (uses the theme's custom dropdown) */
+        $(function () {
+            var $cards = $('#project-list .card');
+            var currentStatus = 'all';
+
+            function applyFilters() {
+                var query = $('#project-search').val().trim().toLowerCase();
+                var visible = 0;
+                $cards.each(function () {
+                    var $card = $(this);
+                    var matchesText = !query || $card.text().toLowerCase().indexOf(query) !== -1;
+                    var matchesStatus = currentStatus === 'all' || $card.data('status') === currentStatus;
+                    var show = matchesText && matchesStatus;
+                    $card.toggle(show);
+                    if (show) { visible++; }
+                });
+                $('#project-list-empty').toggle(visible === 0);
+            }
+
+            $('#project-search').on('keyup change', applyFilters);
+
+            /* custom.js swaps the dropdown label; this adds the actual filtering */
+            $(document).on('click', '.filter-dropdown .select_ul li', function () {
+                currentStatus = $(this).data('filter') || 'all';
+                applyFilters();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -375,7 +375,7 @@
     }
 
     .breadcrumb {
-        padding: 40px 20px;
+        padding: 24px 20px;
     }
 
     .elemets-breadcrumb .breadcrumb-wrapper h2,
@@ -605,5 +605,47 @@
     .tiles .widget-wrapper .widget-box .widget-items .widget-item,
     .statistics .widget-wrapper .widget-box .widget-items .widget-item {
         flex: 0 0 100%;
+    }
+}
+/* ==========================================================================
+   Projects page: mobile responsive (single column + stacked filter bar)
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+
+    .project-wrapper .project-list .card {
+        flex: 0 0 100%;
+    }
+
+    .filter-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .filter-header .filter-search {
+        max-width: 100%;
+    }
+
+    .filter-header .filter-dropdown .select_wrap {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .card .card-content .card-title .card-tag {
+        flex-wrap: wrap;
+    }
+
+    .card .card-content .card-button {
+        gap: 10px;
+    }
+
+    .card .card-content .card-button .card-view-btn {
+        padding: 10px 12px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .breadcrumb .breadcrumb-wrapper {
+        gap: 12px;
     }
 }
