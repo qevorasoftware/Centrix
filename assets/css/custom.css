@@ -4894,3 +4894,285 @@ footer.footer-fixed-position {
     background: #1677FF;
     color: #ffffff;
 }
+
+/* ==========================================================================
+   Project Tasks page (pages/project-tasks.html)
+   ========================================================================== */
+
+/* Banner: subtitle next to the page title */
+.page-project-tasks .breadcrumb .breadcrumb-wrapper .breadcrumb-title h6 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+/* Two-column layout: task lists left, project info panel right.
+   The side panel escapes #content padding (30px) so it sits flush
+   against the right edge, full height, like the design. */
+.page-project-tasks .pt-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.page-project-tasks .pt-main {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-project-tasks .pt-side {
+    flex: 0 0 320px;
+    background: #fbfbfd;
+    border-left: 1px solid #e6e8ec;
+    padding: 30px 24px;
+    margin: -30px -30px -30px 0;
+}
+
+/* Add-task row */
+.page-project-tasks .pt-add-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.page-project-tasks .pt-add-row .form-control {
+    flex: 1 1 auto;
+    height: 46px;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #111111;
+    box-shadow: none;
+}
+
+.page-project-tasks .pt-add-row .form-control::placeholder {
+    color: #9aa0a6;
+}
+
+.page-project-tasks .pt-add-row .form-control:focus {
+    border-color: #1677FF;
+    box-shadow: none;
+}
+
+.page-project-tasks .pt-add-btn {
+    flex: 0 0 auto;
+    height: 46px;
+    padding: 0 22px;
+    background: #1677FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+.page-project-tasks .pt-add-btn:hover,
+.page-project-tasks .pt-add-btn:focus {
+    background: #0f5fd7;
+}
+
+/* Section headings + count badges */
+.page-project-tasks .pt-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 14px;
+}
+
+.page-project-tasks .pt-section-head h5 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-project-tasks .pt-count {
+    min-width: 24px;
+    height: 24px;
+    padding: 0 6px;
+    border-radius: 12px;
+    background: #1677FF;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-project-tasks .pt-list {
+    list-style: none;
+    margin: 0 0 26px;
+    padding: 0;
+}
+
+/* Task rows */
+.page-project-tasks .pt-task {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.page-project-tasks .pt-task .pt-drag {
+    display: inline-flex;
+}
+
+.page-project-tasks .pt-name {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #111111;
+}
+
+.page-project-tasks .pt-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.page-project-tasks .pt-star,
+.page-project-tasks .pt-del {
+    background: none;
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.page-project-tasks .pt-star svg path {
+    fill: none;
+    stroke: #F5A623;
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.page-project-tasks .pt-task.starred .pt-star svg path {
+    fill: #F5A623;
+}
+
+/* Right info panel */
+.page-project-tasks .pt-side-block {
+    margin-bottom: 30px;
+}
+
+.page-project-tasks .pt-side-block h5 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.page-project-tasks .pt-progress {
+    height: 14px;
+    border-radius: 7px;
+    background: #e8eaee;
+    overflow: hidden;
+}
+
+.page-project-tasks .pt-progress-fill {
+    height: 100%;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #1677FF 0%, #5aa2ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 8px;
+    min-width: 38px;
+    box-sizing: border-box;
+}
+
+.page-project-tasks .pt-progress-fill span {
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.page-project-tasks .pt-progress-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.page-project-tasks .pt-about {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5f6368;
+    margin: 0 0 16px;
+}
+
+.page-project-tasks .pt-deadline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeff2;
+    padding: 11px 14px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.page-project-tasks .pt-deadline strong {
+    color: #111111;
+}
+
+.page-project-tasks .pt-people {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.page-project-tasks .pt-people img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dark mode */
+.page-project-tasks.dark-mode .pt-task {
+    background: #1f2430;
+    box-shadow: none;
+}
+
+.page-project-tasks.dark-mode .pt-name,
+.page-project-tasks.dark-mode .pt-section-head h5,
+.page-project-tasks.dark-mode .pt-side-block h5,
+.page-project-tasks.dark-mode .pt-progress-scale {
+    color: #ffffff;
+}
+
+.page-project-tasks.dark-mode .pt-side {
+    background: #171c26;
+    border-left-color: #2a3040;
+}
+
+.page-project-tasks.dark-mode .pt-about {
+    color: #9aa4b2;
+}
+
+.page-project-tasks.dark-mode .pt-deadline {
+    background: #232936;
+    color: #cfd6e0;
+}
+
+.page-project-tasks.dark-mode .pt-deadline strong {
+    color: #ffffff;
+}
+
+.page-project-tasks.dark-mode .pt-add-row .form-control {
+    background: #1f2430;
+    border-color: #2a3040;
+    color: #ffffff;
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Project Tasks | Centrix">
+    <meta name="description"
+        content="Project Tasks — track active, starred and completed tasks for the Marketing Task project, with progress, deadline and team at a glance.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates, Project Tasks">
+    <meta name="author" content="Centrix">
+    <meta name="theme-color" content="#000000">
+    <title>Project Tasks | Centrix</title>
+    <meta property="og:title" content="Project Tasks | Centrix">
+    <meta property="og:description"
+        content="Project Tasks — track active, starred and completed tasks for the Marketing Task project, with progress, deadline and team at a glance.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-project-tasks light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+
+        <!-- Page banner: full-width, kept OUTSIDE #content so the standard
+             #content padding applies only to the page body -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <img src="../assets/images/icon/title-icon.svg" alt="project tasks">
+                    <h2>Marketing Task</h2>
+                    <h6>Social Media Marketing</h6>
+                </div>
+                <div class="breadcrumb-content">
+                    <a href="edit.html" class="centrix-button">
+                        <img src="../assets/images/icon/plus-icon.svg" alt="edit">
+                        Edit Project
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="pt-layout">
+
+                    <!-- Left: task lists -->
+                    <div class="pt-main">
+
+                        <!-- Add task -->
+                        <div class="pt-add-row">
+                            <input type="text" class="form-control" id="pt-task-input" placeholder="Add Task Name"
+                                aria-label="Add task name">
+                            <button type="button" class="pt-add-btn" id="pt-add-btn">Add Task</button>
+                        </div>
+
+                        <!-- Active Tasks -->
+                        <section class="pt-section" data-section="active">
+                            <div class="pt-section-head">
+                                <h5>Active Tasks</h5>
+                                <span class="pt-count">0</span>
+                            </div>
+                            <ul class="pt-list">
+                                <li class="pt-task">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Social Media Post</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Star task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="pt-task">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Market Analysis</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Star task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="pt-task">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Platforms For Marketing</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Star task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Starred Tasks -->
+                        <section class="pt-section" data-section="starred">
+                            <div class="pt-section-head">
+                                <h5>Starred Tasks</h5>
+                                <span class="pt-count">0</span>
+                            </div>
+                            <ul class="pt-list">
+                                <li class="pt-task starred">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Social Media Post</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Unstar task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="pt-task starred">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Market Analysis</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Unstar task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Completed Tasks -->
+                        <section class="pt-section" data-section="completed">
+                            <div class="pt-section-head">
+                                <h5>Completed Tasks</h5>
+                                <span class="pt-count">0</span>
+                            </div>
+                            <ul class="pt-list">
+                                <li class="pt-task">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Social Media Post</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Star task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="pt-task starred">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Market Analysis</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Unstar task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="pt-task">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Platforms For Marketing</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Star task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="pt-task starred">
+                                    <span class="pt-drag" aria-hidden="true">
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <p class="pt-name">Market Analysis</p>
+                                    <div class="pt-actions">
+                                        <button type="button" class="pt-star" aria-label="Unstar task">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z" />
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="pt-del" aria-label="Delete task">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D"
+                                                    stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <!-- Right: project info panel -->
+                    <aside class="pt-side">
+                        <div class="pt-side-block">
+                            <h5>Task Progress</h5>
+                            <div class="pt-progress" role="progressbar" aria-label="Task progress" aria-valuemin="0"
+                                aria-valuemax="100" aria-valuenow="46">
+                                <div class="pt-progress-fill" style="width: 46%;"><span>46%</span></div>
+                            </div>
+                            <div class="pt-progress-scale"><span>0%</span><span>100%</span></div>
+                        </div>
+
+                        <div class="pt-side-block">
+                            <h5>About Project</h5>
+                            <p class="pt-about">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries</p>
+                            <div class="pt-deadline"><span>Deadline :</span><strong>23/04/2024</strong></div>
+                        </div>
+
+                        <div class="pt-side-block">
+                            <h5>People</h5>
+                            <div class="pt-people">
+                                <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                <img src="../assets/images/Profileimg/phillip-lopez.png" alt="Phillip Lopez">
+                                <img src="../assets/images/Profileimg/sean-ingram.png" alt="Sean Ingram">
+                                <img src="../assets/images/Profileimg/shay-kelly.png" alt="Shay Kelly">
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        /* Project Tasks page: add task, star/unstar (moves between Active and
+           Starred lists), delete, and live section counts. */
+        $(function () {
+            var $input = $('#pt-task-input');
+
+            var SVG_DRAG = '<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1H17M1 7H17M1 13H17" stroke="#9AA0A6" stroke-width="2" stroke-linecap="round"/></svg>';
+            var SVG_STAR = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.8L14.9 8.7L21.4 9.65L16.7 14.2L17.8 20.7L12 17.65L6.2 20.7L7.3 14.2L2.6 9.65L9.1 8.7L12 2.8Z"/></svg>';
+            var SVG_X = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 2.5L13.5 13.5M13.5 2.5L2.5 13.5" stroke="#E5484D" stroke-width="2" stroke-linecap="round"/></svg>';
+
+            function makeRow(name, starred) {
+                var $li = $('<li>').addClass('pt-task' + (starred ? ' starred' : ''));
+                $li.append($('<span>').addClass('pt-drag').attr('aria-hidden', 'true').html(SVG_DRAG));
+                $li.append($('<p>').addClass('pt-name').text(name));
+                var $star = $('<button>').attr('type', 'button').addClass('pt-star')
+                    .attr('aria-label', starred ? 'Unstar task' : 'Star task').html(SVG_STAR);
+                var $del = $('<button>').attr('type', 'button').addClass('pt-del')
+                    .attr('aria-label', 'Delete task').html(SVG_X);
+                $li.append($('<div>').addClass('pt-actions').append($star, $del));
+                return $li;
+            }
+
+            function updateCounts() {
+                $('.pt-section').each(function () {
+                    var n = $(this).find('.pt-list .pt-task').length;
+                    $(this).find('.pt-count').text(n);
+                });
+            }
+
+            function addTask() {
+                var name = $.trim($input.val());
+                if (!name) { $input.trigger('focus'); return; }
+                makeRow(name, false).appendTo('.pt-section[data-section="active"] .pt-list');
+                $input.val('').trigger('focus');
+                updateCounts();
+            }
+
+            $('#pt-add-btn').on('click', addTask);
+            $input.on('keydown', function (e) {
+                if (e.key === 'Enter') { e.preventDefault(); addTask(); }
+            });
+
+            $(document).on('click', '.pt-star', function () {
+                var $li = $(this).closest('.pt-task');
+                var kind = $li.closest('.pt-section').data('section');
+                if (kind === 'completed') {
+                    $li.toggleClass('starred');
+                } else if (kind === 'active') {
+                    $li.addClass('starred').appendTo('.pt-section[data-section="starred"] .pt-list');
+                } else {
+                    $li.removeClass('starred').appendTo('.pt-section[data-section="active"] .pt-list');
+                }
+                $(this).attr('aria-label', $li.hasClass('starred') ? 'Unstar task' : 'Star task');
+                updateCounts();
+            });
+
+            $(document).on('click', '.pt-del', function () {
+                $(this).closest('.pt-task').remove();
+                updateCounts();
+            });
+
+            updateCounts();
+        });
+    </script>
+</body>
+
+</html>
