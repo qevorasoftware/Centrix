@@ -5176,3 +5176,34 @@ footer.footer-fixed-position {
     border-color: #2a3040;
     color: #ffffff;
 }
+
+/* ==========================================================================
+   Sidebar collapsed state (body.expandable-sidebar) fixes:
+   - #main kept its 260px margin on pages without a page-scoped override,
+     leaving a grey gap next to the 110px sidebar
+   - open submenus rendered as empty blue columns (link text is hidden but
+     the component sets inline display:block on the active path)
+   - chevrons stayed visible (old selector targeted .treeview-link.menu-toggle
+     but the class lives on the inner span)
+   ========================================================================== */
+.expandable-sidebar #main {
+    margin-left: 110px;
+}
+
+.expandable-sidebar .sidebar .header-logo {
+    justify-content: center;
+    gap: 10px;
+    padding: 21px 10px;
+}
+
+.expandable-sidebar .sidebar .header-logo a img {
+    max-width: 34px;
+}
+
+.expandable-sidebar .sidebar .tree .treeview-menu {
+    display: none !important;
+}
+
+.expandable-sidebar .sidebar .tree .treeview .treeview-link .menu-toggle {
+    display: none;
+}
