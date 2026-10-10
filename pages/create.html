@@ -108,7 +108,7 @@
                         <h3 class="create-card-title">Additional Details</h3>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="create-field">
+                                <div class="create-field create-field-fill">
                                     <label class="create-label" for="project-description">Description</label>
                                     <textarea class="form-control create-textarea" id="project-description"
                                         name="project-description" rows="4"
@@ -258,6 +258,108 @@
                 if (digits.length > 2) { out += '/' + digits.slice(2, 4); }
                 if (digits.length > 4) { out += '/' + digits.slice(4, 8); }
                 $(this).val(out);
+            });
+
+            /* ---- Date picker: click the field or the calendar icon to open a
+               month calendar; click a day to fill DD/MM/YYYY ---- */
+            var DP_MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+            var DP_DOW = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+
+            function dpPad(n) {
+                return (n < 10 ? '0' : '') + n;
+            }
+
+            function dpParse(val) {
+                var m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(val || '');
+                if (!m) { return null; }
+                var d = new Date(+m[3], +m[2] - 1, +m[1]);
+                return isNaN(d.getTime()) ? null : d;
+            }
+
+            function dpRender($date) {
+                var view = $date.data('dp-view');
+                var selected = dpParse($date.find('.form-control').val());
+                var startDay = new Date(view.getFullYear(), view.getMonth(), 1).getDay();
+                var daysInMonth = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate();
+                var today = new Date();
+
+                var html = '<div class="dp-head">'
+                    + '<button type="button" class="dp-prev" aria-label="Previous month">&#8249;</button>'
+                    + '<span class="dp-title">' + DP_MONTHS[view.getMonth()] + ' ' + view.getFullYear() + '</span>'
+                    + '<button type="button" class="dp-next" aria-label="Next month">&#8250;</button>'
+                    + '</div><div class="dp-grid">';
+
+                for (var i = 0; i < 7; i++) {
+                    html += '<span class="dp-dow">' + DP_DOW[i] + '</span>';
+                }
+                for (var b = 0; b < startDay; b++) {
+                    html += '<span class="dp-day dp-blank"></span>';
+                }
+                for (var d = 1; d <= daysInMonth; d++) {
+                    var cls = 'dp-day';
+                    if (selected && selected.getFullYear() === view.getFullYear()
+                        && selected.getMonth() === view.getMonth()
+                        && selected.getDate() === d) { cls += ' dp-selected'; }
+                    if (today.getFullYear() === view.getFullYear()
+                        && today.getMonth() === view.getMonth()
+                        && today.getDate() === d) { cls += ' dp-today'; }
+                    html += '<button type="button" class="' + cls + '" data-day="' + d + '">' + d + '</button>';
+                }
+                html += '</div>';
+
+                var $panel = $date.find('.dp-panel');
+                if (!$panel.length) {
+                    $panel = $('<div class="dp-panel"></div>').appendTo($date);
+                }
+                $panel.html(html);
+            }
+
+            function dpOpen($date) {
+                var picked = dpParse($date.find('.form-control').val()) || new Date();
+                $date.data('dp-view', new Date(picked.getFullYear(), picked.getMonth(), 1));
+                dpRender($date);
+                $date.addClass('active');
+            }
+
+            function dpCloseAll() {
+                $('.create-date').removeClass('active');
+            }
+
+            $(document).on('click', '.create-date .form-control, .create-date > img', function (e) {
+                e.stopPropagation();
+                var $date = $(this).closest('.create-date');
+                var wasOpen = $date.hasClass('active');
+                dpCloseAll();
+                if (!wasOpen) { dpOpen($date); }
+            });
+
+            /* clicks inside the panel must not close it */
+            $(document).on('click', '.dp-panel', function (e) {
+                e.stopPropagation();
+            });
+
+            $(document).on('click', '.dp-prev, .dp-next', function (e) {
+                e.stopPropagation();
+                var $date = $(this).closest('.create-date');
+                var view = $date.data('dp-view');
+                var shift = $(this).hasClass('dp-prev') ? -1 : 1;
+                $date.data('dp-view', new Date(view.getFullYear(), view.getMonth() + shift, 1));
+                dpRender($date);
+            });
+
+            $(document).on('click', '.dp-day[data-day]', function (e) {
+                e.stopPropagation();
+                var $date = $(this).closest('.create-date');
+                var view = $date.data('dp-view');
+                $date.find('.form-control').val(dpPad(+$(this).data('day')) + '/'
+                    + dpPad(view.getMonth() + 1) + '/' + view.getFullYear());
+                dpCloseAll();
+            });
+
+            /* clicking anywhere else closes the calendar */
+            $(document).on('click', function () {
+                dpCloseAll();
             });
 
             function setFieldError($field, show) {

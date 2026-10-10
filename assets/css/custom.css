@@ -5288,6 +5288,19 @@ footer.footer-fixed-position {
     resize: vertical;
 }
 
+/* The two columns of the Additional Details row are equal-height flex items
+   of the Bootstrap row, so letting the description field fill its column
+   lands the textarea's bottom edge exactly on the Deadline field's bottom */
+.page-create .create-field-fill {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-create .create-field-fill .create-textarea {
+    flex: 1 1 auto;
+}
+
 /* Category dropdown - neutral field look, behaviour from custom.js */
 .page-create .select_wrap {
     position: relative;
@@ -5387,7 +5400,111 @@ footer.footer-fixed-position {
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    pointer-events: none;
+    cursor: pointer;
+}
+
+/* ---- Date picker panel (built in the page script, no library) ---- */
+.page-create .dp-panel {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    width: 264px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    display: none;
+    z-index: 30;
+}
+
+.page-create .create-date.active .dp-panel {
+    display: block;
+}
+
+.page-create .dp-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.page-create .dp-title {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.page-create .dp-prev,
+.page-create .dp-next {
+    border: 0;
+    background: #F2F4F7;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1;
+    color: #111111;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.page-create .dp-prev:hover,
+.page-create .dp-next:hover {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-create .dp-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.page-create .dp-dow {
+    font-family: 'Metropolis';
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #B7B7B7;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.page-create .dp-day {
+    border: 0;
+    background: transparent;
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 16px;
+    color: #111111;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.page-create .dp-day:hover {
+    background: #E8F1FF;
+    color: #1677FF;
+}
+
+.page-create .dp-day.dp-today {
+    box-shadow: inset 0 0 0 1px #1677FF;
+}
+
+.page-create .dp-day.dp-selected,
+.page-create .dp-day.dp-selected:hover {
+    background: #1677FF;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.page-create .dp-day.dp-blank,
+.page-create .dp-day.dp-blank:hover {
+    background: transparent;
+    cursor: default;
 }
 
 /* Required-field errors */
@@ -5600,4 +5717,39 @@ footer.footer-fixed-position {
 .page-create.dark-mode .create-clear:hover,
 .page-create.dark-mode .create-clear:focus {
     background: #262626;
+}
+
+/* ---------- Create Project page: date picker on dark ---------- */
+.page-create.dark-mode .dp-panel {
+    background: #262626;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.page-create.dark-mode .dp-title {
+    color: #ffffff;
+}
+
+.page-create.dark-mode .dp-prev,
+.page-create.dark-mode .dp-next {
+    background: #333333;
+    color: #ffffff;
+}
+
+.page-create.dark-mode .dp-dow {
+    color: #8A8A8A;
+}
+
+.page-create.dark-mode .dp-day {
+    color: #E5E5E5;
+}
+
+.page-create.dark-mode .dp-day:hover {
+    background: #333333;
+    color: #6FB1FF;
+}
+
+.page-create.dark-mode .dp-day.dp-selected,
+.page-create.dark-mode .dp-day.dp-selected:hover {
+    background: #1677FF;
+    color: #ffffff;
 }
