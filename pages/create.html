@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Centrix - Add New Project">
+    <meta name="description"
+        content="Create a new project in Centrix: essential details, additional details and the team members assigned to it.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
+    <meta name="author" content="Centrix">
+    <meta name=theme-color content="#000000">
+    <title>Centrix - Add New Project</title>
+    <meta property=og:title content="Centrix - Add New Project">
+    <meta property=og:description
+        content="Create a new project in Centrix: essential details, additional details and the team members assigned to it.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-create light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+
+        <!-- Page banner: reuses the shared .breadcrumb component (all-projects.webp
+             background), same as pages/projects.html -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <img src="../assets/images/icon/plus-icon.svg" alt="add">
+                    <h2>Add New Project</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <form id="create-project-form" novalidate>
+
+                    <!-- Essential Details -->
+                    <section class="card create-card">
+                        <h3 class="create-card-title">Essential Details</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="create-field">
+                                    <label class="create-label" for="project-title">Project Title <span
+                                            class="create-req">*</span></label>
+                                    <input type="text" class="form-control" id="project-title" name="project-title"
+                                        placeholder="Enter Project title Here">
+                                    <p class="create-error">Project title is required</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="create-field">
+                                    <label class="create-label">Category <span class="create-req">*</span></label>
+                                    <!-- same .select_wrap markup + custom.js behaviour as the projects filter -->
+                                    <div class="select_wrap create-select" id="project-category">
+                                        <ul class="default_option">
+                                            <li>
+                                                <div class="option">
+                                                    <p>Select Category</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="select_ul">
+                                            <li>
+                                                <div class="option">
+                                                    <p>Ui/Ux Design</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Web Design</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Logo Designer</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Marketing</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Development</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="create-error">Category is required</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Additional Details -->
+                    <section class="card create-card">
+                        <h3 class="create-card-title">Additional Details</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="create-field">
+                                    <label class="create-label" for="project-description">Description</label>
+                                    <textarea class="form-control create-textarea" id="project-description"
+                                        name="project-description" rows="4"
+                                        placeholder="Enter Project title Here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="create-field">
+                                    <label class="create-label" for="project-start">Start Date</label>
+                                    <div class="create-date">
+                                        <input type="text" class="form-control" id="project-start"
+                                            name="project-start" placeholder="DD/MM/YYYY" inputmode="numeric"
+                                            maxlength="10">
+                                        <img src="../assets/images/icon/calender.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="create-field">
+                                    <label class="create-label" for="project-deadline">Deadline</label>
+                                    <div class="create-date">
+                                        <input type="text" class="form-control" id="project-deadline"
+                                            name="project-deadline" placeholder="DD/MM/YYYY" inputmode="numeric"
+                                            maxlength="10">
+                                        <img src="../assets/images/icon/calender.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- People -->
+                    <section class="card create-card">
+                        <h3 class="create-card-title">People</h3>
+                        <div class="create-people" id="create-people">
+                            <button type="button" class="person selected">
+                                <img src="../assets/images/Profileimg/janet-woodham.png" alt="Janet Woodham">
+                                <div class="person-info">
+                                    <p class="person-name">Janet Woodham</p>
+                                    <span class="person-role">Web Designer</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person">
+                                <img src="../assets/images/Profileimg/allen-mata.png" alt="Allen Mata">
+                                <div class="person-info">
+                                    <p class="person-name">Allen Mata</p>
+                                    <span class="person-role">Logo Designer</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person selected">
+                                <img src="../assets/images/Profileimg/paula-chapman.png" alt="Paula Chapman">
+                                <div class="person-info">
+                                    <p class="person-name">Paula Chapman</p>
+                                    <span class="person-role">Ui/Ux Design</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person selected">
+                                <img src="../assets/images/Profileimg/erlind-hite.png" alt="Erlind Hite">
+                                <div class="person-info">
+                                    <p class="person-name">Erlind Hite</p>
+                                    <span class="person-role">Marketing Expert</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person">
+                                <img src="../assets/images/Profileimg/phillip-lopez.png" alt="Phillip Lopez">
+                                <div class="person-info">
+                                    <p class="person-name">Phillip Lopez</p>
+                                    <span class="person-role">Web Designer</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person">
+                                <img src="../assets/images/Profileimg/ian-adams.png" alt="Ian Adams">
+                                <div class="person-info">
+                                    <p class="person-name">Ian Adams</p>
+                                    <span class="person-role">Marketing Expert</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person selected">
+                                <img src="../assets/images/Profileimg/richard-wolfe.png" alt="Richard Wolfe">
+                                <div class="person-info">
+                                    <p class="person-name">Richard Wolfe</p>
+                                    <span class="person-role">Ui/Ux Design</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person">
+                                <img src="../assets/images/Profileimg/elaine-west.png" alt="Elaine West">
+                                <div class="person-info">
+                                    <p class="person-name">Elaine West</p>
+                                    <span class="person-role">Marketing Expert</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person">
+                                <img src="../assets/images/Profileimg/sean-ingram.png" alt="Sean Ingram">
+                                <div class="person-info">
+                                    <p class="person-name">Sean Ingram</p>
+                                    <span class="person-role">Logo Designer</span>
+                                </div>
+                            </button>
+                            <button type="button" class="person">
+                                <img src="../assets/images/Profileimg/shay-kelly.png" alt="Shay Kelly">
+                                <div class="person-info">
+                                    <p class="person-name">Shay Kelly</p>
+                                    <span class="person-role">Ui/Ux Design</span>
+                                </div>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Actions -->
+                    <div class="create-actions">
+                        <p class="create-success" id="create-success">Project created successfully.</p>
+                        <button type="button" class="centrix-button create-clear" id="create-clear">Clear
+                            Data</button>
+                        <button type="submit" class="centrix-button create-submit" id="create-submit">Create
+                            Project</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        /* Create Project page: people selection + required-field validation.
+           Same inline-script convention as pages/projects.html. */
+        $(function () {
+            /* People cards: click toggles selection */
+            $('#create-people').on('click', '.person', function () {
+                $(this).toggleClass('selected');
+            });
+
+            /* Category dropdown: keep a has-value class so the chosen label
+               renders dark while the placeholder stays grey.
+               (open/close + label swap itself comes from custom.js) */
+            $(document).on('click', '#project-category .select_ul li', function () {
+                $('#project-category').addClass('has-value');
+                setFieldError($('#project-category').closest('.create-field'), false);
+            });
+
+            /* Dates: auto-insert the DD/MM/YYYY slashes while typing */
+            $('#project-start, #project-deadline').on('input', function () {
+                var digits = $(this).val().replace(/\D/g, '').slice(0, 8);
+                var out = digits.slice(0, 2);
+                if (digits.length > 2) { out += '/' + digits.slice(2, 4); }
+                if (digits.length > 4) { out += '/' + digits.slice(4, 8); }
+                $(this).val(out);
+            });
+
+            function setFieldError($field, show) {
+                $field.toggleClass('has-error', !!show);
+            }
+
+            function validate() {
+                var ok = true;
+
+                if ($('#project-title').val().trim() === '') {
+                    setFieldError($('#project-title').closest('.create-field'), true);
+                    ok = false;
+                }
+                if (!$('#project-category').hasClass('has-value')) {
+                    setFieldError($('#project-category').closest('.create-field'), true);
+                    ok = false;
+                }
+                return ok;
+            }
+
+            /* clear the error as soon as the field is fixed */
+            $('#project-title').on('input', function () {
+                setFieldError($(this).closest('.create-field'), false);
+            });
+
+            /* Clear Data: wipe every field + selection back to an empty form */
+            $('#create-clear').on('click', function () {
+                $('#create-project-form')[0].reset();
+                $('#create-people .person').removeClass('selected');
+                $('#project-category').removeClass('has-value');
+                $('#project-category .default_option li').html('<div class="option"><p>Select Category</p></div>');
+                $('.create-field').removeClass('has-error');
+                $('#create-success').removeClass('show');
+            });
+
+            /* Create Project: validate, then confirm */
+            $('#create-project-form').on('submit', function (e) {
+                e.preventDefault();
+                $('#create-success').removeClass('show');
+                if (!validate()) { return; }
+                $('#create-success').addClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

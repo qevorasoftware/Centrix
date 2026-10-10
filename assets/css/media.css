@@ -996,3 +996,105 @@
         font-size: 18px;
     }
 }
+
+/* ==========================================================================
+   Create Project page (pages/create.html): responsive
+   Scoped to .page-create on <body>. The shared .breadcrumb banner is already
+   responsive from the global blocks above, so only the form adapts here.
+   ========================================================================== */
+
+/* --- <=1399px: 5 person cards no longer fit next to the sidebar --- */
+@media screen and (max-width: 1399px) {
+    .page-create .create-people {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* --- <=1199px: #content padding drops to 20px 15px here --- */
+@media screen and (max-width: 1199px) {
+    .page-create .create-card {
+        padding: 22px 20px 24px;
+        margin-bottom: 20px;
+    }
+
+    .page-create .create-people {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* --- <=991px: sidebar collapses, form columns keep stacking via col-lg --- */
+@media screen and (max-width: 991px) {
+    .page-create .create-field {
+        margin-bottom: 18px;
+    }
+
+    .page-create .create-card-title {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+}
+
+/* --- <=767px: phones --- */
+@media screen and (max-width: 767px) {
+    .page-create .create-card {
+        padding: 20px 16px 22px;
+        margin-bottom: 16px;
+    }
+
+    .page-create .create-card-title {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .page-create .create-people {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .page-create .person {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .page-create .person img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page-create .person-name {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .page-create .person-role {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    /* actions stack: message on top, then Clear Data, then Create Project */
+    .page-create .create-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .page-create .create-actions .centrix-button {
+        width: 100%;
+    }
+
+    .page-create .create-success {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* --- <=400px: smallest phones --- */
+@media screen and (max-width: 400px) {
+    .page-create .create-people {
+        grid-template-columns: 1fr;
+    }
+
+    .page-create .create-card {
+        padding: 18px 14px 20px;
+    }
+}

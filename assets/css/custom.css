@@ -5207,3 +5207,397 @@ footer.footer-fixed-position {
 .expandable-sidebar .sidebar .tree .treeview .treeview-link .menu-toggle {
     display: none;
 }
+
+/* ==========================================================================
+   Create Project page (pages/create.html)
+   Reuses the shared pieces instead of reinventing them:
+   - .breadcrumb banner (all-projects.webp)      - .card white panels
+   - .centrix-button primary action              - .select_wrap dropdown
+     markup + open/close/label-swap behaviour from assets/js/custom.js
+   - Profileimg avatars, plus-icon.svg, calender.svg
+   ========================================================================== */
+
+.page-create .breadcrumb .breadcrumb-wrapper .breadcrumb-title img {
+    width: 26px;
+    height: 26px;
+}
+
+.page-create .create-card {
+    padding: 24px 28px 28px;
+    margin-bottom: 24px;
+}
+
+.page-create .create-card:last-of-type {
+    margin-bottom: 24px;
+}
+
+.page-create .create-card-title {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 24px 0;
+}
+
+.page-create .create-field {
+    margin-bottom: 20px;
+}
+
+.page-create .create-field:last-child {
+    margin-bottom: 0;
+}
+
+.page-create .create-label {
+    display: block;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.page-create .create-req {
+    color: #D83131;
+}
+
+.page-create .form-control {
+    height: 46px;
+    border: 1px solid #d8dbe0;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #111111;
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.page-create .form-control::placeholder {
+    color: #B7B7B7;
+}
+
+.page-create .form-control:focus {
+    border-color: #1677FF;
+    box-shadow: none;
+}
+
+.page-create .create-textarea {
+    height: auto;
+    min-height: 116px;
+    padding-top: 12px;
+    resize: vertical;
+}
+
+/* Category dropdown - neutral field look, behaviour from custom.js */
+.page-create .select_wrap {
+    position: relative;
+    user-select: none;
+    z-index: 5;
+}
+
+.page-create .select_wrap .default_option {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.page-create .select_wrap .default_option li {
+    border: 1px solid #d8dbe0;
+    border-radius: 6px;
+    padding: 14px 44px 14px 16px;
+    background-image: url(../images/icon/dropdown-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+    background-size: 18px;
+    transition: border-color 0.2s;
+}
+
+.page-create .select_wrap .default_option li .option p {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #B7B7B7;
+    margin: 0;
+}
+
+.page-create .select_wrap.has-value .default_option li .option p {
+    color: #111111;
+    font-weight: 600;
+}
+
+.page-create .select_wrap .select_ul {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 20;
+}
+
+.page-create .select_wrap.active .select_ul {
+    display: block;
+}
+
+.page-create .select_wrap .select_ul li {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.page-create .select_wrap .select_ul li .option p {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #5A5A5A;
+    margin: 0;
+}
+
+.page-create .select_wrap .select_ul li:hover {
+    background: #1677FF;
+}
+
+.page-create .select_wrap .select_ul li:hover .option p {
+    color: #ffffff;
+}
+
+/* Date fields: calendar icon pinned right, input keeps room for it */
+.page-create .create-date {
+    position: relative;
+}
+
+.page-create .create-date .form-control {
+    padding-right: 46px;
+}
+
+.page-create .create-date img {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+/* Required-field errors */
+.page-create .create-error {
+    display: none;
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #D83131;
+    margin: 6px 0 0;
+}
+
+.page-create .create-field.has-error .create-error {
+    display: block;
+}
+
+.page-create .create-field.has-error .form-control,
+.page-create .create-field.has-error .select_wrap .default_option li {
+    border-color: #D83131;
+}
+
+/* People picker */
+.page-create .create-people {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.page-create .person {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 1px solid #e0e3e8;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.page-create .person img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+
+.page-create .person-name {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 4px;
+}
+
+.page-create .person-role {
+    display: block;
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #B7B7B7;
+}
+
+/* selected = 2px blue ring without any layout shift */
+.page-create .person.selected {
+    border-color: #1677FF;
+    box-shadow: inset 0 0 0 1px #1677FF;
+}
+
+/* Action buttons */
+.page-create .create-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    padding-top: 4px;
+}
+
+.page-create .create-actions .centrix-button {
+    padding: 12px 26px;
+    border-radius: 6px;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.page-create .create-clear,
+.page-create .create-clear:hover,
+.page-create .create-clear:focus {
+    background: #ffffff;
+    color: #111111;
+    border-color: #1677FF;
+}
+
+.page-create .create-clear:hover,
+.page-create .create-clear:focus {
+    background: #F0F6FF;
+}
+
+.page-create .create-submit:hover,
+.page-create .create-submit:focus {
+    background: #1C76DD;
+    border-color: #1C76DD;
+    color: #ffffff;
+}
+
+.page-create .create-success {
+    display: none;
+    margin: 0 auto 0 0;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #03A745;
+}
+
+.page-create .create-success.show {
+    display: block;
+}
+
+/* ---------- Create Project page: dark mode ---------- */
+.page-create.dark-mode .create-card-title,
+.page-create.dark-mode .create-label {
+    color: #ffffff;
+}
+
+.page-create.dark-mode .form-control {
+    background: #262626;
+    border-color: #3D3D3D;
+    color: #ffffff;
+}
+
+.page-create.dark-mode .form-control::placeholder {
+    color: #B7B7B7;
+}
+
+.page-create.dark-mode .select_wrap .default_option {
+    background: transparent;
+}
+
+.page-create.dark-mode .select_wrap .default_option li {
+    border-color: #3D3D3D;
+    background-color: #262626;
+}
+
+.page-create.dark-mode .select_wrap.has-value .default_option li .option p {
+    color: #ffffff;
+}
+
+.page-create.dark-mode .select_wrap .select_ul {
+    background: #262626;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-create.dark-mode .select_wrap .select_ul li .option p {
+    color: #B7B7B7;
+}
+
+/* black calendar / chevron icons need inverting on dark */
+.page-create.dark-mode .create-date img {
+    filter: invert(1);
+}
+
+/* the chevron is a background image, so on dark it is re-drawn inverted
+   through a pseudo element (filter on the li would invert the label too) */
+.page-create.dark-mode .select_wrap .default_option li {
+    background-image: none;
+    position: relative;
+}
+
+.page-create.dark-mode .select_wrap .default_option li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    background: url(../images/icon/dropdown-arrow.svg) no-repeat center / 18px;
+    filter: invert(1);
+    pointer-events: none;
+}
+
+.page-create.dark-mode .person {
+    background: #262626;
+    border-color: #3D3D3D;
+}
+
+.page-create.dark-mode .person-name {
+    color: #ffffff;
+}
+
+.page-create.dark-mode .person.selected {
+    border-color: #1677FF;
+}
+
+.page-create.dark-mode .create-clear,
+.page-create.dark-mode .create-clear:hover,
+.page-create.dark-mode .create-clear:focus {
+    background: #1F1F1F;
+    color: #ffffff;
+}
+
+.page-create.dark-mode .create-clear:hover,
+.page-create.dark-mode .create-clear:focus {
+    background: #262626;
+}
