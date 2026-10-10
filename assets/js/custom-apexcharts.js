@@ -83,12 +83,24 @@ function getOptions(period = 'week') {
     },
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1199,
         options: {
-          chart: { height: 400 },
+          chart: { height: 480 }
+        }
+      },
+      {
+        breakpoint: 991,
+        options: {
+          chart: { height: 420 }
+        }
+      },
+      {
+        breakpoint: 767,
+        options: {
+          chart: { height: 360 },
           xaxis: {
             categories: d.categories,
-            labels: { offsetY: 50, ...label('16px', 500) },
+            labels: { ...label('14px', 500) },
             axisBorder: { show: false },
             axisTicks: { show: false }
           },
@@ -96,7 +108,7 @@ function getOptions(period = 'week') {
             min: 0,
             max: 120,
             tickAmount: 4,
-            labels: label('16px', 500)
+            labels: label('14px', 400)
           },
           legend: {
             fontSize: '13px',
@@ -106,9 +118,9 @@ function getOptions(period = 'week') {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 479,
         options: {
-          chart: { height: 350 },
+          chart: { height: 300 },
           legend: {
             fontSize: '12px',
             markers: { width: 16, height: 16, radius: 0 },
@@ -171,6 +183,35 @@ const options = {
     },
     yaxis: { show: false },
     grid: { show: false },
-    tooltip: { enabled: true }
+    tooltip: { enabled: true },
+    responsive: [
+        {
+            breakpoint: 1199,
+            options: {
+                chart: { height: 480 }
+            }
+        },
+        {
+            breakpoint: 991,
+            options: {
+                chart: { height: 380 },
+                plotOptions: { bar: { columnWidth: '16px', borderRadius: 8 } }
+            }
+        },
+        {
+            breakpoint: 767,
+            options: {
+                chart: { height: 300 },
+                plotOptions: { bar: { columnWidth: '13px', borderRadius: 6 } }
+            }
+        },
+        {
+            breakpoint: 479,
+            options: {
+                chart: { height: 250 },
+                plotOptions: { bar: { columnWidth: '10px', borderRadius: 5 } }
+            }
+        }
+    ]
 };
 new ApexCharts(document.querySelector('#weeklyBarChart'), options).render();

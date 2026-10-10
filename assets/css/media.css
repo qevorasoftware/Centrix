@@ -717,3 +717,282 @@
         justify-content: center;
     }
 }
+
+/* ==========================================================================
+   Index / Dashboard page (pages/index.html): responsive
+   Scoped to .page-index on <body> so nothing leaks to other pages.
+   Nothing above 1200px is touched - the desktop layout is final.
+   Breakpoints match the rest of this file: 1199 / 991 / 767 / 575 / 480 / 400
+   ========================================================================== */
+
+/* --- <=1199px: stats cards drop from 4-up to 2-up (col-xl-3 -> col-sm-6).
+       Bootstrap's .row has no vertical gutter (--bs-gutter-y: 0), so without
+       row-gap the two card rows would sit flush against each other. --- */
+@media screen and (max-width: 1199px) {
+    .page-index .card_dash .row {
+        row-gap: 20px;
+    }
+
+    .page-index .stats-card {
+        height: 100%;
+    }
+
+    .page-index .welcome_banner {
+        padding: 28px 24px;
+    }
+
+    .page-index .wel_content {
+        max-width: 100%;
+    }
+
+    .page-index .wel_content h1 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    /* decorative corner circle shrinks so it never crowds the copy */
+    .page-index .wel_close {
+        width: 150px;
+        height: 150px;
+        right: -66px;
+        top: -66px;
+    }
+
+    .page-index .wel_close svg {
+        width: 20px;
+        height: 20px;
+        bottom: 34px;
+        left: 34px;
+    }
+}
+
+/* --- <=991px: the two chart columns (col-lg-8 / col-lg-4) stack into one,
+       and the sidebar collapses to a fixed overlay so #main goes full width. --- */
+@media screen and (max-width: 991px) {
+    .page-index .chart_group .row {
+        row-gap: 24px;
+    }
+
+    .page-index .visitor-title {
+        font-size: 22px;
+    }
+
+    .page-index .wel_content h1 {
+        font-size: 26px;
+    }
+
+    .page-index .wel_img {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .page-index .wel_img img {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}
+
+/* --- <=767px: phones. Banner copy stacks over the artwork, cards go 1-up,
+       and the chart cards lose their desktop padding. --- */
+@media screen and (max-width: 767px) {
+    .page-index .welcome_banner {
+        padding: 24px 18px;
+    }
+
+    .page-index .wel_content h1 {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+
+    .page-index .wel_content p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .page-index .wel_img {
+        margin-top: 18px;
+    }
+
+    .page-index .wel_img img {
+        max-width: 200px;
+    }
+
+    .page-index .wel_close {
+        width: 120px;
+        height: 120px;
+        right: -52px;
+        top: -52px;
+    }
+
+    .page-index .wel_close svg {
+        width: 16px;
+        height: 16px;
+        bottom: 26px;
+        left: 26px;
+    }
+
+    .page-index .card_dash .row {
+        row-gap: 16px;
+    }
+
+    .page-index .stats-card {
+        padding: 15px 18px;
+    }
+
+    .page-index .stats-title {
+        margin-bottom: 12px;
+    }
+
+    .page-index .stats-title h6 {
+        font-size: 15px;
+    }
+
+    .page-index .stats-number {
+        font-size: 30px;
+    }
+
+    .page-index .stats-icon img {
+        height: 38px;
+        width: auto;
+    }
+
+    .page-index .stats-footer span {
+        font-size: 14px;
+    }
+
+    .page-index .stats-footer strong {
+        font-size: 20px;
+    }
+
+    .page-index .chart_group .row {
+        row-gap: 20px;
+    }
+
+    .page-index #visitorChart,
+    .page-index #weeklyBarChart {
+        padding: 16px 4px;
+    }
+
+    .page-index .chart-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    /* custom.css locks every chart axis label to 16px !important, which is
+       too heavy on a phone - the same !important is needed to win it back. */
+    .page-index #visitorChart .apexcharts-yaxis-label,
+    .page-index #visitorChart .apexcharts-xaxis-label,
+    .page-index #weeklyBarChart .apexcharts-xaxis-label {
+        font-size: 13px !important;
+    }
+}
+
+/* --- <=575px: single-column cards, smaller decorative shapes --- */
+@media screen and (max-width: 575px) {
+    .page-index .visitor-title {
+        font-size: 20px;
+    }
+
+    .page-index .stats-card::after {
+        width: 84px;
+        height: 84px;
+        top: -34px;
+        right: -34px;
+    }
+
+    .page-index .wel_close {
+        width: 104px;
+        height: 104px;
+        right: -46px;
+        top: -46px;
+    }
+
+    .page-index .wel_close svg {
+        bottom: 22px;
+        left: 22px;
+    }
+}
+
+/* --- <=480px --- */
+@media screen and (max-width: 480px) {
+    .page-index .welcome_banner {
+        padding: 20px 16px;
+    }
+
+    .page-index .wel_content h1 {
+        font-size: 22px;
+    }
+
+    .page-index .wel_img img {
+        max-width: 170px;
+    }
+
+    .page-index .wel_close {
+        width: 88px;
+        height: 88px;
+        right: -38px;
+        top: -38px;
+    }
+
+    .page-index .wel_close svg {
+        width: 14px;
+        height: 14px;
+        bottom: 18px;
+        left: 18px;
+    }
+
+    .page-index .stats-card {
+        padding: 14px 16px;
+    }
+
+    .page-index .stats-number {
+        font-size: 26px;
+    }
+
+    .page-index .stats-icon img {
+        height: 34px;
+    }
+
+    .page-index .chart-tab {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .page-index #visitorChart,
+    .page-index #weeklyBarChart {
+        padding: 14px 2px;
+        border-radius: 8px;
+    }
+
+    .page-index #visitorChart .apexcharts-yaxis-label,
+    .page-index #visitorChart .apexcharts-xaxis-label,
+    .page-index #weeklyBarChart .apexcharts-xaxis-label {
+        font-size: 12px !important;
+    }
+}
+
+/* --- <=400px: smallest phones --- */
+@media screen and (max-width: 400px) {
+    .page-index .wel_content h1 {
+        font-size: 20px;
+    }
+
+    .page-index .wel_content p {
+        font-size: 13px;
+    }
+
+    .page-index .stats-number {
+        font-size: 24px;
+    }
+
+    .page-index .stats-footer {
+        flex-wrap: wrap;
+        row-gap: 4px;
+    }
+
+    .page-index .visitor-title {
+        font-size: 18px;
+    }
+}
