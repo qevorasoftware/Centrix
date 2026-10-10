@@ -188,6 +188,15 @@ $(".select_ul li").click(function () {
   $(this).parents(".select_wrap").removeClass("active");
 })
 
+/* close an open dropdown when clicking anywhere outside of it.
+   Clicks inside a .select_wrap are ignored here so the toggle above
+   keeps working (this handler runs later, on the document) */
+$(document).on("click", function (e) {
+  if (!$(e.target).closest(".select_wrap").length) {
+    $(".select_wrap").removeClass("active");
+  }
+});
+
 // Old Jquery
 /* ------------------ Equal height -----------------*/
 $(document).ready(function () {

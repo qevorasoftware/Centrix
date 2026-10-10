@@ -331,7 +331,14 @@
                 var $date = $(this).closest('.create-date');
                 var wasOpen = $date.hasClass('active');
                 dpCloseAll();
+                /* only one popover at a time */
+                $('.select_wrap').removeClass('active');
                 if (!wasOpen) { dpOpen($date); }
+            });
+
+            /* opening the category dropdown closes any open calendar */
+            $(document).on('click', '#project-category .default_option', function () {
+                dpCloseAll();
             });
 
             /* clicks inside the panel must not close it */
