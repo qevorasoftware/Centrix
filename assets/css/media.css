@@ -1098,3 +1098,136 @@
         padding: 18px 14px 20px;
     }
 }
+
+/* ==========================================================================
+   Jobs Dashboard page (pages/jobs.html): responsive
+   Scoped to .page-jobs on <body>.
+   ========================================================================== */
+
+/* --- <=1199px: #content padding drops to 20px 15px here --- */
+@media screen and (max-width: 1199px) {
+    .page-jobs .job-stat {
+        padding: 20px;
+    }
+
+    .page-jobs .job-stat .stats-number {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .page-jobs .job-stat .stats-icon img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .page-jobs .job-hero {
+        padding: 36px 28px;
+    }
+
+    .page-jobs .job-hero h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .page-jobs .job-cats {
+        gap: 20px;
+    }
+}
+
+/* --- <=991px: job cards go single column, hero stacks over categories --- */
+@media screen and (max-width: 991px) {
+    .page-jobs .job-list {
+        grid-template-columns: 1fr;
+    }
+
+    .page-jobs .job-cat h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+/* --- <=767px: phones --- */
+@media screen and (max-width: 767px) {
+    .page-jobs .job-stats .row {
+        row-gap: 16px;
+    }
+
+    .page-jobs .job-stat .stats-title h6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .page-jobs .job-stat .stats-number {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .page-jobs .job-stat .stats-icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .page-jobs .job-hero {
+        padding: 30px 20px;
+    }
+
+    .page-jobs .job-hero h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .page-jobs .job-hero p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 22px;
+    }
+
+    .page-jobs .job-cat {
+        padding: 16px 14px;
+        gap: 14px;
+    }
+
+    .page-jobs .job-cat img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .page-jobs .job-card {
+        padding: 18px 16px;
+        gap: 16px;
+    }
+
+    .page-jobs .job-logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .page-jobs .job-head {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .page-jobs .job-head h6 {
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
+/* --- <=575px: category cards single column --- */
+@media screen and (max-width: 575px) {
+    .page-jobs .job-cats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- <=400px: logo stacks above the job info --- */
+@media screen and (max-width: 400px) {
+    .page-jobs .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-jobs .job-head {
+        width: 100%;
+    }
+}

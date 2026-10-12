@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Centrix - Jobs Dashboard">
+    <meta name="description"
+        content="Jobs dashboard: active jobs, freelancers and companies at a glance, job categories and the latest openings with one-click apply.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
+    <meta name="author" content="Centrix">
+    <meta name=theme-color content="#000000">
+    <title>Centrix - Jobs Dashboard</title>
+    <meta property=og:title content="Centrix - Jobs Dashboard">
+    <meta property=og:description
+        content="Jobs dashboard: active jobs, freelancers and companies at a glance, job categories and the latest openings with one-click apply.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-jobs light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+
+                <!-- Stats: reuses .stats-card + card-blue/orange/green gradients
+                     and the corner circle from the dashboard -->
+                <div class="job-stats">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="stats-card card-blue job-stat">
+                                <div class="stats-title">
+                                    <h6>Active Jobs</h6>
+                                </div>
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="stats-icon">
+                                        <img src="../assets/images/icon/active-job.svg" alt="Active Jobs">
+                                    </div>
+                                    <div class="stats-number">
+                                        <span>840</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="stats-card card-orange job-stat">
+                                <div class="stats-title">
+                                    <h6>Freelancers</h6>
+                                </div>
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="stats-icon">
+                                        <img src="../assets/images/icon/freelancer.svg" alt="Freelancers">
+                                    </div>
+                                    <div class="stats-number">
+                                        <span>982</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="stats-card card-green job-stat">
+                                <div class="stats-title">
+                                    <h6>Companies</h6>
+                                </div>
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="stats-icon">
+                                        <img src="../assets/images/icon/companies.svg" alt="Companies">
+                                    </div>
+                                    <div class="stats-number">
+                                        <span>600</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero search + categories -->
+                <div class="job-middle">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="job-hero card-blue">
+                                <h2>Forge Your Path to Success Today</h2>
+                                <p>Access Our Comprehensive Job Platform to Publish Opportunities and Land Your
+                                    Dream Role.</p>
+                                <div class="job-search">
+                                    <input type="search" class="form-control" id="job-search" placeholder="Search"
+                                        aria-label="Search jobs">
+                                    <img src="../assets/images/icon/search.svg" alt="search">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="job-section-title">Jobs Categories</h3>
+                            <div class="job-cats">
+                                <div class="card job-cat">
+                                    <img src="../assets/images/icon/development.svg" alt="Development">
+                                    <div class="job-cat-info">
+                                        <h6>Development</h6>
+                                        <p>Lorem Ipsum is simply dummy</p>
+                                    </div>
+                                </div>
+                                <div class="card job-cat">
+                                    <img src="../assets/images/icon/category-ux.svg" alt="Ui/Ux Design">
+                                    <div class="job-cat-info">
+                                        <h6>Ui/Ux Design</h6>
+                                        <p>Lorem Ipsum is simply dummy</p>
+                                    </div>
+                                </div>
+                                <div class="card job-cat">
+                                    <img src="../assets/images/icon/category-marketing.svg" alt="Marketing">
+                                    <div class="job-cat-info">
+                                        <h6>Marketing</h6>
+                                        <p>Lorem Ipsum is simply dummy</p>
+                                    </div>
+                                </div>
+                                <div class="card job-cat">
+                                    <img src="../assets/images/icon/category-webdesign.svg" alt="Web Design">
+                                    <div class="job-cat-info">
+                                        <h6>Web Design</h6>
+                                        <p>Lorem Ipsum is simply dummy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job openings -->
+                <div class="job-list" id="job-list">
+
+                    <!-- 1 -->
+                    <div class="card job-card">
+                        <img class="job-logo" src="../assets/images/icon/ux-design.svg" alt="Ui/Ux Design">
+                        <div class="job-info">
+                            <div class="job-head">
+                                <h6>Ui/Ux Design</h6>
+                                <button type="button" class="job-apply">Apply Job</button>
+                            </div>
+                            <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                            <div class="card-tag job-tags">
+                                <span class="status">Web</span>
+                                <span class="status pending">WordPress</span>
+                                <span class="status cancel">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 (already applied) -->
+                    <div class="card job-card">
+                        <img class="job-logo" src="../assets/images/icon/ux-design.svg" alt="Website Design">
+                        <div class="job-info">
+                            <div class="job-head">
+                                <h6>Website Design</h6>
+                                <button type="button" class="job-apply applied">Applied
+                                    <img src="../assets/images/icon/applied-job.svg" alt="applied"></button>
+                            </div>
+                            <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                            <div class="card-tag job-tags">
+                                <span class="status">Web</span>
+                                <span class="status cancel">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="card job-card">
+                        <img class="job-logo" src="../assets/images/icon/logo-swift.svg" alt="Development">
+                        <div class="job-info">
+                            <div class="job-head">
+                                <h6>Development</h6>
+                                <button type="button" class="job-apply">Apply Job</button>
+                            </div>
+                            <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                            <div class="card-tag job-tags">
+                                <span class="status">Web</span>
+                                <span class="status cancel">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="card job-card">
+                        <img class="job-logo" src="../assets/images/icon/logo-ai.svg" alt="Marketing">
+                        <div class="job-info">
+                            <div class="job-head">
+                                <h6>Marketing</h6>
+                                <button type="button" class="job-apply">Apply Job</button>
+                            </div>
+                            <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                            <div class="card-tag job-tags">
+                                <span class="status">Web</span>
+                                <span class="status pending">WordPress</span>
+                                <span class="status cancel">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="card job-card">
+                        <img class="job-logo" src="../assets/images/icon/logo-ai.svg" alt="Marketing">
+                        <div class="job-info">
+                            <div class="job-head">
+                                <h6>Marketing</h6>
+                                <button type="button" class="job-apply">Apply Job</button>
+                            </div>
+                            <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                            <div class="card-tag job-tags">
+                                <span class="status">Web</span>
+                                <span class="status pending">WordPress</span>
+                                <span class="status cancel">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="card job-card">
+                        <img class="job-logo" src="../assets/images/icon/ux-design.svg" alt="Ui/Ux Design">
+                        <div class="job-info">
+                            <div class="job-head">
+                                <h6>Ui/Ux Design</h6>
+                                <button type="button" class="job-apply">Apply Job</button>
+                            </div>
+                            <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                            <div class="card-tag job-tags">
+                                <span class="status">Web</span>
+                                <span class="status cancel">Marketing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        /* Jobs page: hero search filters the job cards, Apply toggles to
+           Applied. Same inline-script convention as pages/projects.html. */
+        $(function () {
+            var $cards = $('#job-list .job-card');
+
+            function applyFilters() {
+                var query = $('#job-search').val().trim().toLowerCase();
+                $cards.each(function () {
+                    var text = $(this).text().toLowerCase();
+                    $(this).toggle(!query || text.indexOf(query) !== -1);
+                });
+            }
+
+            $('#job-search').on('keyup change', applyFilters);
+
+            /* Apply Job -> Applied (green check), click again to undo */
+            $('#job-list').on('click', '.job-apply', function () {
+                var $btn = $(this);
+                if ($btn.hasClass('applied')) {
+                    $btn.removeClass('applied').text('Apply Job');
+                } else {
+                    $btn.addClass('applied')
+                        .html('Applied <img src="../assets/images/icon/applied-job.svg" alt="applied">');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
