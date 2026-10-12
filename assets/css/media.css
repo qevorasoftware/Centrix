@@ -1531,4 +1531,8 @@
     .page-listing .listing-body {
         row-gap: 24px;
     }
+
+    .page-listing .listing-card-body .listing-note {
+        font-size: 18px;
+    }
 }
