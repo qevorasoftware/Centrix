@@ -1369,6 +1369,18 @@
         margin-left: 0;
     }
 
+    /* open mobile sidebar keeps the full desktop-style logo block:
+       undo the desktop-collapse centring and the 34px logo cap */
+    .expandable-sidebar .sidebar .header-logo {
+        justify-content: flex-start;
+        gap: 0;
+        padding: 21px 20px;
+    }
+
+    .expandable-sidebar .sidebar .header-logo a img {
+        max-width: 145px;
+    }
+
     .expandable-sidebar .sidebar .sidebar-nav .tree-header {
         text-align: left;
     }
