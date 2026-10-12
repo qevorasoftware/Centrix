@@ -810,6 +810,15 @@ header .header-nav .header-nav-list li .theme-option-bar img {
 
 header.header-fixed-position {
     position: fixed;
+    top: 0;
+    right: 0;
+    left: 260px;
+    margin-left: 0;
+    z-index: 10;
+}
+
+.expandable-sidebar header.header-fixed-position {
+    left: 110px;
 }
 
 .sidebar {

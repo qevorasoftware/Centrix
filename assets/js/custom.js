@@ -109,14 +109,15 @@ $(document).ready(function () {
 
 /* ------------------ Header Position Type -----------------*/
 function PositionStatic() {
-  var body = document.getElementById("header");
-  var currentClass = body.className;
-  body.className = currentClass == "header-fixed-position" ? "header-static-position" : "header-static-position";
+  var header = document.getElementById("header");
+  /* keep the base classes - only swap the position modifier */
+  header.classList.add("header", "header-static-position");
+  header.classList.remove("header-fixed-position");
 }
 function PositionFixed() {
-  var body = document.getElementById("header");
-  var currentClass = body.className;
-  body.className = currentClass == "header-static-position" ? "header-fixed-position" : "header-fixed-position";
+  var header = document.getElementById("header");
+  header.classList.add("header", "header-fixed-position");
+  header.classList.remove("header-static-position");
 }
 $(".header-position .option-btn").click(function () {
   $(".header-position .option-btn").removeClass("active");
@@ -136,13 +137,13 @@ $(document).ready(function () {
 /* ------------------ Footer Position Type -----------------*/
 function FooterPositionStatic() {
   var footer = document.getElementById("footer");
-  var currentfooter = footer.className;
-  footer.className = currentfooter == "foter-fixed-position" ? "foter-static-position" : "foter-static-position";
+  footer.classList.add("footer", "footer-static-position");
+  footer.classList.remove("footer-fixed-position", "foter-fixed-position");
 }
 function FooterPositionFixed() {
   var footer = document.getElementById("footer");
-  var currentfooter = footer.className;
-  footer.className = currentfooter == "footer-static-position" ? "footer-fixed-position" : "footer-fixed-position";
+  footer.classList.add("footer", "footer-fixed-position");
+  footer.classList.remove("footer-static-position", "foter-static-position");
 }
 $(".footer-position .option-btn").click(function () {
   $(".footer-position .option-btn").removeClass("active");
