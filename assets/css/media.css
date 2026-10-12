@@ -1497,8 +1497,8 @@
     }
 }
 
-/* ---------- Listing page: laptop widths (992-1399) ---------- */
-@media (min-width: 992px) and (max-width: 1399.98px) {
+/* ---------- Listing page: laptop widths (1200-1399) ---------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
     .page-listing .similar-job {
         gap: 16px;
         padding: 16px;
