@@ -5,6 +5,13 @@ class centrixHeader extends HTMLElement {
         <nav class="header-nav">
           <ul class="header-nav-list">
 
+            <!-- Mobile sidebar toggle (hidden from lg up) -->
+            <li class="nav-item d-lg-none nav-mobile-toggle">
+              <a class="nav-link toggle-sidebar-btn" href="javascript:void(0)">
+                <img src="../assets/images/icon/toggle-menu-black.svg" alt="menu" class="d-block">
+              </a>
+            </li>
+
             <!-- Notification -->
             <li class="nav-item dropdown">
               <a class="nav-link nav-notification" href="#" data-bs-toggle="dropdown">
