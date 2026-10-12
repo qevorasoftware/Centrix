@@ -1451,3 +1451,49 @@
         filter: invert(1) brightness(100);
     }
 }
+
+/* ---------- Listing page: mobile ---------- */
+@media (max-width: 991px) {
+    .page-listing .listing-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 0;
+        padding: 32px 24px;
+    }
+
+    .page-listing .listing-hero-side {
+        text-align: left;
+    }
+
+    .page-listing .listing-wrap {
+        padding: 24px 16px;
+    }
+
+    .page-listing .listing-card-head {
+        padding: 16px 20px;
+    }
+
+    .page-listing .listing-card-body {
+        padding: 20px;
+    }
+
+    .page-listing .similar-job {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 575px) {
+    .page-listing .listing-hero {
+        padding: 24px 16px;
+    }
+
+    .page-listing .listing-hero h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .page-listing .listing-hero-side h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}

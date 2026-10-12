@@ -5992,7 +5992,8 @@ footer.footer-fixed-position {
     padding: 24px;
 }
 
-.page-jobs .job-logo {
+.page-jobs .job-logo,
+.page-listing .job-logo {
     width: 72px;
     height: 72px;
     border-radius: 8px;
@@ -6054,13 +6055,15 @@ footer.footer-fixed-position {
 }
 
 /* tag pills: same palette as the projects page .status pills */
-.page-jobs .job-tags {
+.page-jobs .job-tags,
+.page-listing .job-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.page-jobs .job-tags .status {
+.page-jobs .job-tags .status,
+.page-listing .job-tags .status {
     font-family: 'Metropolis';
     font-size: 13px;
     line-height: 14px;
@@ -6072,11 +6075,13 @@ footer.footer-fixed-position {
     display: inline-block;
 }
 
-.page-jobs .job-tags .status.pending {
+.page-jobs .job-tags .status.pending,
+.page-listing .job-tags .status.pending {
     background: #E9951B;
 }
 
-.page-jobs .job-tags .status.cancel {
+.page-jobs .job-tags .status.cancel,
+.page-listing .job-tags .status.cancel {
     background: #D83131;
 }
 
@@ -6093,4 +6098,217 @@ footer.footer-fixed-position {
 
 .page-jobs.dark-mode .job-searchbox .form-control:focus {
     background: rgba(255, 255, 255, 0.16);
+}
+
+/* ==========================================================================
+   Listing page (pages/listing.html)
+   ========================================================================== */
+
+/* ---------- Listing: hero (banner image carries the dark overlay) ---------- */
+.page-listing .listing-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 255px;
+    padding: 40px 70px;
+    background: url("../images/banner/social-media-marketing.png") center / cover no-repeat;
+}
+
+.page-listing .listing-hero h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 12px;
+}
+
+.page-listing .listing-cat {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #D9D9D9;
+}
+
+.page-listing .listing-hero-side {
+    text-align: right;
+}
+
+.page-listing .listing-hero-side h2 {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 4px;
+}
+
+.page-listing .listing-hero-side > span {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color: #D9D9D9;
+    margin: 0 0 16px;
+}
+
+.page-listing .listing-apply {
+    display: inline-block;
+    background: #1677FF;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 26px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.page-listing .listing-apply:hover {
+    background: #0F5FD7;
+    color: #ffffff;
+}
+
+/* ---------- Listing: sections ---------- */
+.page-listing .listing-wrap {
+    padding: 32px;
+}
+
+.page-listing .listing-section-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 24px;
+}
+
+.page-listing .overview-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.page-listing .overview-card img {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 auto;
+}
+
+.page-listing .overview-card h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 6px;
+}
+
+.page-listing .overview-card p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #777777;
+    margin: 0;
+}
+
+/* ---------- Listing: description / similar jobs cards ---------- */
+.page-listing .listing-card {
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.page-listing .listing-card-head {
+    background: #F8F9FA;
+    padding: 18px 32px;
+}
+
+.page-listing .listing-card-head h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.page-listing .listing-card-body {
+    padding: 32px;
+}
+
+.page-listing .listing-card-body p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    margin: 0 0 20px;
+}
+
+.page-listing .listing-card-body ol {
+    padding-left: 22px;
+    margin: 0 0 20px;
+    color: #555555;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.page-listing .listing-card-body ol li {
+    margin-bottom: 6px;
+}
+
+.page-listing .listing-card-body .listing-note {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #222222;
+    margin: 0;
+}
+
+.page-listing .similar-job {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px;
+}
+
+.page-listing .similar-job + .similar-job {
+    border-top: 1px solid #F0F0F0;
+}
+
+.page-listing .similar-job h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 10px;
+}
+
+/* ---------- Listing: dark mode ---------- */
+.page-listing.dark-mode .listing-section-title,
+.page-listing.dark-mode .overview-card h6,
+.page-listing.dark-mode .listing-card-head h5,
+.page-listing.dark-mode .similar-job h6 {
+    color: #ffffff;
+}
+
+.page-listing.dark-mode .listing-card-head {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.page-listing.dark-mode .overview-card p,
+.page-listing.dark-mode .listing-card-body p,
+.page-listing.dark-mode .listing-card-body ol {
+    color: #B7B7B7;
+}
+
+.page-listing.dark-mode .listing-card-body .listing-note {
+    color: #ffffff;
+}
+
+.page-listing.dark-mode .similar-job + .similar-job {
+    border-top-color: rgba(255, 255, 255, 0.10);
 }
