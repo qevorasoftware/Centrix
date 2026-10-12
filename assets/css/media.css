@@ -1372,5 +1372,8 @@
         width: auto;
         max-width: none;
         padding: 21px 16px;
+        /* blend with the header instead of showing a white patch */
+        background: transparent;
+        box-shadow: none;
     }
 }
