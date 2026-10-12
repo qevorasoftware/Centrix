@@ -1496,3 +1496,32 @@
         line-height: 26px;
     }
 }
+
+/* ---------- Listing page: laptop widths (992-1399) ---------- */
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .page-listing .similar-job {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .page-listing .similar-job .job-logo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .page-listing .similar-job h6 {
+        font-size: 15px;
+        line-height: 19px;
+        margin: 0 0 8px;
+    }
+
+    .page-listing .similar-job .job-tags {
+        gap: 6px;
+    }
+
+    .page-listing .similar-job .job-tags .status {
+        font-size: 12px;
+        line-height: 13px;
+        padding: 5px 10px;
+    }
+}
