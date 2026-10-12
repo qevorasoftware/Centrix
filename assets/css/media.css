@@ -1336,3 +1336,19 @@
         height: 52px;
     }
 }
+
+/* ------------------------------------------------------------------
+   Footer (shared component on every page): below md the two copyright
+   columns stack (col-12), so the left-aligned copyright and the
+   right-aligned credit line look jagged. Centre both lines on phones.
+   ------------------------------------------------------------------ */
+@media screen and (max-width: 767px) {
+    footer .copyright p,
+    footer .design-by p {
+        text-align: center;
+    }
+
+    footer .copyright p {
+        margin: 0 0 6px;
+    }
+}
