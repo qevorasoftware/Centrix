@@ -1391,7 +1391,15 @@
         border-left: 0;
     }
 
-    /* hamburger sits at the far left of the header on mobile */
+    /* hamburger sits at the far left of the header on mobile:
+       the nav container is right-pushed by margin-left:auto on desktop,
+       so let it span the full width here and let the toggle's auto
+       margin carry the remaining items to the right */
+    header .header-nav {
+        margin-left: 0;
+        width: 100%;
+    }
+
     .header .header-nav .header-nav-list li.nav-mobile-toggle {
         margin-right: auto;
     }
