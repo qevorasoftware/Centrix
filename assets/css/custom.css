@@ -5821,7 +5821,7 @@ footer.footer-fixed-position {
 
 /* --- hero search + categories --- */
 .page-jobs .job-middle {
-    padding-top: 24px;
+    padding-top: 28px;
 }
 
 .page-jobs .job-middle .row {
@@ -5830,7 +5830,7 @@ footer.footer-fixed-position {
 
 .page-jobs .job-hero {
     border-radius: 8px;
-    padding: 44px 40px;
+    padding: 46px 40px;
     text-align: center;
     height: 100%;
     display: flex;
@@ -5858,9 +5858,8 @@ footer.footer-fixed-position {
 
 .page-jobs .job-search {
     position: relative;
-    max-width: 520px;
+    width: min(520px, 100%);
     margin: 0 auto;
-    width: 100%;
 }
 
 .page-jobs .job-search .form-control {
@@ -5918,8 +5917,8 @@ footer.footer-fixed-position {
 }
 
 .page-jobs .job-cat img {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     flex: 0 0 auto;
 }
 
@@ -5943,7 +5942,7 @@ footer.footer-fixed-position {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
-    padding-top: 24px;
+    padding-top: 46px;
 }
 
 .page-jobs .job-card {

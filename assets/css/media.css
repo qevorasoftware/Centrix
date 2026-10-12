@@ -1132,6 +1132,10 @@
     .page-jobs .job-cats {
         gap: 20px;
     }
+
+    .page-jobs .job-list {
+        padding-top: 32px;
+    }
 }
 
 /* --- <=991px: job cards go single column, hero stacks over categories --- */
@@ -1210,6 +1214,14 @@
     .page-jobs .job-head h6 {
         font-size: 17px;
         line-height: 21px;
+    }
+
+    .page-jobs .job-list {
+        padding-top: 24px;
+    }
+
+    .page-jobs .job-middle {
+        padding-top: 20px;
     }
 }
 
