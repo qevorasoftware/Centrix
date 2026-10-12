@@ -1352,3 +1352,25 @@
         margin: 0 0 6px;
     }
 }
+
+/* ------------------------------------------------------------------
+   Mobile/tablet (<=991): the sidebar collapses to width 0, which also
+   hid its .header-logo block - so the logo AND the hamburger that
+   opens the sidebar (.toggle-sidebar-btn) disappeared. Pin the logo
+   block to the top-left corner instead: a position:fixed child is not
+   clipped by the zero-width sidebar, keeping logo + toggle reachable.
+   When the sidebar opens (body.expandable-sidebar, width 260px) the
+   pinned block sits exactly over the sidebar's own top-left, so the
+   look is unchanged.
+   ------------------------------------------------------------------ */
+@media screen and (max-width: 991px) {
+    .sidebar .header-logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 12;
+        width: auto;
+        max-width: none;
+        padding: 21px 16px;
+    }
+}
