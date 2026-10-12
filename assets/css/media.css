@@ -1427,6 +1427,22 @@
         width: 100%;
     }
 
+    /* theme option "Header Position: Fixed": a fixed header with auto
+       left/right shrinks to fit its content, so pin it to the viewport
+       edges on mobile as well */
+    header.header-fixed-position {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: auto;
+        z-index: 10;
+    }
+
+    .header .header-nav .header-nav-list {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
     .header .header-nav .header-nav-list li.nav-mobile-toggle {
         margin-right: auto;
     }
