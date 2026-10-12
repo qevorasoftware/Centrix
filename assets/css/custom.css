@@ -1086,6 +1086,15 @@ footer {
 }
 
 
+/* wrapper that replaces Bootstrap's .container inside the shared
+   <centrix-footer> element - same geometry, no Bootstrap dependency */
+.footer-container {
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
 footer .copyright p {
     font-family: 'Metropolis';
     font-size: 16px;
