@@ -1525,3 +1525,10 @@
         padding: 5px 10px;
     }
 }
+
+/* ---------- Listing page: stacked body boxes (below 1200) ---------- */
+@media (max-width: 1199.98px) {
+    .page-listing .listing-body {
+        row-gap: 24px;
+    }
+}

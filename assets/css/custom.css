@@ -6175,6 +6175,10 @@ footer.footer-fixed-position {
     margin-top: 40px;
 }
 
+.page-listing .listing-body > * {
+    margin-top: 0;
+}
+
 .page-listing .listing-section-title {
     font-size: 20px;
     line-height: 24px;
