@@ -5,6 +5,7 @@ $(document).ready(function () {
   });
 });
 $(".light-mode .toggle-sidebar-btn").click(function () {
+  if ($(window).width() <= 991) { return; } /* mobile keeps the full logo */
   var src = $('.sidebar-logo').attr('src');
   var newsrc = (src == '../assets/images/icon/favicon.svg') ? '../assets/images/icon/logo-b.svg' : '../assets/images/icon/favicon.svg';
   $('.sidebar-logo').attr('src', newsrc);
@@ -13,6 +14,7 @@ $(".light-mode .toggle-sidebar-btn").click(function () {
 $(document).ready(function () {
   $(document).on('click', function () {
     $(".dark-mode .toggle-sidebar-btn").click(function () {
+      if ($(window).width() <= 991) { return; } /* mobile keeps the full logo */
       var darksrc = $('.sidebar-logo').attr('src');
       var darksrcnew = (darksrc == '../assets/images/icon/favicon.svg') ? '../assets/images/icon/logo.svg' : '../assets/images/icon/favicon.svg';
       $('.sidebar-logo').attr('src', darksrcnew);
