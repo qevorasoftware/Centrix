@@ -1405,6 +1405,13 @@
         display: block !important;
     }
 
+    /* collapse mode hides the whole .menu-toggle span (which carries the
+       chevron ::after); bring it back on mobile so every parent row shows
+       its arrow again */
+    .expandable-sidebar .sidebar .tree .treeview .treeview-link .menu-toggle {
+        display: block;
+    }
+
     .expandable-sidebar .sidebar .sidebar-nav .treeview .treeview-link .menu-toggle:after {
         border: 1px solid #B7B7B7;
         border-bottom: 0;
