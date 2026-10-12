@@ -6172,7 +6172,7 @@ footer.footer-fixed-position {
 /* ---------- Listing: sections ---------- */
 /* #content already pads the body (30px) - just separate the two rows */
 .page-listing .listing-body {
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
 .page-listing .listing-section-title {
@@ -6201,11 +6201,11 @@ footer.footer-fixed-position {
 }
 
 .page-listing .overview-card h6 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 700;
     color: #111111;
-    margin: 0 0 6px;
+    margin: 0 0 8px;
 }
 
 .page-listing .overview-card p {
