@@ -395,7 +395,7 @@ class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <footer id="footer" class="footer footer-static-position">
-            <div class="container">
+            <div class="footer-container">
                 <div class="row footer_row">
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="copyright">
