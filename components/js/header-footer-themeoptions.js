@@ -8,7 +8,7 @@ class centrixHeader extends HTMLElement {
             <!-- Notification -->
             <li class="nav-item dropdown">
               <a class="nav-link nav-notification" href="#" data-bs-toggle="dropdown">
-                <img src="../assets/images/icon/notification-black.svg" alt="notification" class="notification-icon">
+                <img src="../assets/images/icon/notification-black.svg" alt="notification" class="notification-icon d-block">
               </a>
               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                 <li>
