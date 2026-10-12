@@ -1397,6 +1397,14 @@
         display: block;
     }
 
+    /* the tree widget shows open submenus via inline styles, but the
+       desktop-collapse rule hides every .treeview-menu with !important;
+       restore the open submenus on mobile so tapping a parent reveals
+       its children exactly like desktop */
+    .expandable-sidebar .sidebar .tree li.menu-open > .treeview-menu {
+        display: block !important;
+    }
+
     .expandable-sidebar .sidebar .sidebar-nav .treeview .treeview-link .menu-toggle:after {
         border: 1px solid #B7B7B7;
         border-bottom: 0;
