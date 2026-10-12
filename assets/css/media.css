@@ -1373,7 +1373,7 @@
        undo the desktop-collapse centring and the 34px logo cap */
     .expandable-sidebar .sidebar .header-logo {
         justify-content: flex-start;
-        gap: 0;
+        gap: 30px;
         padding: 21px 20px;
     }
 
