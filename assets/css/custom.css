@@ -5911,9 +5911,18 @@ footer.footer-fixed-position {
 
 .page-jobs .job-cat {
     display: flex;
+    /* Bootstrap's .card is flex-direction: column - force the icon to sit
+       BESIDE the content, never stacked above it */
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 18px;
     padding: 22px 20px;
+}
+
+.page-jobs .job-cat-info {
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .page-jobs .job-cat img {
@@ -5947,6 +5956,10 @@ footer.footer-fixed-position {
 
 .page-jobs .job-card {
     display: flex;
+    /* same: override Bootstrap .card's column direction so the company
+       logo stays beside the job info */
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 24px;
     padding: 24px;
