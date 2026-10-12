@@ -6201,17 +6201,17 @@ footer.footer-fixed-position {
 }
 
 .page-listing .overview-card h6 {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 700;
     color: #111111;
     margin: 0 0 8px;
 }
 
 .page-listing .overview-card p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
-    color: #777777;
+    color: #888888;
     margin: 0;
 }
 
