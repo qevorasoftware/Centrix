@@ -1536,3 +1536,15 @@
         font-size: 18px;
     }
 }
+
+/* ---------- Listing page: similar-job rows stack (574 and below) ---------- */
+@media (max-width: 574px) {
+    .page-listing .similar-job {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-listing .similar-job .job-tags {
+        justify-content: center;
+    }
+}
