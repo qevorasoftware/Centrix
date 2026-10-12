@@ -5859,23 +5859,20 @@ footer.footer-fixed-position {
 /* own class name: the legacy ".job-search" component (flex + gap:40px)
    must not leak into the hero search field */
 .page-jobs .job-searchbox {
-    display: flex;
-    align-items: stretch;
+    position: relative;
     width: min(520px, 100%);
     margin: 0 auto;
 }
 
 .page-jobs .job-searchbox .form-control {
-    flex: 1 1 auto;
-    min-width: 0;
+    width: 100%;
     height: 46px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.75);
-    border-right: 0;
-    border-radius: 6px 0 0 6px;
+    border-radius: 6px;
     color: #ffffff;
     font-size: 15px;
-    padding: 10px 16px;
+    padding: 10px 46px 10px 16px;
     box-shadow: none;
 }
 
@@ -5883,28 +5880,24 @@ footer.footer-fixed-position {
     color: #ffffff;
 }
 
-.page-jobs .job-searchbox:focus-within .form-control {
+.page-jobs .job-searchbox .form-control:focus {
     background: rgba(255, 255, 255, 0.2);
     border-color: #ffffff;
     box-shadow: none;
 }
 
-/* icon sits in a joined 46px cap on the right - same field look as the
-   design, but flex-stretched so it can never drift out of alignment */
+/* plain icon inside the field, vertically centred - no box of its own */
 .page-jobs .job-searchbox img {
-    flex: 0 0 auto;
-    width: 46px;
-    padding: 14px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    border-left: 0;
-    border-radius: 0 6px 6px 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: 0;
     pointer-events: none;
-}
-
-.page-jobs .job-searchbox:focus-within img {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: #ffffff;
 }
 
 .page-jobs .job-section-title {
@@ -6087,14 +6080,6 @@ footer.footer-fixed-position {
     background: rgba(255, 255, 255, 0.10);
 }
 
-.page-jobs.dark-mode .job-searchbox img {
-    background: rgba(255, 255, 255, 0.10);
-}
-
-.page-jobs.dark-mode .job-searchbox:focus-within .form-control {
-    background: rgba(255, 255, 255, 0.16);
-}
-
-.page-jobs.dark-mode .job-searchbox:focus-within img {
+.page-jobs.dark-mode .job-searchbox .form-control:focus {
     background: rgba(255, 255, 255, 0.16);
 }
