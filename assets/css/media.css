@@ -1245,14 +1245,14 @@
 }
 
 /* ------------------------------------------------------------------
-   Jobs page - Bootstrap xl window extended to 1439.98 (1200-1439).
-   With the sidebar open the content column is only ~900-1100px here,
+   Jobs page - Bootstrap lg..xxl window (992-1439.98).
+   With the sidebar open the content column is only ~700-1100px here,
    too narrow for the side-by-side middle row, so stack the hero above
    the categories the same way Bootstrap stacks its own columns below
-   a breakpoint. Uses Bootstrap's values/conventions (xl min 1200,
+   a breakpoint. Uses Bootstrap's values/conventions (lg min 992,
    exclusive .98 upper bound).
    ------------------------------------------------------------------ */
-@media screen and (min-width: 1200px) and (max-width: 1439.98px) {
+@media screen and (min-width: 992px) and (max-width: 1439.98px) {
     .page-jobs .job-middle .col-lg-6 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -1279,5 +1279,60 @@
 
     .page-jobs .job-cat {
         padding: 20px;
+    }
+}
+
+/* ------------------------------------------------------------------
+   Jobs page - Bootstrap lg-only window (992-1199.98): content column
+   ~700-900px, so also drop the job list to one column and compact the
+   hero / category / stat sizing a step further.
+   ------------------------------------------------------------------ */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .page-jobs .job-list {
+        grid-template-columns: 1fr;
+    }
+
+    .page-jobs .job-hero {
+        padding: 32px 28px;
+    }
+
+    .page-jobs .job-hero h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .page-jobs .job-hero p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .page-jobs .job-cat {
+        gap: 14px;
+        padding: 18px 16px;
+    }
+
+    .page-jobs .job-cat img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .page-jobs .job-cat h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .page-jobs .job-cat p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .page-jobs .job-stat .stats-number {
+        font-size: 32px;
+    }
+
+    .page-jobs .job-stat .stats-icon img {
+        width: 52px;
+        height: 52px;
     }
 }
