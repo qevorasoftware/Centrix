@@ -6451,7 +6451,7 @@ footer.footer-fixed-position {
     border: 1px solid #d8dbe0;
     border-radius: 6px;
     font-family: 'Metropolis';
-    font-size: 15px;
+    font-size: 14px;
     color: #111111;
     background: #ffffff;
     box-shadow: none;
@@ -6459,6 +6459,12 @@ footer.footer-fixed-position {
 
 .page-apply .form-control::placeholder {
     color: #B7B7B7;
+    font-size: 14px;
+}
+
+.page-apply .form-control::-webkit-input-placeholder {
+    color: #B7B7B7;
+    font-size: 14px;
 }
 
 .page-apply .form-control:focus {
