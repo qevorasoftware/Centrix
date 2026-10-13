@@ -5993,7 +5993,8 @@ footer.footer-fixed-position {
 }
 
 .page-jobs .job-logo,
-.page-listing .job-logo {
+.page-listing .job-logo,
+.page-apply .job-logo {
     width: 72px;
     height: 72px;
     border-radius: 8px;
@@ -6056,14 +6057,16 @@ footer.footer-fixed-position {
 
 /* tag pills: same palette as the projects page .status pills */
 .page-jobs .job-tags,
-.page-listing .job-tags {
+.page-listing .job-tags,
+.page-apply .job-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .page-jobs .job-tags .status,
-.page-listing .job-tags .status {
+.page-listing .job-tags .status,
+.page-apply .job-tags .status {
     font-family: 'Metropolis';
     font-size: 13px;
     line-height: 14px;
@@ -6076,12 +6079,14 @@ footer.footer-fixed-position {
 }
 
 .page-jobs .job-tags .status.pending,
-.page-listing .job-tags .status.pending {
+.page-listing .job-tags .status.pending,
+.page-apply .job-tags .status.pending {
     background: #E9951B;
 }
 
 .page-jobs .job-tags .status.cancel,
-.page-listing .job-tags .status.cancel {
+.page-listing .job-tags .status.cancel,
+.page-apply .job-tags .status.cancel {
     background: #D83131;
 }
 
@@ -6315,4 +6320,226 @@ footer.footer-fixed-position {
 
 .page-listing.dark-mode .similar-job + .similar-job {
     border-top-color: rgba(255, 255, 255, 0.10);
+}
+
+/* ==================== Apply page ==================== */
+.page-apply .breadcrumb.apply-hero {
+    min-height: 255px;
+    padding: 40px 60px;
+    background: url(../images/banner/social-media-marketing.png) center / cover no-repeat;
+}
+
+.page-apply .apply-hero-main h1 {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-apply .apply-hero-side h2 {
+    font-family: 'Metropolis';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* context + submit hint pills */
+.page-apply .apply-pill-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 16px;
+}
+
+.page-apply .apply-pill {
+    display: inline-block;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #1677FF;
+    background: #E8F1FF;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+/* job summary card: logo + info + pills */
+.page-apply .apply-job-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    margin: 0 0 32px;
+}
+
+.page-apply .apply-job-card .job-logo {
+    flex-shrink: 0;
+}
+
+.page-apply .apply-job-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-apply .apply-job-info h6 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 8px;
+}
+
+.page-apply .apply-job-info p {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 22px;
+    color: #777777;
+    margin: 0;
+}
+
+.page-apply .apply-job-card .job-tags {
+    flex-shrink: 0;
+}
+
+/* form cards + fields */
+.page-apply .apply-card {
+    padding: 24px 28px 28px;
+    margin-bottom: 24px;
+}
+
+.page-apply .apply-card-title {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 24px 0;
+}
+
+.page-apply .apply-field {
+    margin-bottom: 20px;
+}
+
+.page-apply .apply-field:last-child {
+    margin-bottom: 0;
+}
+
+.page-apply .apply-label {
+    display: block;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.page-apply .form-control {
+    height: 46px;
+    border: 1px solid #d8dbe0;
+    border-radius: 6px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    color: #111111;
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.page-apply .form-control::placeholder {
+    color: #B7B7B7;
+}
+
+.page-apply .form-control:focus {
+    border-color: #1677FF;
+    box-shadow: none;
+}
+
+.page-apply .apply-textarea {
+    height: auto;
+    min-height: 116px;
+    padding-top: 12px;
+    resize: vertical;
+}
+
+.page-apply .apply-field-fill {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-apply .apply-field-fill .apply-textarea {
+    flex: 1 1 auto;
+}
+
+/* upload field: read-only name + blue Choose File button */
+.page-apply .apply-upload {
+    display: flex;
+    align-items: stretch;
+}
+
+.page-apply .apply-upload .apply-upload-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
+
+.page-apply .apply-upload .apply-upload-btn {
+    flex: 0 0 auto;
+    border: 0;
+    background: #1677FF;
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0 22px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.page-apply .apply-upload .apply-upload-input {
+    display: none;
+}
+
+/* actions */
+.page-apply .apply-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-apply .apply-actions .centrix-button {
+    padding: 14px 32px;
+}
+
+.page-apply .apply-actions .centrix-button:hover,
+.page-apply .apply-actions .centrix-button:focus {
+    background: #ffffff;
+    color: #1677FF;
+}
+
+/* ---------- Apply page: dark mode ---------- */
+.page-apply.dark-mode .apply-card-title,
+.page-apply.dark-mode .apply-label,
+.page-apply.dark-mode .apply-job-info h6 {
+    color: #ffffff;
+}
+
+.page-apply.dark-mode .apply-job-info p {
+    color: #B7B7B7;
+}
+
+.page-apply.dark-mode .form-control {
+    background: #262626;
+    border-color: #3D3D3D;
+    color: #ffffff;
+}
+
+.page-apply.dark-mode .form-control::placeholder {
+    color: #B7B7B7;
 }

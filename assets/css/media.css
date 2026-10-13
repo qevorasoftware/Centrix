@@ -1548,3 +1548,44 @@
         justify-content: center;
     }
 }
+
+/* ---------- Apply page ---------- */
+@media (max-width: 991.98px) {
+    .page-apply .apply-hero {
+        min-height: 0;
+        padding: 32px 24px;
+    }
+
+    .page-apply .apply-hero .breadcrumb-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-apply .apply-hero-main h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .page-apply .apply-hero-side h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .page-apply .apply-job-card {
+        flex-wrap: wrap;
+    }
+
+    .page-apply .apply-pill {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .page-apply .apply-actions .centrix-button {
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+    }
+}

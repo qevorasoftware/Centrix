@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Centrix - Apply for a Job">
+    <meta name="description"
+        content="Apply for a job on Centrix: review the job summary, add your personal information, resume and application details, then submit the form.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
+    <meta name="author" content="Centrix">
+    <meta name=theme-color content="#000000">
+    <title>Centrix - Apply for a Job</title>
+    <meta property=og:title content="Centrix - Apply for a Job">
+    <meta property=og:description
+        content="Apply for a job on Centrix: review the job summary, add your personal information, resume and application details, then submit the form.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-apply light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+        <!-- Page banner: full-width, kept OUTSIDE #content so the standard
+             #content padding applies only to the page body (projects format) -->
+        <div class="breadcrumb apply-hero">
+            <div class="breadcrumb-wrapper">
+                <div class="apply-hero-main">
+                    <h1>Apply for a Job</h1>
+                </div>
+                <div class="apply-hero-side">
+                    <h2>$40 - $50 k</h2>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="apply-wrap">
+
+                    <!-- context + submit hint -->
+                    <div class="apply-pill-row">
+                        <span class="apply-pill">You are applying for this job</span>
+                    </div>
+
+                    <!-- job summary: logo + title + description + tag pills -->
+                    <div class="card apply-job-card">
+                        <img class="job-logo" src="../assets/images/icon/ux-design.svg" alt="Website Design">
+                        <div class="apply-job-info">
+                            <h6>Website Design</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                1500s,</p>
+                        </div>
+                        <div class="job-tags">
+                            <span class="status">Web</span>
+                            <span class="status cancel">Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="apply-pill-row">
+                        <span class="apply-pill">Please submit form for apply</span>
+                    </div>
+
+                    <!-- application form -->
+                    <form id="apply-form" novalidate>
+
+                        <!-- Personal Information -->
+                        <div class="card apply-card">
+                            <h5 class="apply-card-title">Personal Information</h5>
+                            <div class="row">
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="apply-first-name">First Name</label>
+                                    <input type="text" class="form-control" id="apply-first-name" name="first-name"
+                                        placeholder="Enter First Name">
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="apply-last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="apply-last-name" name="last-name"
+                                        placeholder="Enter Last Name">
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="apply-email">Email Address</label>
+                                    <input type="email" class="form-control" id="apply-email" name="email"
+                                        placeholder="Enter Email Address">
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="apply-resume">Upload Resume</label>
+                                    <div class="apply-upload">
+                                        <input type="text" class="form-control apply-upload-name" id="apply-resume"
+                                            placeholder="Upload Your Resume File" readonly>
+                                        <button type="button" class="apply-upload-btn"
+                                            id="apply-resume-btn">Choose File</button>
+                                        <input type="file" class="apply-upload-input" id="apply-resume-input"
+                                            accept=".pdf,.doc,.docx">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Application Details -->
+                        <div class="card apply-card">
+                            <h5 class="apply-card-title">Application Details</h5>
+                            <div class="row">
+                                <div class="col-md-6 apply-field apply-field-fill">
+                                    <label class="apply-label" for="apply-why-work">Why would you like to work with
+                                        us?</label>
+                                    <textarea class="form-control apply-textarea" id="apply-why-work" name="why-work"
+                                        placeholder="Why would you like to work with us?"></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="apply-field">
+                                        <label class="apply-label" for="apply-location">Where are you located?</label>
+                                        <input type="text" class="form-control" id="apply-location" name="location"
+                                            placeholder="Where are you located?">
+                                    </div>
+                                    <div class="apply-field">
+                                        <label class="apply-label" for="apply-new-position">Why are you looking for a new
+                                            position?</label>
+                                        <input type="text" class="form-control" id="apply-new-position"
+                                            name="new-position" placeholder="Why are you looking for a new position?">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 apply-field apply-field-fill">
+                                    <label class="apply-label" for="apply-resume-note">What's not on your resume but you
+                                        think we should know?</label>
+                                    <textarea class="form-control apply-textarea" id="apply-resume-note"
+                                        name="resume-note"
+                                        placeholder="What's not on your resume but you think we should know?"></textarea>
+                                </div>
+                                <div class="col-md-6 apply-field apply-field-fill">
+                                    <label class="apply-label" for="apply-anything">Anything else we should know about
+                                        you?</label>
+                                    <textarea class="form-control apply-textarea" id="apply-anything" name="anything"
+                                        placeholder="Anything else we should know about you?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- actions -->
+                        <div class="apply-actions">
+                            <button type="submit" class="centrix-button">Submit Application</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        /* Apply page: Choose File opens the picker and mirrors the file name,
+           submit stays on the page (static demo) */
+        $(function () {
+            $('#apply-resume-btn, #apply-resume').on('click', function () {
+                $('#apply-resume-input').trigger('click');
+            });
+            $('#apply-resume-input').on('change', function () {
+                var name = this.files && this.files.length ? this.files[0].name : '';
+                $('#apply-resume').val(name);
+            });
+            $('#apply-form').on('submit', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>
