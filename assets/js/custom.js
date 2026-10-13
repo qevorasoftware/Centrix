@@ -1,25 +1,26 @@
 /* ------------------ Expandable Navigation Sidebar  -----------------*/
+/* sidebar logo is state-driven: collapsed shows the mark, expanded shows
+   the theme wordmark (black in light mode, white in dark mode) */
+function sidebarLogoSrc() {
+  var dark = document.getElementById("body").classList.contains("dark-mode");
+  if ($(window).width() <= 991) {
+    return dark ? '../assets/images/icon/logo.svg' : '../assets/images/icon/logo-b.svg'; /* mobile keeps the full logo */
+  }
+  if ($('body').hasClass('expandable-sidebar')) {
+    return '../assets/images/icon/favicon.svg';
+  }
+  return dark ? '../assets/images/icon/logo.svg' : '../assets/images/icon/logo-b.svg';
+}
+function updateSidebarLogo() {
+  $('.sidebar-logo').attr('src', sidebarLogoSrc());
+}
 $(document).ready(function () {
   $(".toggle-sidebar-btn").click(function () {
     $('body').toggleClass("expandable-sidebar");
+    updateSidebarLogo();
   });
-});
-$(".light-mode .toggle-sidebar-btn").click(function () {
-  if ($(window).width() <= 991) { return; } /* mobile keeps the full logo */
-  var src = $('.sidebar-logo').attr('src');
-  var newsrc = (src == '../assets/images/icon/favicon.svg') ? '../assets/images/icon/logo-b.svg' : '../assets/images/icon/favicon.svg';
-  $('.sidebar-logo').attr('src', newsrc);
-});
-
-$(document).ready(function () {
-  $(document).on('click', function () {
-    $(".dark-mode .toggle-sidebar-btn").click(function () {
-      if ($(window).width() <= 991) { return; } /* mobile keeps the full logo */
-      var darksrc = $('.sidebar-logo').attr('src');
-      var darksrcnew = (darksrc == '../assets/images/icon/favicon.svg') ? '../assets/images/icon/logo.svg' : '../assets/images/icon/favicon.svg';
-      $('.sidebar-logo').attr('src', darksrcnew);
-    });
-  });
+  updateSidebarLogo();
+  $(window).on('resize', function () { updateSidebarLogo(); });
 });
 /* ------------------ Theme Option Filter Right Sidebar -----------------*/
 var themeoptionbar = $('.theme-option-bar');
@@ -78,6 +79,7 @@ $(".color-plate .btn").click(function () {
     document.getElementById("body").classList.add("light-mode");
   }
 })();
+updateSidebarLogo(); /* correct wordmark for the saved theme right away */
 
 function toggleLight() {
   var body = document.getElementById("body");
@@ -86,6 +88,7 @@ function toggleLight() {
   localStorage.setItem("theme", "light");
   $(".mode-change .option-btn").removeClass("active");
   $(".light-btn").addClass("active");
+  updateSidebarLogo();
 }
 
 function toggleDark() {
@@ -95,6 +98,7 @@ function toggleDark() {
   localStorage.setItem("theme", "dark");
   $(".mode-change .option-btn").removeClass("active");
   $(".dark-btn").addClass("active");
+  updateSidebarLogo();
 }
 
 // set active button after DOM ready
