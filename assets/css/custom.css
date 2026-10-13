@@ -6261,6 +6261,7 @@ footer.footer-fixed-position {
 
 .page-listing .listing-card-body ol li {
     margin-bottom: 6px;
+    list-style: decimal;
 }
 
 .page-listing .listing-card-body .listing-note {
