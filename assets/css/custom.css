@@ -6472,6 +6472,11 @@ footer.footer-fixed-position {
     box-shadow: none;
 }
 
+/* bottom row: reserve two label lines so both textarea tops/bottoms line up */
+.page-apply .apply-field-bottom .apply-label {
+    min-height: 32px;
+}
+
 /* fixed textarea height at every breakpoint: no flex stretch */
 .page-apply .apply-textarea {
     height: 116px;
