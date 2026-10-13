@@ -6420,12 +6420,20 @@ footer.footer-fixed-position {
     margin: 0 0 24px 0;
 }
 
-.page-apply .apply-field {
-    margin-bottom: 20px;
+/* uniform 20px rhythm: row-gap spaces the wrapped lines, col margins stay
+   0 so stretched columns (and their textareas) keep equal heights */
+.page-apply .apply-card .row {
+    row-gap: 20px;
 }
 
-.page-apply .apply-field:last-child {
+.page-apply .apply-field {
     margin-bottom: 0;
+}
+
+.page-apply .apply-col-stack {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .page-apply .apply-label {
