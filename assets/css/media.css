@@ -1576,11 +1576,48 @@
 
     .page-apply .apply-job-card {
         flex-wrap: wrap;
+        gap: 14px;
+        padding: 18px;
+        margin: 0 0 24px;
     }
 
     .page-apply .apply-pill {
         font-size: 12px;
         padding: 8px 14px;
+    }
+
+    /* form: uniform 16px rhythm + roomier fields */
+    .page-apply .apply-card {
+        padding: 20px 18px;
+        margin-bottom: 16px;
+    }
+
+    .page-apply .apply-card-title {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+
+    .page-apply .apply-card .row,
+    .page-apply .apply-col-stack {
+        row-gap: 16px;
+    }
+
+    /* upload: filename field full width, Choose File button below */
+    .page-apply .apply-upload {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .page-apply .apply-upload .apply-upload-name {
+        border-radius: 6px;
+    }
+
+    .page-apply .apply-upload .apply-upload-btn {
+        width: 100%;
+        height: 46px;
+        text-align: center;
+        border-radius: 6px;
     }
 
     .page-apply .apply-actions .centrix-button {
