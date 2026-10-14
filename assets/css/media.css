@@ -1730,3 +1730,39 @@
         width: 100%;
     }
 }
+
+/* ---------- Education page: hero + cards responsive ---------- */
+@media (max-width: 991.98px) {
+    .page-education .breadcrumb.edu-hero {
+        min-height: 0;
+        padding: 32px 24px;
+    }
+
+    .page-education .edu-hero .breadcrumb-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-education .edu-hero h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .page-education .edu-hero h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .page-education .edu-card {
+        min-height: 160px;
+        padding: 18px 20px;
+    }
+
+    .page-education .edu-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

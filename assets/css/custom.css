@@ -7082,3 +7082,158 @@ footer.footer-fixed-position {
     background: transparent;
     color: #ffffff;
 }
+
+/* ==========================================================================
+   Education page (pages/education.html)
+   Hero banner + 3 large session cards (background images) + 8 gradient cards.
+   Reuses the .breadcrumb banner component and the .centrix-button primary.
+   ========================================================================== */
+.page-education .breadcrumb.edu-hero {
+    min-height: 215px;
+    padding: 0 60px;
+    background: url(../images/banner/kits-education.png) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.page-education .edu-hero .breadcrumb-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.page-education .edu-hero h1 {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.page-education .edu-hero h2 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #d6d6d6;
+    margin: 0;
+}
+
+.page-education .edu-hero .centrix-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 140px;
+    padding: 10px 0;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    border-radius: 4px;
+    flex: 0 0 auto;
+}
+
+.page-education .edu-grid {
+    row-gap: 24px;
+    margin-top: 0;
+}
+
+.page-education .edu-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 180px;
+    padding: 20px 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-education .edu-card-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-education .edu-html-bg { background-image: url(../images/banner/html-session-bg.png); }
+.page-education .edu-react-bg { background-image: url(../images/banner/react-session-bg.png); }
+.page-education .edu-ux-bg { background-image: url(../images/banner/ux-session-bg.png); }
+
+.page-education .edu-g-wordpress { background: linear-gradient(135deg, #6E2C6F 0%, #C4496F 100%); }
+.page-education .edu-g-html { background: linear-gradient(135deg, #0E7C7B 0%, #14A85C 100%); }
+.page-education .edu-g-ux { background: linear-gradient(135deg, #E95A1F 0%, #7A2A14 100%); }
+.page-education .edu-g-react { background: linear-gradient(135deg, #1BB7C9 0%, #1B4C8C 100%); }
+.page-education .edu-g-marketing { background: linear-gradient(135deg, #E4531E 0%, #B4401B 100%); }
+.page-education .edu-g-development { background: linear-gradient(135deg, #17B5C8 0%, #174A8A 100%); }
+.page-education .edu-g-html2 { background: linear-gradient(135deg, #7F2C6C 0%, #B9476E 100%); }
+.page-education .edu-g-wordpress2 { background: linear-gradient(135deg, #14A35A 0%, #0F7F55 100%); }
+
+.page-education .edu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.page-education .edu-title {
+    font-family: 'Metropolis';
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-education .edu-pill {
+    flex: 0 0 auto;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.page-education .edu-stars {
+    display: flex;
+    gap: 6px;
+    margin-top: 14px;
+}
+
+.page-education .edu-stars svg {
+    width: 20px;
+    height: 20px;
+}
+
+.page-education .edu-stars .on {
+    fill: #F5A524;
+}
+
+.page-education .edu-stars .off {
+    fill: none;
+    stroke: #F5A524;
+    stroke-width: 1.5;
+}
+
+.page-education .edu-foot {
+    margin-top: auto;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
