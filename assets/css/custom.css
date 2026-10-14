@@ -7044,6 +7044,13 @@ footer.footer-fixed-position {
     color: #ffffff;
 }
 
+.page-post .post-actions .centrix-button:hover,
+.page-post .post-actions .centrix-button:focus {
+    background: #ffffff;
+    color: #1677FF;
+    outline: none;
+}
+
 .page-post.dark-mode .post-section-title {
     color: #ffffff;
 }
