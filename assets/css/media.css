@@ -1780,8 +1780,8 @@
     }
 }
 
-/* ---------- Course page: 1200-1399 session pill stays left aligned when it wraps ---------- */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+/* ---------- Course page: 992-1399 session pill stays left aligned when it wraps ---------- */
+@media (min-width: 992px) and (max-width: 1399.98px) {
     .page-course .course-head {
         justify-content: flex-start;
     }
