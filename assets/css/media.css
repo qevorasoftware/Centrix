@@ -1780,6 +1780,17 @@
     }
 }
 
+/* ---------- Course page: 1200-1399 session pill stays left aligned when it wraps ---------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .page-course .course-head {
+        justify-content: flex-start;
+    }
+
+    .page-course .course-pill {
+        margin-left: 0;
+    }
+}
+
 /* ---------- Course page: responsive ---------- */
 @media (max-width: 991.98px) {
     .page-course .breadcrumb.course-hero {
