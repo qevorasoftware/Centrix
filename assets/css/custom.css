@@ -7156,7 +7156,7 @@ footer.footer-fixed-position {
     flex-direction: column;
     height: 100%;
     min-height: 180px;
-    padding: 20px 15px;
+    padding: 20px;
     border-radius: 10px;
     overflow: hidden;
     color: #ffffff;

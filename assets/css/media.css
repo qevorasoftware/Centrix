@@ -1731,6 +1731,13 @@
     }
 }
 
+/* ---------- Education page: card left/right padding 15px below laptop (1199 and below) ---------- */
+@media (max-width: 1199.98px) {
+    .page-education .edu-card {
+        padding: 20px 15px;
+    }
+}
+
 /* ---------- Education page: 1200-1399 header height so cards line up ---------- */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
     .page-education .edu-head {
@@ -1765,7 +1772,6 @@
 
     .page-education .edu-card {
         min-height: 160px;
-        padding: 18px 20px;
     }
 
     .page-education .edu-title {
