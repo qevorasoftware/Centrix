@@ -6938,6 +6938,12 @@ footer.footer-fixed-position {
    Mirrors the apply page card/field/upload/actions rules and the create page
    .select_wrap dropdown (scoped to .page-post), plus the post-only pieces.
    ========================================================================== */
+/* banner: same height as the apply page banner (255px, 40px 60px) */
+.page-post .breadcrumb {
+    min-height: 255px;
+    padding: 40px 60px;
+}
+
 .page-post .post-wrap {
     padding: 0;
 }
