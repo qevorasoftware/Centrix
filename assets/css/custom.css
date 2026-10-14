@@ -7027,12 +7027,10 @@ footer.footer-fixed-position {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 46px;
     min-width: 160px;
-    padding: 0 24px;
+    padding: 13px 24px;
     font-family: 'Metropolis';
     font-size: 16px;
-    line-height: 16px;
     font-weight: 600;
     border: 2px solid #1677FF;
     border-radius: 6px;
