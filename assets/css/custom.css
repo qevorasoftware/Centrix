@@ -6037,6 +6037,7 @@ footer.footer-fixed-position {
     align-items: center;
     gap: 8px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .page-jobs .job-apply:hover {
