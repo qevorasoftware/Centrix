@@ -7008,35 +7008,47 @@ footer.footer-fixed-position {
     margin-top: 24px;
 }
 
-.page-post .post-cancel {
+/* Cancel + Post New Job: same size, type and radius; only the fill differs */
+.page-post .post-actions .post-cancel,
+.page-post .post-actions .centrix-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     height: 46px;
-    min-width: 120px;
+    min-width: 160px;
     padding: 0 24px;
-    background: #ffffff;
-    border: 2px solid #1677FF;
-    border-radius: 6px;
     font-family: 'Metropolis';
     font-size: 16px;
+    line-height: 16px;
     font-weight: 600;
+    border: 2px solid #1677FF;
+    border-radius: 6px;
+    transition: all ease 0.3s 0s;
+}
+
+.page-post .post-actions .post-cancel {
+    background: #ffffff;
     color: #111111;
 }
 
-.page-post .post-cancel:hover,
-.page-post .post-cancel:focus {
+.page-post .post-actions .post-cancel:hover,
+.page-post .post-actions .post-cancel:focus {
     background: #1677FF;
     color: #ffffff;
     outline: none;
 }
 
 .page-post .post-actions .centrix-button {
-    min-width: 160px;
+    background: #1677FF;
+    color: #ffffff;
 }
 
 .page-post.dark-mode .post-section-title {
     color: #ffffff;
 }
 
-.page-post.dark-mode .post-cancel {
+.page-post.dark-mode .post-actions .post-cancel {
     background: transparent;
     color: #ffffff;
 }
