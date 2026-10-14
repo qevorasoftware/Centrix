@@ -7433,6 +7433,7 @@ footer.footer-fixed-position {
     color: #ffffff;
     font-family: 'Metropolis';
     font-size: 22px;
+    line-height: 1;
     font-weight: 700;
     display: flex;
     align-items: center;
