@@ -7220,16 +7220,7 @@ footer.footer-fixed-position {
 .page-education .edu-stars svg {
     width: 20px;
     height: 20px;
-}
-
-.page-education .edu-stars .on {
-    fill: #F5A524;
-}
-
-.page-education .edu-stars .off {
-    fill: none;
-    stroke: #F5A524;
-    stroke-width: 1.5;
+    flex: 0 0 auto;
 }
 
 .page-education .edu-foot {
