@@ -7137,10 +7137,17 @@ footer.footer-fixed-position {
     flex: 0 0 auto;
 }
 
-/* one 24px gutter on both axes (horizontal gap and vertical gap between rows) */
+/* 24px gap between cards on both axes: horizontal via the column gutter,
+   vertical via row-gap inside a row and a 24px top margin on each row after the first
+   (Bootstrap's gutter-y cancels out across separate .row elements) */
 .page-education .edu-grid {
     --bs-gutter-x: 24px;
-    --bs-gutter-y: 24px;
+    --bs-gutter-y: 0;
+    row-gap: 24px;
+}
+
+.page-education .edu-grid + .edu-grid {
+    margin-top: 24px;
 }
 
 .page-education .edu-card {
