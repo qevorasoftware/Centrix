@@ -7070,3 +7070,9 @@ footer.footer-fixed-position {
     background: transparent;
     color: #ffffff;
 }
+
+.page-post.dark-mode .post-actions .post-cancel:hover,
+.page-post.dark-mode .post-actions .post-cancel:focus {
+    background: #1677FF;
+    color: #ffffff;
+}
