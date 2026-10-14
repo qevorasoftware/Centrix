@@ -7137,9 +7137,10 @@ footer.footer-fixed-position {
     flex: 0 0 auto;
 }
 
+/* one 24px gutter on both axes (horizontal gap and vertical gap between rows) */
 .page-education .edu-grid {
-    row-gap: 24px;
-    margin-top: 0;
+    --bs-gutter-x: 24px;
+    --bs-gutter-y: 24px;
 }
 
 .page-education .edu-card {
