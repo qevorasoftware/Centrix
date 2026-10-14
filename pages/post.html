@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Centrix - Post a new Job">
+    <meta name="description"
+        content="Post a new job on Centrix: review your current posts, then fill in the job info and occupational details and publish the job.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
+    <meta name="author" content="Centrix">
+    <meta name=theme-color content="#000000">
+    <title>Centrix - Post a new Job</title>
+    <meta property=og:title content="Centrix - Post a new Job">
+    <meta property=og:description
+        content="Post a new job on Centrix: review your current posts, then fill in the job info and occupational details and publish the job.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-post light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+        <!-- Page banner: shared .breadcrumb component, kept OUTSIDE #content
+             (same format as the create and apply pages) -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h2>Post a new Job</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="post-wrap">
+
+                    <!-- current posts: same job card as the apply page, with an Edit link -->
+                    <h3 class="post-section-title">Your Current Post</h3>
+                    <div class="row post-jobs">
+                        <div class="col-lg-6">
+                            <div class="card apply-job-card post-job-card">
+                                <img class="job-logo" src="../assets/images/icon/ux-design.svg" alt="Ui/Ux Design">
+                                <div class="apply-job-info">
+                                    <div class="post-job-head">
+                                        <h6>Ui/Ux Design</h6>
+                                        <a href="#" class="post-edit">Edit</a>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,</p>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="status">Web</span>
+                                    <span class="status pending">WordPress</span>
+                                    <span class="status cancel">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card apply-job-card post-job-card">
+                                <img class="job-logo" src="../assets/images/icon/ux-design.svg" alt="Website Design">
+                                <div class="apply-job-info">
+                                    <div class="post-job-head">
+                                        <h6>Website Design</h6>
+                                        <a href="#" class="post-edit">Edit</a>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,</p>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="status">Web</span>
+                                    <span class="status cancel">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card apply-job-card post-job-card">
+                                <img class="job-logo" src="../assets/images/icon/logo-swift.svg" alt="Development">
+                                <div class="apply-job-info">
+                                    <div class="post-job-head">
+                                        <h6>Development</h6>
+                                        <a href="#" class="post-edit">Edit</a>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,</p>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="status">Web</span>
+                                    <span class="status cancel">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card apply-job-card post-job-card">
+                                <img class="job-logo" src="../assets/images/icon/logo-ai.svg" alt="Marketing">
+                                <div class="apply-job-info">
+                                    <div class="post-job-head">
+                                        <h6>Marketing</h6>
+                                        <a href="#" class="post-edit">Edit</a>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s,</p>
+                                </div>
+                                <div class="job-tags">
+                                    <span class="status">Web</span>
+                                    <span class="status pending">WordPress</span>
+                                    <span class="status cancel">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- new job form -->
+                    <h3 class="post-section-title post-section-next">Post a new Job</h3>
+                    <form id="post-form" novalidate>
+
+                        <!-- Job Info -->
+                        <div class="card apply-card">
+                            <h5 class="apply-card-title">Job Info</h5>
+                            <div class="row">
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="post-title">Title</label>
+                                    <input type="text" class="form-control" id="post-title" name="title"
+                                        placeholder="Enter First Name">
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="post-location">Location</label>
+                                    <input type="text" class="form-control" id="post-location" name="location"
+                                        placeholder="Enter Last Name">
+                                </div>
+                                <div class="col-md-6 apply-col-stack">
+                                    <div class="apply-field">
+                                        <label class="apply-label" for="post-salary-min">Salary</label>
+                                        <input type="text" class="form-control" id="post-salary-min" name="salary-min"
+                                            placeholder="Minimum">
+                                    </div>
+                                    <div class="apply-field">
+                                        <input type="text" class="form-control" id="post-salary-max" name="salary-max"
+                                            placeholder="Maximum">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 apply-field apply-field-fill">
+                                    <label class="apply-label" for="post-about">About Job</label>
+                                    <textarea class="form-control apply-textarea post-about" id="post-about"
+                                        name="about" placeholder="Describe About Your Job"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Occupational Odyssey -->
+                        <div class="card apply-card">
+                            <h5 class="apply-card-title">Occupational Odyssey</h5>
+                            <div class="row">
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label">Job Type</label>
+                                    <div class="select_wrap" id="post-job-type">
+                                        <ul class="default_option">
+                                            <li>
+                                                <div class="option">
+                                                    <p>Select Job Type</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="select_ul">
+                                            <li>
+                                                <div class="option">
+                                                    <p>Full Time</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Part Time</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Contract</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Freelance</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label">Category</label>
+                                    <div class="select_wrap" id="post-category">
+                                        <ul class="default_option">
+                                            <li>
+                                                <div class="option">
+                                                    <p>Select Category</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="select_ul">
+                                            <li>
+                                                <div class="option">
+                                                    <p>Ui/Ux Design</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Web Design</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Logo Designer</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Marketing</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="option">
+                                                    <p>Development</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="post-tags">Add Tags</label>
+                                    <input type="text" class="form-control" id="post-tags" name="tags"
+                                        placeholder="Add Tags">
+                                </div>
+                                <div class="col-md-6 apply-field">
+                                    <label class="apply-label" for="post-image">Upload Image</label>
+                                    <div class="apply-upload">
+                                        <input type="text" class="form-control apply-upload-name" id="post-image"
+                                            placeholder="Upload Image For Your Post" readonly>
+                                        <button type="button" class="apply-upload-btn" id="post-image-btn">Choose
+                                            File</button>
+                                        <input type="file" class="apply-upload-input" id="post-image-input"
+                                            accept=".png,.jpg,.jpeg,.svg,.webp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- actions -->
+                        <div class="post-actions">
+                            <button type="button" class="post-cancel" id="post-cancel">Cancel</button>
+                            <button type="submit" class="centrix-button">Post New Job</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        /* Post page: Choose File opens the picker and mirrors the file name,
+           Cancel resets the form, submit stays on the page (static demo) */
+        $(function () {
+            $('#post-image-btn, #post-image').on('click', function () {
+                $('#post-image-input').trigger('click');
+            });
+            $('#post-image-input').on('change', function () {
+                var name = this.files && this.files.length ? this.files[0].name : '';
+                $('#post-image').val(name);
+            });
+            $('#post-cancel').on('click', function () {
+                $('#post-form')[0].reset();
+                $('#post-image').val('');
+            });
+            $('#post-form').on('submit', function (e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+
+</html>

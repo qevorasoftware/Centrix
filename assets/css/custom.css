@@ -6553,3 +6553,490 @@ footer.footer-fixed-position {
 .page-apply.dark-mode .form-control::placeholder {
     color: #B7B7B7;
 }
+
+
+.page-post .select_wrap {
+    position: relative;
+    user-select: none;
+    z-index: 5;
+}
+
+.page-post .select_wrap .default_option {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.page-post .select_wrap .default_option li {
+    border: 1px solid #d8dbe0;
+    border-radius: 6px;
+    padding: 14px 44px 14px 16px;
+    background-image: url(../images/icon/dropdown-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+    background-size: 18px;
+    transition: border-color 0.2s;
+}
+
+.page-post .select_wrap .default_option li .option p {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #B7B7B7;
+    margin: 0;
+}
+
+.page-post .select_wrap.has-value .default_option li .option p {
+    color: #111111;
+    font-weight: 600;
+}
+
+.page-post .select_wrap .select_ul {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 20;
+}
+
+.page-post .select_wrap.active .select_ul {
+    display: block;
+}
+
+.page-post .select_wrap .select_ul li {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.page-post .select_wrap .select_ul li .option p {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #5A5A5A;
+    margin: 0;
+}
+
+.page-post .select_wrap .select_ul li:hover {
+    background: #1677FF;
+}
+
+.page-post .select_wrap .select_ul li:hover .option p {
+    color: #ffffff;
+}
+
+.page-post.dark-mode .select_wrap .default_option {
+    background: transparent;
+}
+
+.page-post.dark-mode .select_wrap .default_option li {
+    border-color: #3D3D3D;
+    background-color: #262626;
+}
+
+.page-post.dark-mode .select_wrap.has-value .default_option li .option p {
+    color: #ffffff;
+}
+
+.page-post.dark-mode .select_wrap .select_ul {
+    background: #262626;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.page-post.dark-mode .select_wrap .select_ul li .option p {
+    color: #B7B7B7;
+}
+
+.page-post.dark-mode .select_wrap .default_option li {
+    background-image: none;
+    position: relative;
+}
+
+.page-post.dark-mode .select_wrap .default_option li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    background: url(../images/icon/dropdown-arrow.svg) no-repeat center / 18px;
+    filter: invert(1);
+    pointer-events: none;
+}
+
+.page-post .job-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    flex: 0 0 auto;
+    object-fit: cover;
+}
+
+.page-post .job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.page-post .job-tags .status {
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 6px 14px;
+    background: #03A745;
+    display: inline-block;
+}
+
+.page-post .job-tags .status.pending {
+    background: #E9951B;
+}
+
+.page-post .job-tags .status.cancel {
+    background: #D83131;
+}
+
+.page-post .breadcrumb.apply-hero {
+    min-height: 255px;
+    padding: 40px 60px;
+    background: url(../images/banner/social-media-marketing.png) center / cover no-repeat;
+}
+
+.page-post .apply-hero-main h1 {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-post .apply-hero-side h2 {
+    font-family: 'Metropolis';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-post .apply-pill-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 16px;
+}
+
+.page-post .apply-pill {
+    display: inline-block;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #1677FF;
+    background: #E8F1FF;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.page-post .apply-job-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    margin: 0 0 32px;
+}
+
+.page-post .apply-job-card .job-logo {
+    flex-shrink: 0;
+}
+
+.page-post .apply-job-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-post .apply-job-info h6 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 8px;
+}
+
+.page-post .apply-job-info p {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 22px;
+    color: #777777;
+    margin: 0;
+}
+
+.page-post .apply-job-card .job-tags {
+    flex-shrink: 0;
+}
+
+.page-post .apply-card {
+    padding: 24px 28px 28px;
+    margin-bottom: 24px;
+}
+
+.page-post .apply-card-title {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 24px 0;
+}
+
+.page-post .apply-card .row {
+    row-gap: 20px;
+}
+
+.page-post .apply-field {
+    margin-bottom: 0;
+}
+
+.page-post .apply-col-stack {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.page-post .apply-label {
+    display: block;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.page-post .form-control {
+    height: 46px;
+    border: 1px solid #d8dbe0;
+    border-radius: 6px;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    color: #111111;
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.page-post .form-control::placeholder {
+    color: #B7B7B7;
+    font-size: 14px;
+}
+
+.page-post .form-control::-webkit-input-placeholder {
+    color: #B7B7B7;
+    font-size: 14px;
+}
+
+.page-post .form-control:focus {
+    border-color: #1677FF;
+    box-shadow: none;
+}
+
+.page-post .apply-textarea {
+    height: 116px;
+    min-height: 116px;
+    max-height: 116px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.page-post .apply-field-fill {
+    display: block;
+}
+
+.page-post .apply-upload {
+    display: flex;
+    align-items: stretch;
+}
+
+.page-post .apply-upload .apply-upload-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
+
+.page-post .apply-upload .apply-upload-btn {
+    flex: 0 0 auto;
+    border: 0;
+    background: #1677FF;
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 0 22px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.page-post .apply-upload .apply-upload-input {
+    display: none;
+}
+
+.page-post .apply-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-post .apply-actions .centrix-button {
+    padding: 14px 32px;
+}
+
+.page-post .apply-actions .centrix-button:hover,
+.page-post .apply-actions .centrix-button:focus {
+    background: #ffffff;
+    color: #1677FF;
+}
+
+.page-post.dark-mode .apply-card-title,
+.page-post.dark-mode .apply-label,
+.page-post.dark-mode .apply-job-info h6 {
+    color: #ffffff;
+}
+
+.page-post.dark-mode .apply-job-info p {
+    color: #B7B7B7;
+}
+
+.page-post.dark-mode .form-control {
+    background: #262626;
+    border-color: #3D3D3D;
+    color: #ffffff;
+}
+
+.page-post.dark-mode .form-control::placeholder {
+    color: #B7B7B7;
+}
+
+/* ==========================================================================
+   Post a new Job page (pages/post.html)
+   Mirrors the apply page card/field/upload/actions rules and the create page
+   .select_wrap dropdown (scoped to .page-post), plus the post-only pieces.
+   ========================================================================== */
+.page-post .post-wrap {
+    padding-bottom: 24px;
+}
+
+.page-post .post-section-title {
+    font-family: 'Metropolis';
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 20px 0;
+}
+
+.page-post .post-section-next {
+    margin-top: 28px;
+}
+
+.page-post .post-jobs {
+    row-gap: 20px;
+}
+
+.page-post .post-job-card {
+    margin: 0;
+    height: 100%;
+}
+
+.page-post .post-job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.page-post .post-job-head h6 {
+    margin: 0;
+}
+
+.page-post .post-edit {
+    flex: 0 0 auto;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #1677FF;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.page-post .post-edit:hover,
+.page-post .post-edit:focus {
+    text-decoration: underline;
+}
+
+/* About Job: locked to the height of the two stacked Salary inputs
+   (label 24 + 46 + 20 + 46 = 136 = label 24 + textarea 112) */
+.page-post .post-about {
+    height: 112px;
+    min-height: 112px;
+    max-height: 112px;
+    resize: none;
+}
+
+.page-post .post-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.page-post .post-cancel {
+    height: 46px;
+    min-width: 120px;
+    padding: 0 24px;
+    background: #ffffff;
+    border: 2px solid #1677FF;
+    border-radius: 6px;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.page-post .post-cancel:hover,
+.page-post .post-cancel:focus {
+    background: #1677FF;
+    color: #ffffff;
+    outline: none;
+}
+
+.page-post .post-actions .centrix-button {
+    min-width: 160px;
+}
+
+.page-post.dark-mode .post-section-title {
+    color: #ffffff;
+}
+
+.page-post.dark-mode .post-cancel {
+    background: transparent;
+    color: #ffffff;
+}
