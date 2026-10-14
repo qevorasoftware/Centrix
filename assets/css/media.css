@@ -1848,6 +1848,15 @@
         flex: 1 1 100%;
     }
 
+    .page-course .course-stars {
+        gap: 2px;
+    }
+
+    .page-course .course-stars svg {
+        width: 14px;
+        height: 14px;
+    }
+
     .page-course .course-item {
         flex-direction: column;
         align-items: flex-start;
