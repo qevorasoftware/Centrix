@@ -7076,3 +7076,9 @@ footer.footer-fixed-position {
     background: #1677FF;
     color: #ffffff;
 }
+
+.page-post.dark-mode .post-actions .centrix-button:hover,
+.page-post.dark-mode .post-actions .centrix-button:focus {
+    background: transparent;
+    color: #ffffff;
+}
