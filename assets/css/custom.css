@@ -7254,6 +7254,12 @@ footer.footer-fixed-position {
     text-align: center;
 }
 
+.page-course .course-hero .breadcrumb-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .page-course .course-hero h1 {
     font-family: 'Metropolis';
     font-size: 40px;
@@ -7261,6 +7267,7 @@ footer.footer-fixed-position {
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 8px 0;
+    text-align: center;
 }
 
 .page-course .course-hero h2 {
@@ -7270,6 +7277,7 @@ footer.footer-fixed-position {
     font-weight: 500;
     color: #d6d6d6;
     margin: 0;
+    text-align: center;
 }
 
 .page-course .course-profile {
