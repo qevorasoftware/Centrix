@@ -7046,7 +7046,7 @@ footer.footer-fixed-position {
 
 .page-post .post-actions .centrix-button:hover,
 .page-post .post-actions .centrix-button:focus {
-    background: #ffffff;
+    background: transparent;
     color: #1677FF;
     outline: none;
 }
