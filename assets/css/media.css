@@ -1779,3 +1779,55 @@
         line-height: 28px;
     }
 }
+
+/* ---------- Course page: responsive ---------- */
+@media (max-width: 991.98px) {
+    .page-course .breadcrumb.course-hero {
+        min-height: 0;
+        padding: 32px 24px;
+    }
+
+    .page-course .course-meta {
+        flex-wrap: wrap;
+    }
+
+    .page-course .course-meta-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-course .course-hero h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .page-course .course-hero h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .page-course .course-stat-tiles {
+        width: 100%;
+    }
+
+    .page-course .course-stat {
+        flex: 1 1 0;
+        width: auto;
+    }
+
+    .page-course .course-meta-item {
+        flex: 1 1 100%;
+    }
+
+    .page-course .course-item {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .page-course .course-num {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+}
