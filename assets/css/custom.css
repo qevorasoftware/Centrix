@@ -7197,8 +7197,6 @@ footer.footer-fixed-position {
     font-weight: 700;
     color: #ffffff;
     margin: 0;
-    min-width: 0;
-    overflow-wrap: anywhere;
 }
 
 .page-education .edu-pill {
