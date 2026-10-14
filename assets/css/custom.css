@@ -7184,6 +7184,7 @@ footer.footer-fixed-position {
 
 .page-education .edu-head {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
@@ -7196,10 +7197,13 @@ footer.footer-fixed-position {
     font-weight: 700;
     color: #ffffff;
     margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .page-education .edu-pill {
     flex: 0 0 auto;
+    margin-left: auto;
     padding: 8px 18px;
     border-radius: 50px;
     background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
