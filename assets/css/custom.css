@@ -7028,7 +7028,7 @@ footer.footer-fixed-position {
     justify-content: center;
     box-sizing: border-box;
     width: 145px;
-    padding: 10px 0;
+    padding: 12px 10px;
     font-family: 'Metropolis';
     font-size: 14px;
     line-height: 1;
