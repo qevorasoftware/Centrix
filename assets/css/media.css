@@ -1731,6 +1731,13 @@
     }
 }
 
+/* ---------- Education page: 1200-1399 header height so cards line up ---------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .page-education .edu-head {
+        min-height: 76px;
+    }
+}
+
 /* ---------- Education page: hero + cards responsive ---------- */
 @media (max-width: 991.98px) {
     .page-education .breadcrumb.edu-hero {
