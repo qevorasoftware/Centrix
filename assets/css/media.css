@@ -1731,8 +1731,8 @@
     }
 }
 
-/* ---------- Education page: card left/right padding 15px below laptop (1199 and below) ---------- */
-@media (max-width: 1199.98px) {
+/* ---------- Education page: card left/right padding 15px at laptop width and below (1399 and below) ---------- */
+@media (max-width: 1399.98px) {
     .page-education .edu-card {
         padding: 20px 15px;
     }
