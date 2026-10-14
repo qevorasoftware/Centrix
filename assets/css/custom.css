@@ -6942,6 +6942,7 @@ footer.footer-fixed-position {
 .page-post .breadcrumb {
     min-height: 255px;
     padding: 40px 60px;
+    background: url(../images/banner/social-media-marketing.png) center / cover no-repeat;
 }
 
 .page-post .post-wrap {
