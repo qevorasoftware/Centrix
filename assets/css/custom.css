@@ -7028,7 +7028,7 @@ footer.footer-fixed-position {
 }
 
 .page-post .post-actions .post-cancel {
-    background: #ffffff;
+    background: transparent;
     color: #111111;
 }
 
