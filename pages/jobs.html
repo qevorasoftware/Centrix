@@ -141,7 +141,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Ui/Ux Design</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -179,7 +179,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Development</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -197,7 +197,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Marketing</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -216,7 +216,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Marketing</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -235,7 +235,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Ui/Ux Design</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -252,7 +252,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Development</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -270,7 +270,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Website Design</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -289,7 +289,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Ui/Ux Design</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -308,7 +308,7 @@
                         <div class="job-info">
                             <div class="job-head">
                                 <h6>Development</h6>
-                                <button type="button" class="job-apply">Apply Job</button>
+                                <a href="apply.html" class="job-apply">Apply Job</a>
                             </div>
                             <p class="job-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -347,7 +347,7 @@
             $('#job-search').on('keyup change', applyFilters);
 
             /* Apply Job -> Applied (green check), click again to undo */
-            $('#job-list').on('click', '.job-apply', function () {
+            $('#job-list').on('click', 'button.job-apply', function () {
                 var $btn = $(this);
                 if ($btn.hasClass('applied')) {
                     $btn.removeClass('applied').text('Apply Job');
