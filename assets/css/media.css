@@ -1805,6 +1805,23 @@
     .page-course .course-meta-item {
         flex: 1 1 calc(50% - 16px);
     }
+    /* Single column below 992px: alternate colour by position, not by DOM class */
+    .page-course .course-list > .row > .col-lg-6:nth-child(odd) > .course-item {
+        background: #e8f1ff;
+    }
+
+    .page-course .course-list > .row > .col-lg-6:nth-child(even) > .course-item {
+        background: #ffffff;
+    }
+
+    /* Session pill stays left aligned in the stacked layout */
+    .page-course .course-head {
+        justify-content: flex-start;
+    }
+
+    .page-course .course-pill {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 575.98px) {
