@@ -7031,6 +7031,7 @@ footer.footer-fixed-position {
     padding: 10px 0;
     font-family: 'Metropolis';
     font-size: 14px;
+    line-height: 1;
     font-weight: 600;
     border: 2px solid #1677FF;
     border-radius: 4px;
@@ -7039,7 +7040,6 @@ footer.footer-fixed-position {
 
 .page-post .post-actions .post-cancel {
     background: transparent;
-    padding: 11px 0;
     color: #111111;
 }
 
