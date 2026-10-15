@@ -7539,6 +7539,10 @@ footer.footer-fixed-position {
     filter: brightness(0) invert(1);
 }
 
-.page-course.dark-mode .course-meta-item svg path[stroke="#111111"] {
+.page-course.dark-mode .course-meta-item svg path {
     stroke: #FFFFFF;
+}
+
+.page-course.dark-mode .course-meta-item svg path[fill="#E53935"] {
+    stroke: none;
 }
