@@ -7547,5 +7547,5 @@ footer.footer-fixed-position {
 footer .design-by p a:hover,
 footer .design-by p a:focus {
     color: #1677FF;
-    text-decoration: underline;
+    text-decoration: none;
 }
