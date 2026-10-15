@@ -7688,7 +7688,16 @@ footer .design-by p a:focus {
     flex: 1 1 auto;
     min-width: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 12px 24px;
+}
+
+.page-authors .author-details .author-info {
+    flex: 0 1 auto;
+}
+
+.page-authors .author-details .author-name {
+    white-space: nowrap;
 }
