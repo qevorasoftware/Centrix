@@ -1814,6 +1814,15 @@
         background: #ffffff;
     }
 
+    /* Dark mode: same stacked alternation, dark palette */
+    .page-course.dark-mode .course-list > .row > .col-lg-6:nth-child(odd) > .course-item {
+        background: #1B2636;
+    }
+
+    .page-course.dark-mode .course-list > .row > .col-lg-6:nth-child(even) > .course-item {
+        background: #1F1F1F;
+    }
+
     /* Session pill stays left aligned in the stacked layout */
     .page-course .course-head {
         justify-content: flex-start;
