@@ -7678,3 +7678,17 @@ footer .design-by p a:focus {
 .page-authors.dark-mode .author-courses {
     color: #A6A6A6;
 }
+
+/* author card: image box + details group */
+.page-authors .author-img {
+    flex: 0 0 auto;
+}
+
+.page-authors .author-details {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
