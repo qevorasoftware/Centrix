@@ -87,7 +87,7 @@ function toggleLight() {
   body.classList.add("light-mode");
   localStorage.setItem("theme", "light");
   $(".mode-change .option-btn").removeClass("active");
-  $(".light-btn").addClass("active");
+  $(".mode-light").addClass("active");
   updateSidebarLogo();
 }
 
@@ -97,7 +97,7 @@ function toggleDark() {
   body.classList.add("dark-mode");
   localStorage.setItem("theme", "dark");
   $(".mode-change .option-btn").removeClass("active");
-  $(".dark-btn").addClass("active");
+  $(".mode-dark").addClass("active");
   updateSidebarLogo();
 }
 
@@ -105,9 +105,9 @@ function toggleDark() {
 $(document).ready(function () {
   var savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
-    $(".dark-btn").addClass("active");
+    $(".mode-dark").addClass("active");
   } else {
-    $(".light-btn").addClass("active");
+    $(".mode-light").addClass("active");
   }
 });
 

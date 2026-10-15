@@ -327,7 +327,7 @@ class centrixHeader extends HTMLElement {
             <div class="option-title"><p>Theme</p></div>
             <div class="option-item">
                 <div class="option-btn-item mode-change">
-                    <a class="option-btn mode-light active" id="light" onclick="toggleLight()" href="#">Light 
+                    <a class="option-btn mode-light" id="light" onclick="toggleLight()" href="#">Light 
                         <img src="../assets/images/icon/light-mode.svg" alt="icon"></a>
                     <a class="option-btn mode-dark" id="dark" onclick="toggleDark()" href="#">Dark 
                         <img src="../assets/images/icon/dark-mode.svg" alt="icon"></a>
