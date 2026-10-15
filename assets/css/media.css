@@ -1973,6 +1973,39 @@
     .page-categories .cat-row .cat-last {
         grid-column: 1 / -1;
     }
+
+    .page-categories .cat-row {
+        gap: 16px 12px;
+        padding: 18px 11px;
+    }
+
+    .page-categories .cat-row .cat-name {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .page-categories .cat-row .cat-last {
+        margin-top: 4px;
+        padding-top: 14px;
+        border-top: 1px solid #ececec;
+    }
+
+    .page-categories.dark-mode .cat-row .cat-last {
+        border-top-color: #333333;
+    }
+
+    .page-categories .cat-mod::before,
+    .page-categories .cat-num::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
+        font-family: 'Metropolis';
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #9a9a9a;
+    }
 }
 
 @media (max-width: 575.98px) {
