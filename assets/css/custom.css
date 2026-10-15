@@ -7542,3 +7542,10 @@ footer.footer-fixed-position {
 .page-course.dark-mode .course-bag path {
     stroke: #FFFFFF;
 }
+
+/* Footer: "Crafted with Love by Uptechies" link hover */
+footer .design-by p a:hover,
+footer .design-by p a:focus {
+    color: #1677FF;
+    text-decoration: underline;
+}
