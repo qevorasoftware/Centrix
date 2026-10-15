@@ -7891,3 +7891,84 @@ footer .design-by p a:focus {
 .page-categories.dark-mode .cat-desc {
     color: #A6A6A6;
 }
+
+/* ---------- Topics page (pages/topics.html) ---------- */
+.page-topics .cat-hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+}
+
+.page-topics .btn-new-topic {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 6px;
+    background: #1677FF;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.page-topics .btn-new-topic:hover {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.page-topics .topic-table {
+    min-width: 0;
+}
+
+.page-topics .topic-row {
+    display: grid;
+    grid-template-columns: 51% 16% 16% 17%;
+    align-items: center;
+}
+
+.page-topics .topic-row:not(.cat-row-head) {
+    padding: 16px 11px;
+}
+
+.page-topics .topic-row:not(.cat-row-head) + .topic-row {
+    border-top: 1px solid #ececec;
+}
+
+.page-topics .topic-name {
+    min-width: 0;
+}
+
+.page-topics .topic-views {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #9a9a9a;
+}
+
+.page-topics .topic-views svg {
+    flex: 0 0 auto;
+    color: #111111;
+}
+
+/* dark mode */
+.page-topics.dark-mode .topic-row:not(.cat-row-head) + .topic-row {
+    border-top-color: #333333;
+}
+
+.page-topics.dark-mode .topic-views {
+    color: #A6A6A6;
+}
+
+.page-topics.dark-mode .topic-views svg {
+    color: #FFFFFF;
+}

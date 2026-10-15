@@ -2064,3 +2064,75 @@
         font-size: 18px;
     }
 }
+
+/* ---------- Topics page: responsive ---------- */
+/* laptop + tablet (up to 1199px): single-line rows, scaled to fit */
+@media (max-width: 1199.98px) {
+    .page-topics .topic-row {
+        grid-template-columns: 40% 14% 30% 16%;
+    }
+
+    .page-topics .topic-row:not(.cat-row-head) {
+        padding: 14px 8px;
+    }
+
+    .page-topics .cat-hero h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+/* mobile (below 768px): stacked rows with labels, no horizontal scroll */
+@media (max-width: 767.98px) {
+    .page-topics .cat-hero-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-topics .cat-table-wrap {
+        overflow-x: visible;
+        padding: 12px;
+    }
+
+    .page-topics .topic-row.cat-row-head {
+        height: auto;
+        padding: 12px 11px;
+    }
+
+    .page-topics .topic-row.cat-row-head > span:not(:first-child) {
+        display: none;
+    }
+
+    .page-topics .topic-row:not(.cat-row-head) {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 12px;
+        padding: 16px 11px;
+    }
+
+    .page-topics .topic-name,
+    .page-topics .cat-last {
+        grid-column: 1 / -1;
+    }
+
+    .page-topics .cat-num::before,
+    .page-topics .topic-views::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
+        font-family: 'Metropolis';
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #9a9a9a;
+    }
+
+    .page-topics .topic-views {
+        display: block;
+    }
+
+    .page-topics .topic-views svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+}
