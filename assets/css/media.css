@@ -1944,8 +1944,8 @@
     }
 }
 
-/* tablet (768-991): single-line rows, scaled to fit */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* tablet + small laptop (768-1199): single-line rows, scaled to fit, no scroll */
+@media (min-width: 768px) and (max-width: 1199.98px) {
     .page-categories .cat-table-wrap {
         padding: 12px;
         overflow-x: visible;
@@ -1981,10 +1981,15 @@
         font-size: 16px;
     }
 
+    .page-categories .cat-row > * {
+        min-width: 0;
+    }
+
     .page-categories .cat-last p {
         font-size: 13px;
         gap: 6px;
         min-width: 0;
+        flex-wrap: wrap;
     }
 }
 
