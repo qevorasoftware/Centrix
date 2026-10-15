@@ -1942,7 +1942,54 @@
     .page-categories .body_part {
         padding: 16px;
     }
+}
 
+/* tablet (768-991): single-line rows, scaled to fit */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .page-categories .cat-table-wrap {
+        padding: 12px;
+        overflow-x: visible;
+    }
+
+    .page-categories .cat-table {
+        min-width: 0;
+    }
+
+    .page-categories .cat-row,
+    .page-categories .cat-row-head {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .page-categories .cat-row-head {
+        font-size: 16px;
+    }
+
+    .page-categories .cat-title {
+        font-size: 16px;
+    }
+
+    .page-categories .cat-desc {
+        font-size: 13px;
+    }
+
+    .page-categories .cat-mod {
+        font-size: 14px;
+    }
+
+    .page-categories .cat-num {
+        font-size: 16px;
+    }
+
+    .page-categories .cat-last p {
+        font-size: 13px;
+        gap: 6px;
+        min-width: 0;
+    }
+}
+
+/* mobile (<768): stacked rows, no horizontal scroll */
+@media (max-width: 767.98px) {
     /* stacked table: no horizontal scroll */
     .page-categories .cat-table-wrap {
         overflow-x: visible;
