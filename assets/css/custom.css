@@ -7549,3 +7549,132 @@ footer .design-by p a:focus {
     color: #1677FF;
     text-decoration: none;
 }
+
+/* ---------- Authors page ---------- */
+.page-authors .breadcrumb.authors-hero {
+    min-height: 215px;
+    padding: 0 60px;
+    background: url(../images/banner/kits-education.png) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-authors .authors-hero .breadcrumb-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.page-authors .authors-hero h1 {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.page-authors .authors-hero h2 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #d6d6d6;
+    margin: 0;
+    text-align: center;
+}
+
+.page-authors .authors-list {
+    padding: 27px;
+}
+
+.page-authors .author-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: 100%;
+    padding: 27px 36px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.page-authors .author-avatar {
+    flex: 0 0 auto;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.page-authors .author-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-authors .author-name {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 8px 0;
+}
+
+.page-authors .author-courses {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #9a9a9a;
+    margin: 0;
+}
+
+.page-authors .author-sales {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-authors .author-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    padding: 0 18px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.page-authors .author-sales-label {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #111111;
+}
+
+/* dark mode */
+.page-authors.dark-mode .author-card {
+    background: #1F1F1F;
+}
+
+.page-authors.dark-mode .author-name,
+.page-authors.dark-mode .author-sales-label {
+    color: #FFFFFF;
+}
+
+.page-authors.dark-mode .author-courses {
+    color: #A6A6A6;
+}
