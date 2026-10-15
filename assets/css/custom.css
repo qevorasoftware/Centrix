@@ -7722,10 +7722,6 @@ footer .design-by p a:focus {
     margin: 0;
 }
 
-.page-categories .body_part {
-    padding: 0;
-}
-
 .page-categories .cat-toolbar {
     display: flex;
     justify-content: flex-end;

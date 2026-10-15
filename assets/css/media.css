@@ -1939,9 +1939,6 @@
         padding: 32px 24px;
     }
 
-    .page-categories .body_part {
-        padding: 0;
-    }
 }
 
 /* tablet + small laptop (768-1199): single-line rows, scaled to fit, no scroll */
@@ -2066,11 +2063,6 @@
 }
 
 /* ---------- Topics page: responsive ---------- */
-/* no extra body padding: card sits directly in the content area */
-.page-topics .body_part {
-    padding: 0;
-}
-
 /* laptop + tablet (up to 1199px): single-line rows, scaled to fit */
 @media (max-width: 1199.98px) {
     .page-topics .topic-row {
