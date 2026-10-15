@@ -7701,3 +7701,193 @@ footer .design-by p a:focus {
 .page-authors .author-details .author-name {
     white-space: nowrap;
 }
+
+/* ---------- Categories page ---------- */
+.page-categories .breadcrumb.cat-hero {
+    min-height: 107px;
+    padding: 0 60px;
+    background: url(../images/banner/welcome-banner.png) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.page-categories .cat-hero h1 {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-categories .body_part {
+    padding: 27px;
+}
+
+.page-categories .cat-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 18px 0;
+}
+
+.page-categories .cat-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.page-categories .cat-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    padding: 0 18px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+}
+
+.page-categories .cat-card-head h3 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-categories .cat-refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.page-categories .cat-table-wrap {
+    padding: 18px;
+    overflow-x: auto;
+}
+
+.page-categories .cat-table {
+    min-width: 900px;
+}
+
+.page-categories .cat-section + .cat-section {
+    margin-top: 24px;
+}
+
+.page-categories .cat-row {
+    display: grid;
+    grid-template-columns: 34% 16% 16% 16% 18%;
+    align-items: center;
+    padding: 16px 11px;
+}
+
+.page-categories .cat-row + .cat-row {
+    border-top: 1px solid #ececec;
+}
+
+.page-categories .cat-row-head + .cat-row {
+    border-top: 0;
+}
+
+.page-categories .cat-row-head {
+    padding: 0 11px;
+    height: 43px;
+    background: #f4f4f4;
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.page-categories .cat-title {
+    display: block;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #1677FF;
+    text-decoration: none;
+}
+
+.page-categories .cat-desc {
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #9a9a9a;
+    margin: 4px 0 0 0;
+}
+
+.page-categories .cat-mod {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #9a9a9a;
+}
+
+.page-categories .cat-num {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.page-categories .cat-last p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.page-categories .cat-last p + p {
+    margin-top: 4px;
+}
+
+.page-categories .cat-last img {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+}
+
+.page-categories .cat-last a {
+    color: #1677FF;
+    text-decoration: none;
+}
+
+/* dark mode */
+.page-categories.dark-mode .cat-card {
+    background: #1F1F1F;
+}
+
+.page-categories.dark-mode .cat-row-head {
+    background: #2A2A2A;
+    color: #FFFFFF;
+}
+
+.page-categories.dark-mode .cat-row + .cat-row {
+    border-top-color: #333333;
+}
+
+.page-categories.dark-mode .cat-num {
+    color: #FFFFFF;
+}
+
+.page-categories.dark-mode .cat-mod,
+.page-categories.dark-mode .cat-desc {
+    color: #A6A6A6;
+}
