@@ -7534,3 +7534,7 @@ footer.footer-fixed-position {
 .page-course.dark-mode .course-item-blue {
     background: #1B2636;
 }
+
+.page-course.dark-mode .course-meta-grey img {
+    filter: brightness(0) invert(1);
+}
