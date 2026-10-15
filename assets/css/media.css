@@ -1970,8 +1970,11 @@
     }
 
     .page-categories .cat-row .cat-name,
-    .page-categories .cat-row .cat-last {
         grid-column: 1 / -1;
+    }
+
+    .page-categories .cat-row .cat-last {
+        margin-top: 4px;
     }
 
     .page-categories .cat-row {
@@ -1983,16 +1986,6 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
-    }
-
-    .page-categories .cat-row .cat-last {
-        margin-top: 4px;
-        padding-top: 14px;
-        border-top: 1px solid #ececec;
-    }
-
-    .page-categories.dark-mode .cat-row .cat-last {
-        border-top-color: #333333;
     }
 
     .page-categories .cat-mod::before,
