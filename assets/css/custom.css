@@ -7802,8 +7802,8 @@ footer .design-by p a:focus {
     height: 43px;
     background: #f4f4f4;
     font-family: 'Metropolis';
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 600;
     color: #111111;
 }
@@ -7811,8 +7811,8 @@ footer .design-by p a:focus {
 .page-categories .cat-title {
     display: block;
     font-family: 'Metropolis';
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 600;
     color: #1677FF;
     text-decoration: none;
@@ -7820,8 +7820,8 @@ footer .design-by p a:focus {
 
 .page-categories .cat-desc {
     font-family: 'Metropolis';
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
     color: #9a9a9a;
     margin: 4px 0 0 0;
@@ -7829,8 +7829,8 @@ footer .design-by p a:focus {
 
 .page-categories .cat-mod {
     font-family: 'Metropolis';
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 22px;
     font-weight: 400;
     color: #9a9a9a;
 }
