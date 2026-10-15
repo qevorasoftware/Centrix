@@ -1942,6 +1942,37 @@
     .page-categories .body_part {
         padding: 16px;
     }
+
+    /* stacked table: no horizontal scroll */
+    .page-categories .cat-table-wrap {
+        overflow-x: visible;
+        padding: 12px;
+    }
+
+    .page-categories .cat-table {
+        min-width: 0;
+    }
+
+    .page-categories .cat-row-head {
+        height: auto;
+        padding: 12px 11px;
+        grid-template-columns: 1fr;
+    }
+
+    .page-categories .cat-row-head > span:not(:first-child) {
+        display: none;
+    }
+
+    .page-categories .cat-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px 12px;
+        padding: 16px 11px;
+    }
+
+    .page-categories .cat-row .cat-name,
+    .page-categories .cat-row .cat-last {
+        grid-column: 1 / -1;
+    }
 }
 
 @media (max-width: 575.98px) {
