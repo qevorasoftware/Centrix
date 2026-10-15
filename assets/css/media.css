@@ -2066,6 +2066,11 @@
 }
 
 /* ---------- Topics page: responsive ---------- */
+/* no extra body padding: card sits directly in the content area */
+.page-topics .body_part {
+    padding: 0;
+}
+
 /* laptop + tablet (up to 1199px): single-line rows, scaled to fit */
 @media (max-width: 1199.98px) {
     .page-topics .topic-row {
