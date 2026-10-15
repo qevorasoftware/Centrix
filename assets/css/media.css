@@ -1970,6 +1970,7 @@
     }
 
     .page-categories .cat-row .cat-name,
+    .page-categories .cat-row .cat-last {
         grid-column: 1 / -1;
     }
 
