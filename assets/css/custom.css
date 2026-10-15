@@ -7504,34 +7504,34 @@ footer.footer-fixed-position {
 }
 
 /* ---------- Course page: dark mode ---------- */
-.dark-mode .page-course .course-profile,
-.dark-mode .page-course .course-meta,
-.dark-mode .page-course .course-list {
+.page-course.dark-mode .course-profile,
+.page-course.dark-mode .course-meta,
+.page-course.dark-mode .course-list {
     background: #1F1F1F;
 }
 
-.dark-mode .page-course .course-stat,
-.dark-mode .page-course .course-meta-grey {
+.page-course.dark-mode .course-stat,
+.page-course.dark-mode .course-meta-grey {
     background: #2A2A2A;
 }
 
-.dark-mode .page-course .course-author h3,
-.dark-mode .page-course .course-stat span,
-.dark-mode .page-course .course-meta-item span,
-.dark-mode .page-course .course-title,
-.dark-mode .page-course .course-time {
+.page-course.dark-mode .course-author h3,
+.page-course.dark-mode .course-stat span,
+.page-course.dark-mode .course-meta-item span,
+.page-course.dark-mode .course-title,
+.page-course.dark-mode .course-time {
     color: #FFFFFF;
 }
 
-.dark-mode .page-course .course-author p,
-.dark-mode .page-course .course-desc {
+.page-course.dark-mode .course-author p,
+.page-course.dark-mode .course-desc {
     color: #A6A6A6;
 }
 
-.dark-mode .page-course .course-item-white {
+.page-course.dark-mode .course-item-white {
     background: #1F1F1F;
 }
 
-.dark-mode .page-course .course-item-blue {
+.page-course.dark-mode .course-item-blue {
     background: #1B2636;
 }
