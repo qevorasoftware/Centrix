@@ -7538,3 +7538,7 @@ footer.footer-fixed-position {
 .page-course.dark-mode .course-meta-grey img {
     filter: brightness(0) invert(1);
 }
+
+.page-course.dark-mode .course-meta-item svg path[stroke="#111111"] {
+    stroke: #FFFFFF;
+}
