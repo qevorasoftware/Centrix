@@ -7888,6 +7888,15 @@ footer .design-by p a:focus {
     color: #A6A6A6;
 }
 
+/* Filter dropdown options: light text on the dark panel */
+.page-categories.dark-mode .cat-toolbar .select_ul {
+    background: #1F1F1F;
+}
+
+.page-categories.dark-mode .cat-toolbar .select_ul li .option p {
+    color: #FFFFFF;
+}
+
 /* ---------- Topics page (pages/topics.html) ---------- */
 .page-topics .cat-hero-inner {
     display: flex;
