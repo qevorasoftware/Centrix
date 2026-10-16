@@ -7897,6 +7897,15 @@ footer .design-by p a:focus {
     color: #FFFFFF;
 }
 
+/* Projects page: Filter dropdown options on the dark panel */
+.page-projects.dark-mode .filter-header .select_ul {
+    background: #1F1F1F;
+}
+
+.page-projects.dark-mode .filter-header .select_ul li .option p {
+    color: #FFFFFF;
+}
+
 /* ---------- Topics page (pages/topics.html) ---------- */
 .page-topics .cat-hero-inner {
     display: flex;
