@@ -4683,6 +4683,40 @@ footer.footer-fixed-position {
     color: #1976ff;
     border-color: #1976ff;
 }
+/* Dashboard charts: dark mode */
+.dark-mode #visitorChart,
+.dark-mode #weeklyBarChart {
+    background: #1F1F1F;
+    box-shadow: none;
+}
+.dark-mode .visitor-title {
+    color: #FFFFFF;
+}
+.dark-mode .chart-tab {
+    color: #A6A6A6;
+}
+.dark-mode .chart-tab.active {
+    color: #1976ff;
+    border-color: #1976ff;
+}
+.dark-mode #visitorChart .apexcharts-text,
+.dark-mode #weeklyBarChart .apexcharts-text,
+.dark-mode .apexcharts-legend-text {
+    fill: #B7B7B7;
+    color: #B7B7B7;
+}
+.dark-mode .apexcharts-legend-text {
+    fill: #FFFFFF;
+    color: #FFFFFF;
+}
+.dark-mode .apexcharts-gridline,
+.dark-mode .apexcharts-grid-borders line {
+    stroke: #3A3A3A;
+}
+.dark-mode .apexcharts-xcrosshairs line,
+.dark-mode .apexcharts-ycrosshairs line {
+    stroke: #3A3A3A;
+}
 /* Apex legend */
 .apexcharts-legend {
     padding-top: 10px !important;
