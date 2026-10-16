@@ -4705,9 +4705,10 @@ footer.footer-fixed-position {
     fill: #B7B7B7;
     color: #B7B7B7;
 }
-.dark-mode .apexcharts-legend-text {
-    fill: #FFFFFF;
-    color: #FFFFFF;
+.dark-mode .apexcharts-legend-text,
+.dark-mode .apexcharts-legend-series .apexcharts-legend-text {
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
 }
 .dark-mode .apexcharts-gridline,
 .dark-mode .apexcharts-grid-borders line {
