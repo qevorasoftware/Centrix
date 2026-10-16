@@ -7904,18 +7904,12 @@ footer .design-by p a:focus {
     height: 44px;
     padding: 0 20px;
     border-radius: 6px;
-    background: #1677FF;
     font-family: 'Metropolis';
     font-size: 16px;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
     white-space: nowrap;
-}
-
-.page-topics .btn-new-topic:hover {
-    color: #ffffff;
-    opacity: 0.9;
 }
 
 .page-topics .topic-table {
