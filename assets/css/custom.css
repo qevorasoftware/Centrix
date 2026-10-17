@@ -8189,6 +8189,11 @@ footer .design-by p a:focus {
     padding: 0;
     text-align: center;
 }
+.page-discussion .disc-reply:hover,
+.page-discussion .disc-reply:focus {
+    background: #ffffff;
+    color: #1677FF;
+}
 
 /* dark mode */
 .page-discussion.dark-mode .disc-list {
