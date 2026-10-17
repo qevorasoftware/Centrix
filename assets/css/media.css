@@ -2133,3 +2133,47 @@
         margin-right: 8px;
     }
 }
+
+/* ---------- Discussion page: responsive ---------- */
+@media (max-width: 767.98px) {
+    .page-discussion .disc-list {
+        padding: 12px;
+    }
+
+    .page-discussion .disc-item {
+        padding: 16px;
+    }
+
+    .page-discussion .disc-head {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .page-discussion .disc-avatar {
+        width: 56px;
+        height: 56px;
+    }
+
+    .page-discussion .disc-name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .page-discussion .disc-level {
+        margin-left: auto;
+    }
+
+    .page-discussion .disc-form {
+        flex-wrap: wrap;
+    }
+
+    .page-discussion .disc-input {
+        flex: 1 1 100%;
+    }
+
+    .page-discussion .disc-cancel,
+    .page-discussion .disc-reply {
+        flex: 1 1 calc(50% - 8px);
+        width: auto;
+    }
+}

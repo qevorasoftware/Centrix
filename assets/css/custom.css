@@ -8044,3 +8044,184 @@ footer .design-by p a:focus {
 .page-topics.dark-mode .topic-views svg {
     color: #FFFFFF;
 }
+
+/* ---------- Discussion page (pages/discussion.html) ---------- */
+.page-discussion .disc-list {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.page-discussion .disc-item {
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.page-discussion .disc-item + .disc-item {
+    margin-top: 20px;
+}
+
+.page-discussion .disc-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.page-discussion .disc-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+
+.page-discussion .disc-author {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-discussion .disc-name {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0;
+}
+
+.page-discussion .disc-meta {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #111111;
+    margin: 4px 0 0 0;
+}
+
+.page-discussion .disc-level {
+    flex: 0 0 auto;
+    padding: 6px 18px;
+    border-radius: 20px;
+    background: #E8F1FF;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #1677FF;
+}
+
+.page-discussion .disc-body {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #111111;
+    margin: 16px 0 0 0;
+}
+
+/* reply form, sits in the last box */
+.page-discussion .disc-item-reply {
+    background: #F5F5F5;
+}
+
+.page-discussion .disc-item-reply .disc-head {
+    border-bottom: 0;
+    padding-bottom: 16px;
+}
+
+.page-discussion .disc-form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding-top: 16px;
+    border-top: 1px solid #DDDDDD;
+}
+
+.page-discussion .disc-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 44px;
+    padding: 0 16px;
+    border: 1px solid #B7B7B7;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    color: #111111;
+    outline: none;
+}
+
+.page-discussion .disc-input::placeholder {
+    color: #B7B7B7;
+}
+
+.page-discussion .disc-input:focus {
+    border-color: #1677FF;
+}
+
+.page-discussion .disc-cancel {
+    flex: 0 0 auto;
+    width: 145px;
+    height: 44px;
+    border: 2px solid #1677FF;
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+    color: #111111;
+    cursor: pointer;
+    transition: all ease 0.3s 0s;
+}
+
+.page-discussion .disc-cancel:hover {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-discussion .disc-reply {
+    flex: 0 0 auto;
+    width: 145px;
+    height: 44px;
+    padding: 0;
+    text-align: center;
+}
+
+/* dark mode */
+.page-discussion.dark-mode .disc-list {
+    background: #1F1F1F;
+}
+
+.page-discussion.dark-mode .disc-item,
+.page-discussion.dark-mode .disc-item-reply {
+    background: #2A2A2A;
+}
+
+.page-discussion.dark-mode .disc-head,
+.page-discussion.dark-mode .disc-form {
+    border-color: #3A3A3A;
+}
+
+.page-discussion.dark-mode .disc-name,
+.page-discussion.dark-mode .disc-meta,
+.page-discussion.dark-mode .disc-body {
+    color: #FFFFFF;
+}
+
+.page-discussion.dark-mode .disc-level {
+    background: #1B2636;
+}
+
+.page-discussion.dark-mode .disc-input {
+    background: #1F1F1F;
+    border-color: #4A4A4A;
+    color: #FFFFFF;
+}
+
+.page-discussion.dark-mode .disc-cancel {
+    background: transparent;
+    color: #FFFFFF;
+}
