@@ -8832,3 +8832,8 @@ footer .design-by p a:focus {
 .page-full-width.dark-mode .fw-card-body p {
     color: #FFFFFF;
 }
+
+/* ---------- Space page (pages/space.html): 80px side padding ---------- */
+.page-space .fw-wrap {
+    padding: 0 80px;
+}
