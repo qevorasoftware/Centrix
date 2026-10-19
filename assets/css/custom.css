@@ -8750,3 +8750,89 @@ footer .design-by p a:focus {
 .page-blog.dark-mode .blog-sec-title {
     color: #A6A6A6;
 }
+
+/* ---------- Full Width page (pages/full-width.html) ---------- */
+.page-full-width .body_part {
+    padding: 0;
+}
+
+.page-full-width .breadcrumb.fw-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 107px;
+    padding: 0 60px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+}
+
+.page-full-width .fw-hero h1 {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-full-width .fw-hero p {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-full-width .fw-wrap {
+    padding: 27px;
+}
+
+.page-full-width .fw-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.page-full-width .fw-card-head {
+    padding: 14px 20px;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+.page-full-width .fw-card-head h3 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.page-full-width .fw-card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.page-full-width .fw-card-body p {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #111111;
+    margin: 0;
+}
+
+/* dark mode */
+.page-full-width.dark-mode .fw-card {
+    background: #1F1F1F;
+}
+
+.page-full-width.dark-mode .fw-card-head {
+    background: #2A2A2A;
+}
+
+.page-full-width.dark-mode .fw-card-head h3,
+.page-full-width.dark-mode .fw-card-body p {
+    color: #FFFFFF;
+}

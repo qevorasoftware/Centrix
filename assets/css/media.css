@@ -2237,3 +2237,24 @@
         aspect-ratio: 16 / 9;
     }
 }
+
+/* ---------- Full Width page: responsive ---------- */
+@media (max-width: 991.98px) {
+    .page-full-width .breadcrumb.fw-hero {
+        min-height: 0;
+        padding: 28px 24px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-full-width .fw-hero h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .page-full-width .fw-wrap {
+        padding: 16px;
+    }
+}
