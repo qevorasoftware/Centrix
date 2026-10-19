@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" id="palette">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Centrix - Right">
+    <meta name="description" content="Detail content layout on Centrix with a right side panel.">
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
+    <meta name="author" content="Centrix">
+    <meta name=theme-color content="#000000">
+    <title>Centrix - Right</title>
+    <meta property=og:title content="Centrix - Right">
+    <meta property=og:description content="Detail content layout on Centrix with a right side panel.">
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/media.css">
+</head>
+
+<body class="page-full-width page-right light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+        <!-- Hero banner: full-width .breadcrumb, kept OUTSIDE #content (same as Full Width) -->
+        <div class="breadcrumb fw-hero">
+            <h1>Detail Content</h1>
+            <p>Position</p>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="rt-layout">
+                    <!-- Main content area -->
+                    <div class="rt-main"></div>
+
+                    <!-- Right side panel -->
+                    <aside class="rt-side" id="rtSide">
+                        <div class="rt-side-head">
+                            <h4>Side Content</h4>
+                            <button type="button" class="rt-side-close" id="rtSideClose" aria-label="Close side content">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                                    <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="rt-side-body">
+                            <p>Details Of page and selected Content Will be here</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        (function () {
+            var side = document.getElementById('rtSide');
+            var close = document.getElementById('rtSideClose');
+            if (side && close) {
+                close.addEventListener('click', function () {
+                    side.classList.toggle('rt-side-hidden');
+                });
+            }
+        })();
+    </script>
+</body>
+
+</html>

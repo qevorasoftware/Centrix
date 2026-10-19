@@ -8842,3 +8842,97 @@ footer .design-by p a:focus {
 .page-centered .fw-wrap {
     padding: 0 110px;
 }
+
+/* ---------- Right side panel page (pages/right.html) ---------- */
+.page-right .rt-layout {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 107px);
+}
+
+.page-right .rt-main {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.page-right .rt-side {
+    flex: 0 0 340px;
+    width: 340px;
+    background: #ffffff;
+    border-left: 1px solid #EDEDED;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-right .rt-side.rt-side-hidden {
+    display: none;
+}
+
+.page-right .rt-side-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: #F5F5F5;
+}
+
+.page-right .rt-side-head h4 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-right .rt-side-close {
+    background: transparent;
+    border: 0;
+    padding: 4px;
+    line-height: 0;
+    color: #E53935;
+    cursor: pointer;
+}
+
+.page-right .rt-side-body {
+    padding: 16px 20px;
+}
+
+.page-right .rt-side-body p {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 22px;
+    color: #A6A6A6;
+    margin: 0;
+}
+
+.page-right.dark-mode .rt-side {
+    background: #1F1F1F;
+    border-left-color: #333333;
+}
+
+.page-right.dark-mode .rt-side-head {
+    background: #2A2A2A;
+}
+
+.page-right.dark-mode .rt-side-head h4 {
+    color: #FFFFFF;
+}
+
+.page-right.dark-mode .rt-side-body p {
+    color: #8C8C8C;
+}
+
+@media (max-width: 991.98px) {
+    .page-right .rt-layout {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .page-right .rt-side {
+        flex: 0 0 auto;
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid #EDEDED;
+    }
+}
