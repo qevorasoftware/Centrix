@@ -8269,7 +8269,7 @@ footer .design-by p a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 24px 0 16px;
+    margin: 32px 0 16px;
 }
 
 .page-users .u-sec-head:first-child {
@@ -8299,8 +8299,16 @@ footer .design-by p a:focus {
 .page-users .u-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    margin-bottom: 8px;
+    column-gap: 20px;
+    row-gap: 0;
+}
+
+.page-users .u-grid > .u-card {
+    margin-bottom: 24px;
+}
+
+.page-users .u-grid + .u-sec-head {
+    margin-top: 8px;
 }
 
 .page-users .u-card {
