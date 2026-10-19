@@ -8502,7 +8502,7 @@ footer .design-by p a:focus {
 }
 
 /* dark mode */
-.page-users.dark-mode .u-card {
+.page-users.dark-mode .u-card:not(.u-grad) {
     background: #1F1F1F;
     border-color: #333333;
 }
