@@ -2214,12 +2214,6 @@
 }
 
 /* ---------- Blog page: responsive ---------- */
-@media (max-width: 1199.98px) {
-    .page-blog .blog-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
 @media (max-width: 991.98px) {
     .page-blog .breadcrumb.blog-hero {
         min-height: 0;
@@ -2231,11 +2225,6 @@
     .page-blog .blog-hero h1 {
         font-size: 30px;
         line-height: 36px;
-    }
-
-    .page-blog .blog-grid,
-    .page-blog .blog-grid-h {
-        grid-template-columns: 1fr;
     }
 
     .page-blog .blog-h-card {
