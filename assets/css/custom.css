@@ -8960,7 +8960,7 @@ footer .design-by p a:focus {
 }
 
 /* ---------- Header Fixed page (pages/header-fixed.html) ---------- */
-.page-header-fixed .hf-card {
+.page-header-layout .hf-card {
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
@@ -8973,24 +8973,24 @@ footer .design-by p a:focus {
     margin-bottom: 24px;
 }
 
-.page-header-fixed .hf-card-tall-short {
+.page-header-layout .hf-card-tall-short {
     height: 180px;
 }
 
-.page-header-fixed .hf-card-tall {
+.page-header-layout .hf-card-tall {
     height: 380px;
 }
 
-.page-header-fixed .hf-card-half {
+.page-header-layout .hf-card-half {
     height: 180px;
     margin-bottom: 24px;
 }
 
-.page-header-fixed .hf-card-half + .hf-card-half {
+.page-header-layout .hf-card-half + .hf-card-half {
     margin-bottom: 0;
 }
 
-.page-header-fixed.dark-mode .hf-card {
+.page-header-layout.dark-mode .hf-card {
     background: #1F1F1F;
     color: #FFFFFF;
 }
