@@ -8936,3 +8936,8 @@ footer .design-by p a:focus {
         border-top: 1px solid #EDEDED;
     }
 }
+
+/* Right page: panel touches hero bottom and right edge (no #content padding) */
+.page-right #main #content {
+    padding: 0;
+}
