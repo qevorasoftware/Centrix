@@ -8837,3 +8837,8 @@ footer .design-by p a:focus {
 .page-space .fw-wrap {
     padding: 0 80px;
 }
+
+/* ---------- Centered page (pages/centered.html): 110px side padding ---------- */
+.page-centered .fw-wrap {
+    padding: 0 110px;
+}
