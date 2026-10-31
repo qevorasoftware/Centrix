@@ -9067,10 +9067,17 @@ footer.footer-fixed-position {
     box-shadow: 2px 0 6px rgba(0, 0, 0, 0.04);
 }
 
-.page-left-sidebar-hidden .nav-mobile-toggle .toggle-sidebar-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 22px;
-    height: 80px;
+.page-left-sidebar-hidden .nav-mobile-toggle .nav-link {
+    display: block;
+    padding: 28px 22px;
+    line-height: 0;
+}
+
+.page-left-sidebar-hidden .nav-mobile-toggle img {
+    display: block !important;
+    width: 24px;
+    height: 24px;
+    max-width: none;
+    opacity: 1;
+    visibility: visible;
 }
