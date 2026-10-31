@@ -9059,3 +9059,18 @@ footer.footer-fixed-position {
     z-index: 12;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
 }
+
+/* Hidden sidebar page: the menu button stays visible at the top-left on every width
+   (Bootstrap d-lg-none would hide it from 992px up). */
+.page-left-sidebar-hidden .nav-mobile-toggle {
+    display: block !important;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.page-left-sidebar-hidden .nav-mobile-toggle .toggle-sidebar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 22px;
+    height: 80px;
+}
