@@ -9090,3 +9090,9 @@ footer.footer-fixed-position {
 .page-left-sidebar-hidden .header .header-nav .header-nav-list li.nav-mobile-toggle {
     margin-right: auto;
 }
+
+/* Hidden sidebar page: the header nav starts at the left edge (default is margin-left:auto). */
+.page-left-sidebar-hidden header .header-nav {
+    margin-left: 0;
+    width: 100%;
+}
