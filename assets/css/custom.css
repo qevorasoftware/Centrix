@@ -9081,3 +9081,12 @@ footer.footer-fixed-position {
     opacity: 1;
     visibility: visible;
 }
+
+/* Hidden sidebar page: menu button sits at the far left of the header. */
+.page-left-sidebar-hidden .header .header-nav .header-nav-list {
+    justify-content: flex-start;
+}
+
+.page-left-sidebar-hidden .header .header-nav .header-nav-list li.nav-mobile-toggle {
+    margin-right: auto;
+}
