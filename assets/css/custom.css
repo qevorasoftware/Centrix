@@ -9097,3 +9097,15 @@ footer.footer-fixed-position {
     width: 100%;
     padding-left: 0;
 }
+
+/* ---------- Right sidebar hover page (pages/right-sidebar-hover.html) ---------- */
+.page-right-sidebar-hover .rs-hover-strip {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 72px;
+    background: #1677FF;
+    z-index: 1040;
+    cursor: pointer;
+}
