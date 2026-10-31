@@ -9069,14 +9069,14 @@ footer.footer-fixed-position {
 
 .page-left-sidebar-hidden .nav-mobile-toggle .nav-link {
     display: block;
-    padding: 28px 22px;
+    padding: 29px 25px;
     line-height: 0;
 }
 
 .page-left-sidebar-hidden .nav-mobile-toggle img {
     display: block !important;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     max-width: none;
     opacity: 1;
     visibility: visible;
