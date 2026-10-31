@@ -9007,3 +9007,27 @@ footer.footer-fixed-position {
 .expandable-sidebar footer.footer-fixed-position {
     left: 110px;
 }
+
+/* ---------- Closed side menubar page (pages/left-sidebar-closed.html) ----------
+   Sidebar starts collapsed (body.expandable-sidebar). On hover it widens to the
+   full 260px menu as an overlay, so the page content does not move. */
+.page-left-sidebar-closed .sidebar {
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-left-sidebar-closed .sidebar:hover {
+    width: 260px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+
+.page-left-sidebar-closed .sidebar:hover .sidebar-nav .tree-header {
+    text-align: left;
+}
+
+.page-left-sidebar-closed .sidebar:hover .sidebar-nav .treeview .treeview-link {
+    justify-content: flex-start;
+}
+
+.page-left-sidebar-closed .sidebar:hover .sidebar-nav .treeview .treeview-link p {
+    display: block;
+}
