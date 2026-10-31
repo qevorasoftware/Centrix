@@ -9031,3 +9031,7 @@ footer.footer-fixed-position {
 .page-left-sidebar-closed .sidebar:hover .sidebar-nav .treeview .treeview-link p {
     display: block;
 }
+
+.page-left-sidebar-closed .sidebar:hover .sidebar-nav .treeview .treeview-link img {
+    margin-right: 10px;
+}
