@@ -9105,7 +9105,7 @@ footer.footer-fixed-position {
     right: 0;
     width: 18px;
     height: 72px;
-    background: #1677FF;
+    background: transparent;
     z-index: 1040;
     cursor: pointer;
 }
