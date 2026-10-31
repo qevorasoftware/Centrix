@@ -8994,3 +8994,16 @@ footer .design-by p a:focus {
     background: #1F1F1F;
     color: #FFFFFF;
 }
+
+/* Footer Fixed: start after the sidebar instead of spanning under it (width 100% + margin-left overflowed the right edge) */
+footer.footer-fixed-position {
+    left: 260px;
+    right: 0;
+    width: auto;
+    margin-left: 0;
+    z-index: 10;
+}
+
+.expandable-sidebar footer.footer-fixed-position {
+    left: 110px;
+}
