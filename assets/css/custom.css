@@ -9095,4 +9095,5 @@ footer.footer-fixed-position {
 .page-left-sidebar-hidden header .header-nav {
     margin-left: 0;
     width: 100%;
+    padding-left: 0;
 }
