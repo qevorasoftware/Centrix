@@ -9035,3 +9035,27 @@ footer.footer-fixed-position {
 .page-left-sidebar-closed .sidebar:hover .sidebar-nav .treeview .treeview-link img {
     margin-right: 10px;
 }
+
+/* ---------- Hidden side menubar page (pages/left-sidebar-hidden.html) ----------
+   Sidebar is removed from the layout; header, content and footer use the full
+   width. The menu button adds body.sidebar-open to show the sidebar as an overlay. */
+.page-left-sidebar-hidden .sidebar {
+    display: none !important;
+}
+
+.page-left-sidebar-hidden header,
+.page-left-sidebar-hidden #main,
+.page-left-sidebar-hidden footer {
+    margin-left: 0 !important;
+}
+
+.page-left-sidebar-hidden.sidebar-open .sidebar {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px !important;
+    z-index: 12;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
