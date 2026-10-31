@@ -61,6 +61,10 @@
             $('#rsHoverStrip').on('mouseenter', function () {
                 panel.addClass('theme-option-open');
             });
+            // Hovering the top-right menu icon in the header also opens the panel
+            $('.theme-option-bar').on('mouseenter', function () {
+                panel.addClass('theme-option-open');
+            });
             panel.on('mouseleave', function () {
                 panel.removeClass('theme-option-open');
             });
