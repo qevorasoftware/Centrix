@@ -52,9 +52,12 @@
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/extra.js"></script>
     <script>
-        // Menu button opens the hidden sidebar as an overlay and closes it again
+        // Menu button opens the hidden sidebar as a full (labelled) overlay and closes it again.
+        // custom.js also toggles the icon-only mode on this button; undo that here.
         $(document).on('click', '.toggle-sidebar-btn', function () {
+            $('body').removeClass('expandable-sidebar');
             $('body').toggleClass('sidebar-open');
+            if (typeof updateSidebarLogo === 'function') { updateSidebarLogo(); }
         });
     </script>
 </body>
