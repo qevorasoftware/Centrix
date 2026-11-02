@@ -9341,11 +9341,7 @@ footer.footer-fixed-position {
 
 /* ---------- Grid page (pages/grid.html) ---------- */
 .page-grid .gd-section {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
-    padding: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
 }
 
 .page-grid .gd-head {
@@ -9354,7 +9350,7 @@ footer.footer-fixed-position {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .page-grid .gd-head h3 {
@@ -9394,31 +9390,35 @@ footer.footer-fixed-position {
     background: #ffffff;
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
-    padding: 16px;
+    padding: 14px 16px;
     font-family: 'Metropolis';
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 20px;
     color: #000000;
-    text-align: center;
+    text-align: left;
 }
 
 .page-grid .gd-flat {
+    background: #ffffff;
     border: 1px solid #E8E8E8;
 }
 
 .page-grid .gd-flat-cell {
     border-right: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
-    padding: 16px;
+    padding: 14px 16px;
     font-family: 'Metropolis';
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 20px;
     color: #000000;
+    text-align: left;
     height: 100%;
 }
 
 .page-grid .gd-block {
     background: #ffffff;
-    border: 1px solid #E8E8E8;
     border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
     overflow: hidden;
 }
 
@@ -9426,13 +9426,13 @@ footer.footer-fixed-position {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 16px;
-    background: #F5F5F5;
+    padding: 14px 16px 6px;
 }
 
 .page-grid .gd-block-head h5 {
     font-family: 'Metropolis';
     font-size: 16px;
+    line-height: 22px;
     font-weight: 700;
     color: #000000;
     margin: 0;
@@ -9441,14 +9441,16 @@ footer.footer-fixed-position {
 .page-grid .gd-block p {
     font-family: 'Metropolis';
     font-size: 14px;
+    line-height: 20px;
     color: #A6A6A6;
-    padding: 10px 16px 14px;
+    padding: 0 16px 14px;
     margin: 0;
 }
 
 .page-grid .gd-para h5 {
     font-family: 'Metropolis';
     font-size: 16px;
+    line-height: 22px;
     font-weight: 700;
     color: #000000;
     margin: 0 0 8px;
@@ -9460,14 +9462,6 @@ footer.footer-fixed-position {
     line-height: 22px;
     color: #A6A6A6;
     margin: 0;
-    text-align: justify;
-}
-
-.page-grid.dark-mode .gd-section,
-.page-grid.dark-mode .gd-tile,
-.page-grid.dark-mode .gd-box,
-.page-grid.dark-mode .gd-block {
-    background: #1F1F1F;
 }
 
 .page-grid.dark-mode .gd-head h3,
@@ -9478,6 +9472,9 @@ footer.footer-fixed-position {
     color: #FFFFFF;
 }
 
-.page-grid.dark-mode .gd-block-head {
-    background: #2A2A2A;
+.page-grid.dark-mode .gd-tile,
+.page-grid.dark-mode .gd-box,
+.page-grid.dark-mode .gd-block,
+.page-grid.dark-mode .gd-flat {
+    background: #1F1F1F;
 }
