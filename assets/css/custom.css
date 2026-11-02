@@ -10612,3 +10612,20 @@ footer.footer-fixed-position {
         min-height: 188px;
     }
 }
+
+/* Horizontal Nav page: outer spacing matched to the reference (26px around content, cards sit on the section edge) */
+.page-horizontal-nav #main #content {
+    padding: 26px;
+}
+
+.page-horizontal-nav .hn-section {
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+@media (max-width: 767.98px) {
+    .page-horizontal-nav #main #content {
+        padding: 16px;
+    }
+}
