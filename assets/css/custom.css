@@ -9233,3 +9233,103 @@ footer.footer-fixed-position {
         padding: 8px 24px;
     }
 }
+
+/* ---------- Icon Packs page (pages/icon-packs.html) ---------- */
+.page-icon-packs .ip-pack {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.page-icon-packs .ip-pack-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background: #F5F5F5;
+    border: 0;
+    text-align: left;
+}
+
+.page-icon-packs .ip-pack-head h3 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-icon-packs .ip-pack-head h3 span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.page-icon-packs .ip-chevron {
+    color: #000000;
+    transition: transform 0.2s ease;
+}
+
+.page-icon-packs .ip-pack-head:not(.collapsed) .ip-chevron {
+    transform: rotate(180deg);
+}
+
+.page-icon-packs .ip-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px 16px;
+    padding: 24px 20px;
+}
+
+.page-icon-packs .ip-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page-icon-packs .ip-tile img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+}
+
+.page-icon-packs .ip-code {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 22px;
+    color: #E53935;
+    margin: 0;
+}
+
+.page-icon-packs.dark-mode .ip-pack {
+    background: #1F1F1F;
+}
+
+.page-icon-packs.dark-mode .ip-pack-head {
+    background: #2A2A2A;
+}
+
+.page-icon-packs.dark-mode .ip-pack-head h3,
+.page-icon-packs.dark-mode .ip-chevron {
+    color: #FFFFFF;
+}
+
+.page-icon-packs.dark-mode .ip-grid {
+    background: #1F1F1F;
+}
+
+@media (max-width: 991.98px) {
+    .page-icon-packs .ip-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-icon-packs .ip-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
