@@ -9218,3 +9218,18 @@ footer.footer-fixed-position {
 .page-api.dark-mode .api-item-body h5 {
     color: #FFFFFF;
 }
+
+/* API page: on mobile the Action button sits below the text and is smaller */
+@media (max-width: 767.98px) {
+    .page-api .api-item-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .page-api .api-action-btn {
+        align-self: flex-start;
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+}
