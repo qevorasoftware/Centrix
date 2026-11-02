@@ -10006,3 +10006,47 @@ footer.footer-fixed-position {
 .page-navigation.dark-mode .nv-pg-text:hover {
     color: #5AA9FF;
 }
+
+/* Navigation page: pagination text alignment */
+.page-navigation .nv-pg {
+    align-items: center;
+}
+
+.page-navigation .nv-pg-btn,
+.page-navigation .nv-pg-box,
+.page-navigation .nv-pg-num,
+.page-navigation .nv-pg-text,
+.page-navigation .nv-pg-chev {
+    box-sizing: border-box;
+    height: 36px;
+    min-width: 36px;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-navigation .nv-pg-text,
+.page-navigation .nv-pg-chev {
+    padding: 0 6px;
+}
+
+.page-navigation .nv-pg-btn,
+.page-navigation .nv-pg-box {
+    min-width: 0;
+}
+
+.page-navigation .nv-pg-box {
+    width: 36px;
+    padding: 0;
+}
+
+.page-navigation .nv-pg-chev svg,
+.page-navigation .nv-pg-box svg {
+    display: block;
+    flex: 0 0 auto;
+}
