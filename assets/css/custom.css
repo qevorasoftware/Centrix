@@ -10140,3 +10140,30 @@ footer.footer-fixed-position {
         padding: 0 8px;
     }
 }
+
+/* Navigation page: mobile segmented group, single clean 1px grid lines */
+@media (max-width: 767.98px) {
+    .page-navigation .nv-seg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background: #1677FF;
+        border: 1px solid #1677FF;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .page-navigation .nv-seg-item,
+    .page-navigation .nv-seg-item:nth-child(n) {
+        background: #ffffff;
+        border: 0;
+        margin: 0;
+        height: 44px;
+    }
+
+    .page-navigation .nv-seg-item.active,
+    .page-navigation .nv-seg-item.active:nth-child(n) {
+        background: #1677FF;
+        color: #ffffff;
+    }
+}
