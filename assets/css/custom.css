@@ -11568,3 +11568,27 @@ footer.footer-fixed-position {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
+/* Buttons page: card header labels (Fill / Square / Pill) share one size and sit on the same line */
+.page-buttons .bt-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 52px;
+    padding: 0 18px;
+}
+
+.page-buttons .bt-card-head h4,
+.page-buttons .bt-tag {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-buttons.dark-mode .bt-card-head h4,
+.page-buttons.dark-mode .bt-tag {
+    color: #FFFFFF;
+}
