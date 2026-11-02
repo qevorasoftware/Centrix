@@ -10526,3 +10526,55 @@ footer.footer-fixed-position {
         min-height: 70px;
     }
 }
+
+/* Horizontal Nav page: desktop measurements matched to the reference (768px and up) */
+@media (min-width: 768px) {
+    .page-horizontal-nav .hn-card {
+        margin-bottom: 18px;
+    }
+
+    .page-horizontal-nav .hn-bar {
+        padding: 12px 16px;
+        gap: 12px;
+    }
+
+    .page-horizontal-nav .hn-bar.hn-autofill {
+        gap: 13px;
+    }
+
+    .page-horizontal-nav .hn-item {
+        height: 34px;
+        padding: 0 13px;
+        gap: 10px;
+    }
+
+    .page-horizontal-nav .hn-caption {
+        padding: 14px 24px 0;
+    }
+
+    .page-horizontal-nav .hn-body {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .page-horizontal-nav .hn-full {
+        min-height: 88px;
+    }
+
+    .page-horizontal-nav .hn-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .page-horizontal-nav .hn-left {
+        min-height: 190px;
+    }
+
+    .page-horizontal-nav .hn-stack {
+        gap: 16px;
+    }
+
+    .page-horizontal-nav .hn-small {
+        min-height: 87px;
+    }
+}
