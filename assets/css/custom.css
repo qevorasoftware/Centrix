@@ -11220,3 +11220,70 @@ footer.footer-fixed-position {
 .page-tabs.dark-mode .tb-vtab-sub {
     color: #CFCFCF;
 }
+
+/* Tabs page: phone layout (up to 767.98px) - tabs stack above the content, no squeezed columns */
+@media (max-width: 767.98px) {
+    .page-tabs .tb-section-head h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .page-tabs .tb-vcard {
+        flex-direction: column;
+    }
+
+    .page-tabs .tb-vtabs {
+        flex: none;
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .page-tabs .tb-vtab {
+        height: 44px;
+        padding: 0 14px;
+        white-space: nowrap;
+    }
+
+    .page-tabs .tb-details .tb-vtabs {
+        flex: none;
+        width: 100%;
+        flex-direction: column;
+        overflow-x: visible;
+    }
+
+    .page-tabs .tb-details .tb-vtab {
+        min-height: 0;
+        height: auto;
+        padding: 12px 16px;
+        white-space: normal;
+    }
+
+    .page-tabs .tb-body,
+    .page-tabs .tb-details .tb-body {
+        padding: 16px;
+    }
+
+    .page-tabs .tb-ph,
+    .page-tabs .tb-details .tb-ph {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+    }
+
+    .page-tabs .tb-box,
+    .page-tabs .tb-details .tb-box {
+        height: 120px;
+    }
+
+    .page-tabs .tb-stack,
+    .page-tabs .tb-details .tb-stack {
+        grid-column: 1 / -1;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .page-tabs .tb-bar,
+    .page-tabs .tb-details .tb-bar {
+        height: 40px;
+    }
+}
