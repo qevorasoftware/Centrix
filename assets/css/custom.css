@@ -9478,3 +9478,130 @@ footer.footer-fixed-position {
 .page-grid.dark-mode .gd-flat {
     background: #1F1F1F;
 }
+
+/* ---------- Typography page (pages/typography.html) ---------- */
+.page-typography .ty-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+}
+
+.page-typography .ty-section-head {
+    padding: 16px 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+}
+
+.page-typography .ty-section-head h3 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-typography .ty-section .row {
+    padding: 16px;
+    margin: 0;
+}
+
+.page-typography .ty-card {
+    background: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.page-typography .ty-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #F5F5F5;
+}
+
+.page-typography .ty-card-head h4 {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-typography .ty-card-head span {
+    font-family: 'Metropolis';
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.page-typography .ty-card-body {
+    padding: 16px;
+    font-family: 'Metropolis';
+    color: #000000;
+}
+
+.page-typography .ty-card-body h1 { font-size: 44px; line-height: 56px; margin: 0 0 8px; font-weight: inherit; }
+.page-typography .ty-card-body h2 { font-size: 36px; line-height: 46px; margin: 0 0 8px; font-weight: inherit; }
+.page-typography .ty-card-body h3 { font-size: 28px; line-height: 36px; margin: 0 0 8px; font-weight: inherit; }
+.page-typography .ty-card-body h4 { font-size: 22px; line-height: 30px; margin: 0 0 8px; font-weight: inherit; }
+.page-typography .ty-card-body h5 { font-size: 18px; line-height: 24px; margin: 0 0 8px; font-weight: inherit; }
+.page-typography .ty-card-body h6 { font-size: 16px; line-height: 22px; margin: 0 0 8px; font-weight: inherit; }
+.page-typography .ty-card-body p { font-size: 14px; line-height: 20px; margin: 0; font-weight: inherit; }
+
+.page-typography .ty-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.page-typography .ty-badge,
+.page-typography .ty-badge-light {
+    display: inline-block;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 14px;
+    color: #ffffff;
+}
+
+.page-typography .ty-pill .ty-badge,
+.page-typography .ty-pill .ty-badge-light {
+    border-radius: 20px;
+}
+
+.page-typography .ty-rect .ty-badge,
+.page-typography .ty-rect .ty-badge-light {
+    border-radius: 4px;
+}
+
+.page-typography .ty-badge.ty-green { background: #0DA54B; }
+.page-typography .ty-badge.ty-orange { background: #EE9A14; }
+.page-typography .ty-badge.ty-blue { background: #1677FF; }
+.page-typography .ty-badge.ty-red { background: #E53935; }
+
+.page-typography .ty-badge-light.ty-green { background: #D4F4E2; color: #0DA54B; }
+.page-typography .ty-badge-light.ty-orange { background: #FDF0D5; color: #EE9A14; }
+.page-typography .ty-badge-light.ty-blue { background: #D6E8FF; color: #1677FF; }
+.page-typography .ty-badge-light.ty-red { background: #FBDCDA; color: #E53935; }
+
+.page-typography.dark-mode .ty-section,
+.page-typography.dark-mode .ty-card {
+    background: #1F1F1F;
+}
+
+.page-typography.dark-mode .ty-card-head {
+    background: #2A2A2A;
+}
+
+.page-typography.dark-mode .ty-card-head h4,
+.page-typography.dark-mode .ty-card-head span,
+.page-typography.dark-mode .ty-card-body {
+    color: #FFFFFF;
+}
