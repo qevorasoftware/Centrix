@@ -10886,3 +10886,271 @@ footer.footer-fixed-position {
     margin-right: auto;
     flex: 0 0 auto;
 }
+
+
+/* ---------- Tabs page (pages/tabs.html) ---------- */
+.page-tabs #main #content {
+    padding: 26px;
+}
+
+.page-tabs .tb-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 26px;
+}
+
+.page-tabs .tb-grid.tb-single {
+    grid-template-columns: 1fr;
+}
+
+.page-tabs .tb-section {
+    margin-bottom: 26px;
+    min-width: 0;
+}
+
+.page-tabs .tb-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.page-tabs .tb-section-head h3 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-tabs .tb-badge {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    color: #1677FF;
+    background: #DCEBFF;
+    border-radius: 20px;
+    padding: 6px 18px;
+    line-height: 20px;
+}
+
+.page-tabs .tb-card {
+    background: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Horizontal tabs */
+.page-tabs .tb-tabs {
+    display: flex;
+    align-items: stretch;
+    background: #F6F6F6;
+    height: 44px;
+}
+
+.page-tabs .tb-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 24px;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.page-tabs .tb-tab.active {
+    color: #1677FF;
+    background: #ffffff;
+}
+
+.page-tabs .tb-tab:hover:not(.active) {
+    color: #1677FF;
+}
+
+/* Vertical tabs */
+.page-tabs .tb-vcard {
+    display: flex;
+    align-items: stretch;
+}
+
+.page-tabs .tb-vtabs {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 128px;
+    background: #F6F6F6;
+}
+
+.page-tabs .tb-vtab {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+    padding: 0 22px;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    background: transparent;
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.page-tabs .tb-vtab.active {
+    color: #1677FF;
+    background: #ffffff;
+}
+
+.page-tabs .tb-vtab:hover:not(.active) {
+    color: #1677FF;
+}
+
+/* Vertical tab with details: two-line tab labels */
+.page-tabs .tb-details .tb-vtabs {
+    flex: 0 0 220px;
+}
+
+.page-tabs .tb-details .tb-vtab {
+    height: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+}
+
+.page-tabs .tb-vtab-sub {
+    font-size: 13px;
+    font-weight: 400;
+    color: #A6A6A6;
+}
+
+/* Body and placeholders */
+.page-tabs .tb-body {
+    flex: 1 1 auto;
+    padding: 18px;
+    min-width: 0;
+}
+
+.page-tabs .tb-title {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-tabs .tb-text {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    color: #A6A6A6;
+    margin: 10px 0 18px;
+}
+
+.page-tabs .tb-ph {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2.6fr;
+    gap: 13px;
+}
+
+.page-tabs .tb-box {
+    height: 153px;
+    background: #F6F6F6;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+.page-tabs .tb-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.page-tabs .tb-bar {
+    height: 42px;
+    background: #F6F6F6;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+}
+
+@media (max-width: 991.98px) {
+    .page-tabs #main #content {
+        padding: 16px;
+    }
+
+    .page-tabs .tb-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-tabs .tb-tabs {
+        overflow-x: auto;
+    }
+
+    .page-tabs .tb-tab {
+        padding: 0 14px;
+        white-space: nowrap;
+    }
+
+    .page-tabs .tb-vtabs {
+        flex-basis: 110px;
+    }
+
+    .page-tabs .tb-details .tb-vtabs {
+        flex-basis: 150px;
+    }
+
+    .page-tabs .tb-ph {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .page-tabs .tb-stack {
+        grid-column: 1 / -1;
+        flex-direction: row;
+    }
+
+    .page-tabs .tb-bar {
+        flex: 1 1 0;
+    }
+}
+
+.page-tabs.dark-mode .tb-card,
+.page-tabs.dark-mode .tb-body {
+    background: #1F1F1F;
+}
+
+.page-tabs.dark-mode .tb-card {
+    border-color: #3A3A3A;
+}
+
+.page-tabs.dark-mode .tb-tabs,
+.page-tabs.dark-mode .tb-vtabs {
+    background: #2A2A2A;
+}
+
+.page-tabs.dark-mode .tb-tab,
+.page-tabs.dark-mode .tb-vtab,
+.page-tabs.dark-mode .tb-title,
+.page-tabs.dark-mode .tb-section-head h3 {
+    color: #FFFFFF;
+}
+
+.page-tabs.dark-mode .tb-tab.active,
+.page-tabs.dark-mode .tb-vtab.active {
+    background: #1F1F1F;
+    color: #5AA9FF;
+}
+
+.page-tabs.dark-mode .tb-box,
+.page-tabs.dark-mode .tb-bar {
+    background: #2A2A2A;
+    border-color: #3A3A3A;
+}
