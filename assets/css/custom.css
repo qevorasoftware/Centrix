@@ -10872,3 +10872,18 @@ footer.footer-fixed-position {
         grid-row: auto !important;
     }
 }
+
+/* Mega Menu Normal page: keep the header menu left-aligned (bell and profile stay on the right) */
+.page-mega-menu-normal header .header-nav,
+.page-mega-menu-normal header .header-nav-list {
+    width: 100%;
+}
+
+.page-mega-menu-normal header .header-nav-list {
+    justify-content: flex-start;
+}
+
+.page-mega-menu-normal .mm-topnav-item {
+    margin-right: auto;
+    flex: 0 0 auto;
+}
