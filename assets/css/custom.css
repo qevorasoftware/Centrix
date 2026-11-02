@@ -11154,3 +11154,69 @@ footer.footer-fixed-position {
     background: #2A2A2A;
     border-color: #3A3A3A;
 }
+
+/* Tabs page: details sections match the full-page screenshot */
+.page-tabs .tb-details .tb-vtabs {
+    flex: 0 0 194px;
+}
+
+.page-tabs .tb-details .tb-vtab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    height: auto;
+    min-height: 88px;
+    padding: 14px 22px 12px;
+}
+
+.page-tabs .tb-details .tb-vtab-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.page-tabs .tb-details .tb-vtab-sub {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #333333;
+}
+
+.page-tabs .tb-details .tb-vtab.active .tb-vtab-name {
+    color: #1677FF;
+}
+
+.page-tabs .tb-details .tb-body {
+    padding: 22px 22px 22px 24px;
+}
+
+.page-tabs .tb-details .tb-text {
+    margin: 10px 0 20px;
+}
+
+.page-tabs .tb-details .tb-box {
+    height: 232px;
+}
+
+.page-tabs .tb-details .tb-bar {
+    height: 69px;
+}
+
+.page-tabs .tb-details .tb-stack {
+    gap: 11px;
+}
+
+.page-tabs .tb-details .tb-ph {
+    gap: 11px;
+}
+
+.page-tabs.dark-mode .tb-vtab-sub {
+    color: #CFCFCF;
+}
