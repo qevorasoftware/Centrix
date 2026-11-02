@@ -10050,3 +10050,93 @@ footer.footer-fixed-position {
     display: block;
     flex: 0 0 auto;
 }
+
+/* Navigation page: responsive (mobile, up to 767.98px) */
+@media (max-width: 767.98px) {
+    .page-navigation .nv-section-head {
+        padding: 14px 16px;
+    }
+
+    .page-navigation .nv-section-body {
+        padding: 12px;
+    }
+
+    .page-navigation .nv-card-body {
+        padding: 16px 12px;
+    }
+
+    .page-navigation .nv-crumb {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .page-navigation .nv-btns {
+        gap: 8px;
+    }
+
+    .page-navigation .nv-btn {
+        height: 38px;
+        padding: 0 12px;
+        font-size: 14px;
+    }
+
+    /* Segmented group: even 2 x 2 grid with clean borders */
+    .page-navigation .nv-seg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 0;
+        border: 1px solid #1677FF;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .page-navigation .nv-seg-item {
+        justify-content: center;
+        height: 44px;
+        padding: 0 8px;
+        font-size: 14px;
+        white-space: nowrap;
+        border-left: 0;
+        border-top: 1px solid #1677FF;
+    }
+
+    .page-navigation .nv-seg-item:nth-child(-n+2) {
+        border-top: 0;
+    }
+
+    .page-navigation .nv-seg-item:nth-child(odd) {
+        border-right: 1px solid #1677FF;
+    }
+
+    .page-navigation .nv-seg-item:nth-child(even) {
+        border-right: 0;
+    }
+
+    .page-navigation .nv-tab {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .page-navigation .nv-pg {
+        gap: 6px;
+    }
+
+    .page-navigation .nv-pg-btn,
+    .page-navigation .nv-pg-box,
+    .page-navigation .nv-pg-num,
+    .page-navigation .nv-pg-text,
+    .page-navigation .nv-pg-chev {
+        height: 32px;
+        min-width: 32px;
+        font-size: 14px;
+    }
+
+    .page-navigation .nv-pg-box {
+        width: 32px;
+    }
+
+    .page-navigation .nv-pg-btn {
+        padding: 0 8px;
+    }
+}
