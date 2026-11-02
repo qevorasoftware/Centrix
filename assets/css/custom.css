@@ -11592,3 +11592,28 @@ footer.footer-fixed-position {
 .page-buttons.dark-mode .bt-tag {
     color: #FFFFFF;
 }
+
+/* Buttons page: below 576px, one full-width button per line in a list */
+@media (max-width: 575.98px) {
+    .page-buttons .bt-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .page-buttons .bt-cell {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .page-buttons .bt-btn {
+        width: 100%;
+        min-width: 0;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .page-buttons .bt-card-body {
+        padding: 22px 16px;
+        gap: 22px;
+    }
+}
