@@ -9338,3 +9338,146 @@ footer.footer-fixed-position {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ---------- Grid page (pages/grid.html) ---------- */
+.page-grid .gd-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.page-grid .gd-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.page-grid .gd-head h3 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-grid .gd-badge {
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #1677FF;
+    background: #E6F0FF;
+    border-radius: 14px;
+    padding: 4px 14px;
+}
+
+.page-grid .gd-box {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    color: #E53935;
+}
+
+.page-grid .gd-tile {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    padding: 16px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.page-grid .gd-flat {
+    border: 1px solid #E8E8E8;
+}
+
+.page-grid .gd-flat-cell {
+    border-right: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 16px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    color: #000000;
+    height: 100%;
+}
+
+.page-grid .gd-block {
+    background: #ffffff;
+    border: 1px solid #E8E8E8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.page-grid .gd-block-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #F5F5F5;
+}
+
+.page-grid .gd-block-head h5 {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-grid .gd-block p {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    color: #A6A6A6;
+    padding: 10px 16px 14px;
+    margin: 0;
+}
+
+.page-grid .gd-para h5 {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 8px;
+}
+
+.page-grid .gd-para p {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 22px;
+    color: #A6A6A6;
+    margin: 0;
+    text-align: justify;
+}
+
+.page-grid.dark-mode .gd-section,
+.page-grid.dark-mode .gd-tile,
+.page-grid.dark-mode .gd-box,
+.page-grid.dark-mode .gd-block {
+    background: #1F1F1F;
+}
+
+.page-grid.dark-mode .gd-head h3,
+.page-grid.dark-mode .gd-tile,
+.page-grid.dark-mode .gd-flat-cell,
+.page-grid.dark-mode .gd-block-head h5,
+.page-grid.dark-mode .gd-para h5 {
+    color: #FFFFFF;
+}
+
+.page-grid.dark-mode .gd-block-head {
+    background: #2A2A2A;
+}
