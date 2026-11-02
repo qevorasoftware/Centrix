@@ -10447,3 +10447,82 @@ footer.footer-fixed-position {
         flex: 1 1 45%;
     }
 }
+
+/* Horizontal Nav page: mobile responsive and spacing (up to 767.98px) */
+@media (max-width: 767.98px) {
+    .page-horizontal-nav .hn-section {
+        padding: 10px;
+    }
+
+    .page-horizontal-nav .hn-card {
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+
+    .page-horizontal-nav .hn-bar,
+    .page-horizontal-nav .hn-bar.hn-center,
+    .page-horizontal-nav .hn-bar.hn-autofill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 12px;
+        justify-content: stretch;
+    }
+
+    .page-horizontal-nav .hn-dd,
+    .page-horizontal-nav .hn-bar.hn-autofill .hn-dd {
+        display: flex;
+        width: 100%;
+        flex: none;
+    }
+
+    .page-horizontal-nav .hn-item,
+    .page-horizontal-nav .hn-bar.hn-autofill .hn-item {
+        width: 100%;
+        height: 40px;
+        padding: 0 12px;
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .page-horizontal-nav .hn-item-main {
+        gap: 6px;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .page-horizontal-nav .hn-caption,
+    .page-horizontal-nav .hn-caption-center,
+    .page-horizontal-nav .hn-caption-autofill {
+        padding: 12px 12px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .page-horizontal-nav .hn-body {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .page-horizontal-nav .hn-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .page-horizontal-nav .hn-stack {
+        gap: 12px;
+    }
+
+    .page-horizontal-nav .hn-small {
+        min-height: 70px;
+    }
+
+    .page-horizontal-nav .hn-left {
+        min-height: 140px;
+    }
+
+    .page-horizontal-nav .hn-full {
+        min-height: 70px;
+    }
+}
