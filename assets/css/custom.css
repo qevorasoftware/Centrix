@@ -10629,3 +10629,34 @@ footer.footer-fixed-position {
         padding: 16px;
     }
 }
+
+/* Horizontal Nav page: dropdown sizes and spacing matched to the reference (768px and up) */
+@media (min-width: 768px) {
+    .page-horizontal-nav .hn-bar {
+        gap: 13px;
+    }
+
+    .page-horizontal-nav .hn-bar:not(.hn-autofill) .hn-dd {
+        flex: 0 0 auto;
+    }
+
+    .page-horizontal-nav .hn-bar:not(.hn-autofill) .hn-dd:nth-child(1) {
+        width: 121px;
+    }
+
+    .page-horizontal-nav .hn-bar:not(.hn-autofill) .hn-dd:nth-child(2) {
+        width: 100px;
+    }
+
+    .page-horizontal-nav .hn-bar:not(.hn-autofill) .hn-dd:nth-child(3) {
+        width: 129px;
+    }
+
+    .page-horizontal-nav .hn-bar:not(.hn-autofill) .hn-dd:nth-child(4) {
+        width: 154px;
+    }
+
+    .page-horizontal-nav .hn-item {
+        height: 34px;
+    }
+}
