@@ -12045,3 +12045,21 @@ footer.footer-fixed-position {
 .page-dropdowns .bt-cell {
     position: relative;
 }
+
+/* Dropdowns page: menu width is automatic (fits its content), never wider than needed */
+.page-dropdowns .bt-cell .dd {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.page-dropdowns .dd-menu {
+    width: max-content;
+    min-width: 100%;
+}
+
+@media (max-width: 575.98px) {
+    .page-dropdowns .bt-cell .dd {
+        width: 100%;
+    }
+}
