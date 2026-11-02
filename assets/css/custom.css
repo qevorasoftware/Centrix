@@ -11555,3 +11555,16 @@ footer.footer-fixed-position {
         font-size: 13px;
     }
 }
+
+/* Buttons page: 2 per line below 576px, 3 per line from the Bootstrap sm breakpoint (576px) up to 991px, 4 per line on desktop */
+@media (max-width: 575.98px) {
+    .page-buttons .bt-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .page-buttons .bt-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
