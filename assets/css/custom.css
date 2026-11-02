@@ -10578,3 +10578,8 @@ footer.footer-fixed-position {
         min-height: 87px;
     }
 }
+
+/* Horizontal Nav page: nav bar fill from the Figma frame (#F6F6F6) */
+.page-horizontal-nav .hn-bar {
+    background: #F6F6F6;
+}
