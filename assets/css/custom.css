@@ -9644,3 +9644,286 @@ footer.footer-fixed-position {
 .page-grid.dark-mode .gd-block p {
     color: #A6A6A6;
 }
+
+/* ---------- Navigation page (pages/navigation.html) ---------- */
+.page-navigation .nv-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.page-navigation .nv-section-head {
+    padding: 16px 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+}
+
+.page-navigation .nv-section-head h3 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-navigation .nv-section-body {
+    padding: 16px;
+}
+
+.page-navigation .nv-section-body .row {
+    margin: 0 0 16px;
+}
+
+.page-navigation .nv-card {
+    background: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.page-navigation .nv-card-head {
+    padding: 12px 16px;
+    background: #F5F5F5;
+}
+
+.page-navigation .nv-card-head h4 {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-navigation .nv-card-body {
+    padding: 20px 16px;
+    font-family: 'Metropolis';
+}
+
+.page-navigation .nv-card-body a {
+    text-decoration: none;
+}
+
+/* Breadcrumb */
+.page-navigation .nv-crumb {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page-navigation .nv-crumb-blue {
+    color: #1677FF;
+}
+
+.page-navigation .nv-crumb-grey {
+    color: #A6A6A6;
+}
+
+.page-navigation .nv-slash {
+    color: #A6A6A6;
+    margin: 0 8px;
+}
+
+/* Navigation: buttons */
+.page-navigation .nv-btns,
+.page-navigation .nv-tabs,
+.page-navigation .nv-seg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-navigation .nv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 18px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    color: #1677FF;
+    background: #ffffff;
+    border: 1px solid #1677FF;
+    border-radius: 4px;
+}
+
+.page-navigation .nv-btn.active {
+    color: #ffffff;
+    background: #1677FF;
+}
+
+/* Navigation: underline tabs */
+.page-navigation .nv-tabs {
+    gap: 0;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.page-navigation .nv-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.page-navigation .nv-tab.active {
+    color: #ffffff;
+    background: #9CC8FF;
+    border-bottom-color: #1677FF;
+}
+
+/* Navigation: segmented group */
+.page-navigation .nv-seg {
+    gap: 0;
+    display: inline-flex;
+    border: 1px solid #1677FF;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.page-navigation .nv-seg-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 18px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    background: #ffffff;
+}
+
+.page-navigation .nv-seg-item + .nv-seg-item {
+    border-left: 1px solid #1677FF;
+}
+
+.page-navigation .nv-seg-item.active {
+    color: #ffffff;
+    background: #1677FF;
+}
+
+/* Pagination */
+.page-navigation .nv-pg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.page-navigation .nv-pg-btn,
+.page-navigation .nv-pg-box,
+.page-navigation .nv-pg-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #1677FF;
+    color: #1677FF;
+    background: #ffffff;
+}
+
+.page-navigation .nv-pg-btn.filled,
+.page-navigation .nv-pg-box.filled,
+.page-navigation .nv-pg-num.filled {
+    color: #ffffff;
+    background: #1677FF;
+}
+
+.page-navigation .nv-pg-num.plain {
+    color: #000000;
+    border-color: transparent;
+    background: transparent;
+}
+
+.page-navigation .nv-pg-num.outline {
+    color: #1677FF;
+}
+
+.page-navigation .nv-pg-text,
+.page-navigation .nv-pg-chev {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    color: #A6A6A6;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.page-navigation .nv-pg-chev {
+    color: #A6A6A6;
+}
+
+.page-navigation .nv-pg-num.plain {
+    color: #A6A6A6;
+}
+
+.page-navigation .nv-style2 .nv-pg-num.plain,
+.page-navigation .nv-style4 .nv-pg-num.plain {
+    color: #000000;
+}
+
+.page-navigation .nv-style4 .nv-pg-chev {
+    color: #A6A6A6;
+}
+
+.page-navigation .nv-round .nv-pg-btn,
+.page-navigation .nv-round .nv-pg-box,
+.page-navigation .nv-round .nv-pg-num {
+    border-radius: 999px;
+}
+
+.page-navigation .nv-round .nv-pg-btn {
+    padding: 0 18px;
+}
+
+.page-navigation.dark-mode .nv-section,
+.page-navigation.dark-mode .nv-card,
+.page-navigation.dark-mode .nv-btn,
+.page-navigation.dark-mode .nv-seg-item {
+    background: #1F1F1F;
+}
+
+.page-navigation.dark-mode .nv-card {
+    border-color: #3A3A3A;
+}
+
+.page-navigation.dark-mode .nv-card-head {
+    background: #2A2A2A;
+}
+
+.page-navigation.dark-mode .nv-card-head h4,
+.page-navigation.dark-mode .nv-seg-item,
+.page-navigation.dark-mode .nv-tab,
+.page-navigation.dark-mode .nv-pg-num.plain {
+    color: #FFFFFF;
+}
+
+.page-navigation.dark-mode .nv-tabs {
+    border-bottom-color: #3A3A3A;
+}
+
+.page-navigation.dark-mode .nv-btn.active,
+.page-navigation.dark-mode .nv-seg-item.active,
+.page-navigation.dark-mode .nv-pg-num.filled,
+.page-navigation.dark-mode .nv-pg-btn.filled,
+.page-navigation.dark-mode .nv-pg-box.filled {
+    color: #FFFFFF;
+}
