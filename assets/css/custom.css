@@ -9620,3 +9620,27 @@ footer.footer-fixed-position {
 .page-typography.dark-mode .ty-card-body p {
     color: #FFFFFF;
 }
+
+/* Grid page, dark mode: dark borders on boxes, tiles, flat grid and blocks */
+.page-grid.dark-mode .gd-box {
+    border-color: #3A3A3A;
+}
+
+.page-grid.dark-mode .gd-flat {
+    border-color: #3A3A3A;
+}
+
+.page-grid.dark-mode .gd-flat-cell {
+    border-right-color: #3A3A3A;
+    border-bottom-color: #3A3A3A;
+}
+
+.page-grid.dark-mode .gd-tile,
+.page-grid.dark-mode .gd-block {
+    box-shadow: none;
+    border: 1px solid #3A3A3A;
+}
+
+.page-grid.dark-mode .gd-block p {
+    color: #A6A6A6;
+}
