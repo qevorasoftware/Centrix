@@ -11487,3 +11487,71 @@ footer.footer-fixed-position {
 .page-buttons.dark-mode .bt-fill.bt-light {
     color: #000000;
 }
+
+/* Buttons page: desktop sizes matched to the design (buttons were too small) */
+.page-buttons .bt-section-head h3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.page-buttons .bt-card-head {
+    padding: 14px 18px;
+}
+
+.page-buttons .bt-card-head h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.page-buttons .bt-tag {
+    font-size: 14px;
+}
+
+.page-buttons .bt-card-body {
+    padding: 22px 18px;
+    gap: 22px;
+}
+
+.page-buttons .bt-row {
+    gap: 18px;
+}
+
+.page-buttons .bt-cell {
+    gap: 10px;
+}
+
+.page-buttons .bt-btn {
+    min-width: 132px;
+    height: 34px;
+    padding: 0 16px;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.page-buttons .bt-btn.bt-pill {
+    border-radius: 24px;
+}
+
+.page-buttons .bt-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+.page-buttons .bt-code {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+@media (max-width: 991.98px) {
+    .page-buttons .bt-btn {
+        min-width: 120px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .page-buttons .bt-code {
+        font-size: 13px;
+    }
+}
