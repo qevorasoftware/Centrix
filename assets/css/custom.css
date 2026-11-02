@@ -10734,8 +10734,7 @@ footer.footer-fixed-position {
     overflow: hidden;
 }
 
-.page-mega-menu-normal .mm-item.open .mm-panel,
-.page-mega-menu-normal .mm-item:hover .mm-panel {
+.page-mega-menu-normal .mm-item.open .mm-panel {
     display: block;
 }
 
