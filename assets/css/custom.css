@@ -9109,3 +9109,112 @@ footer.footer-fixed-position {
     z-index: 1040;
     cursor: pointer;
 }
+
+/* ---------- API page (pages/api.html) ---------- */
+.page-api .api-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.page-api .api-section-head {
+    padding: 18px 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+}
+
+.page-api .api-section-head h3 {
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-api .api-item {
+    margin: 16px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.page-api .api-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+}
+
+.page-api .api-item-head h4 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 6px;
+}
+
+.page-api .api-item-head p {
+    font-family: 'Metropolis';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin: 0;
+}
+
+.page-api .api-action-btn {
+    flex: 0 0 auto;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1677FF;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.page-api .api-item-body {
+    padding: 16px 20px 20px;
+    background: #ffffff;
+}
+
+.page-api .api-item-body h5 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 12px 0 6px 16px;
+}
+
+.page-api .api-item-body h5:first-child {
+    margin-top: 0;
+}
+
+.page-api .api-code {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 22px;
+    color: #E53935;
+    margin: 0 0 12px 16px;
+}
+
+.page-api.dark-mode .api-section,
+.page-api.dark-mode .api-item-body {
+    background: #1F1F1F;
+}
+
+.page-api.dark-mode .api-item {
+    background: #2A2A2A;
+}
+
+.page-api.dark-mode .api-item-head h4,
+.page-api.dark-mode .api-item-head p,
+.page-api.dark-mode .api-item-body h5 {
+    color: #FFFFFF;
+}
