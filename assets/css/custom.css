@@ -11287,3 +11287,13 @@ footer.footer-fixed-position {
         height: 40px;
     }
 }
+
+/* Tabs page: phone bars keep their height when stacked (no flex shrink to lines) */
+@media (max-width: 767.98px) {
+    .page-tabs .tb-stack .tb-bar,
+    .page-tabs .tb-details .tb-stack .tb-bar {
+        flex: 0 0 auto;
+        height: 40px;
+        min-height: 40px;
+    }
+}
