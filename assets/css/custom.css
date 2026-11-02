@@ -11291,3 +11291,199 @@ footer.footer-fixed-position {
         min-height: 40px;
     }
 }
+
+/* ---------- Buttons page (pages/buttons.html) ---------- */
+.page-buttons #main #content {
+    padding: 26px;
+}
+
+.page-buttons .bt-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    margin-bottom: 26px;
+}
+
+.page-buttons .bt-section-head {
+    padding: 16px 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+}
+
+.page-buttons .bt-section-head h3 {
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.page-buttons .bt-section-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page-buttons .bt-card {
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.page-buttons .bt-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #F6F6F6;
+}
+
+.page-buttons .bt-card-head h4 {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.page-buttons .bt-tag {
+    font-family: 'Metropolis';
+    font-size: 12px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-buttons .bt-card-body {
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page-buttons .bt-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.page-buttons .bt-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.page-buttons .bt-code {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 12px;
+    line-height: 16px;
+    color: #E53935;
+}
+
+.page-buttons .bt-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-width: 86px;
+    height: 26px;
+    padding: 0 12px;
+    font-family: 'Metropolis';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    border: 1.5px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
+}
+
+.page-buttons .bt-btn.bt-pill {
+    border-radius: 20px;
+}
+
+.page-buttons .bt-primary { --bt-c: #1677FF; }
+.page-buttons .bt-secondary { --bt-c: #8C8C8C; }
+.page-buttons .bt-success { --bt-c: #0DA54B; }
+.page-buttons .bt-info { --bt-c: #7DB3FF; }
+.page-buttons .bt-warning { --bt-c: #E8961E; }
+.page-buttons .bt-danger { --bt-c: #FF3B3B; }
+.page-buttons .bt-dark { --bt-c: #4A4A4A; }
+.page-buttons .bt-light { --bt-c: #CFCFCF; }
+
+.page-buttons .bt-fill.bt-btn {
+    background: var(--bt-c);
+    border-color: var(--bt-c);
+    color: #ffffff;
+}
+
+.page-buttons .bt-fill.bt-light {
+    color: #000000;
+}
+
+.page-buttons .bt-fill.bt-btn:hover {
+    filter: brightness(0.92);
+}
+
+.page-buttons .bt-stroke.bt-btn {
+    background: #ffffff;
+    border-color: var(--bt-c);
+    color: var(--bt-c);
+}
+
+.page-buttons .bt-stroke.bt-light {
+    color: #C4C4C4;
+}
+
+.page-buttons .bt-stroke.bt-btn:hover {
+    background: var(--bt-c);
+    color: #ffffff;
+}
+
+.page-buttons .bt-stroke.bt-light:hover {
+    color: #ffffff;
+}
+
+.page-buttons .bt-btn svg {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 991.98px) {
+    .page-buttons #main #content {
+        padding: 16px;
+    }
+
+    .page-buttons .bt-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 16px;
+    }
+}
+
+.page-buttons.dark-mode .bt-section,
+.page-buttons.dark-mode .bt-card {
+    background: #1F1F1F;
+    border-color: #3A3A3A;
+}
+
+.page-buttons.dark-mode .bt-card-head {
+    background: #2A2A2A;
+}
+
+.page-buttons.dark-mode .bt-card-head h4,
+.page-buttons.dark-mode .bt-tag {
+    color: #FFFFFF;
+}
+
+.page-buttons.dark-mode .bt-stroke.bt-btn {
+    background: #1F1F1F;
+}
+
+.page-buttons.dark-mode .bt-fill.bt-light {
+    color: #000000;
+}
