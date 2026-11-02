@@ -12027,3 +12027,21 @@ footer.footer-fixed-position {
         min-width: 100%;
     }
 }
+
+/* Dropdowns page: let open menus show outside their card and section (no clipping) */
+.page-dropdowns .bt-section,
+.page-dropdowns .bt-card {
+    overflow: visible;
+}
+
+.page-dropdowns .bt-card-head {
+    border-radius: 8px 8px 0 0;
+}
+
+.page-dropdowns .bt-section-head {
+    border-radius: 8px 8px 0 0;
+}
+
+.page-dropdowns .bt-cell {
+    position: relative;
+}
