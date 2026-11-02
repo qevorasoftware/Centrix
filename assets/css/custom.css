@@ -9927,3 +9927,82 @@ footer.footer-fixed-position {
 .page-navigation.dark-mode .nv-pg-box.filled {
     color: #FFFFFF;
 }
+
+/* ---------- Navigation page: hover effects ---------- */
+.page-navigation .nv-btn,
+.page-navigation .nv-seg-item,
+.page-navigation .nv-tab,
+.page-navigation .nv-pg-btn,
+.page-navigation .nv-pg-box,
+.page-navigation .nv-pg-num,
+.page-navigation .nv-pg-text,
+.page-navigation .nv-pg-chev,
+.page-navigation .nv-crumb a {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-navigation .nv-btn:hover:not(.active),
+.page-navigation .nv-seg-item:hover:not(.active) {
+    color: #ffffff;
+    background: #1677FF;
+    box-shadow: 0 4px 10px rgba(22, 119, 255, 0.25);
+}
+
+.page-navigation .nv-btn.active:hover,
+.page-navigation .nv-seg-item.active:hover {
+    box-shadow: 0 4px 10px rgba(22, 119, 255, 0.25);
+}
+
+.page-navigation .nv-tab:hover:not(.active) {
+    color: #1677FF;
+    border-bottom-color: #1677FF;
+}
+
+.page-navigation .nv-tab.active:hover {
+    background: #7FB6FF;
+}
+
+.page-navigation .nv-pg-btn:hover,
+.page-navigation .nv-pg-box:hover,
+.page-navigation .nv-pg-num:hover:not(.filled):not(.plain) {
+    color: #ffffff;
+    background: #1677FF;
+}
+
+.page-navigation .nv-pg-btn.filled:hover,
+.page-navigation .nv-pg-box.filled:hover,
+.page-navigation .nv-pg-num.filled:hover {
+    background: #0B5ED7;
+}
+
+.page-navigation .nv-pg-num.plain:hover,
+.page-navigation .nv-pg-text:hover,
+.page-navigation .nv-pg-chev:hover {
+    color: #1677FF;
+}
+
+.page-navigation .nv-crumb a:hover,
+.page-navigation .nv-crumb-blue:hover {
+    text-decoration: underline;
+    color: #0B5ED7;
+}
+
+.page-navigation .nv-btn:focus-visible,
+.page-navigation .nv-tab:focus-visible,
+.page-navigation .nv-seg-item:focus-visible,
+.page-navigation .nv-pg-btn:focus-visible,
+.page-navigation .nv-pg-box:focus-visible,
+.page-navigation .nv-pg-num:focus-visible {
+    outline: 2px solid #1677FF;
+    outline-offset: 2px;
+}
+
+.page-navigation.dark-mode .nv-tab:hover:not(.active) {
+    color: #5AA9FF;
+    border-bottom-color: #5AA9FF;
+}
+
+.page-navigation.dark-mode .nv-pg-num.plain:hover,
+.page-navigation.dark-mode .nv-pg-text:hover {
+    color: #5AA9FF;
+}
