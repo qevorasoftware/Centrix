@@ -13165,3 +13165,130 @@ footer.footer-fixed-position {
 .page-modals.dark-mode .modal-footer {
     border-color: #3A3A3A;
 }
+
+/* ---------- Ribbons page (pages/ribbons.html) ---------- */
+.page-ribbons #main #content {
+    padding: 26px;
+}
+
+.page-ribbons .rb-group + .rb-group {
+    margin-top: 30px;
+}
+
+.page-ribbons .rb-group-title {
+    margin: 0 0 14px;
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-ribbons .rb-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.page-ribbons .rb-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 190px;
+    padding: 24px 16px;
+    background: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.page-ribbons .rb-icon {
+    color: #1677FF;
+    margin-bottom: 8px;
+}
+
+.page-ribbons .rb-num {
+    font-family: 'Metropolis';
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-ribbons .rb-label {
+    font-family: 'Metropolis';
+    font-size: 16px;
+    line-height: 22px;
+    color: #A3A3A3;
+}
+
+/* Bookmark ribbon: angled tag flush with the card's top-right corner */
+.page-ribbons .rb-ribbon {
+    position: absolute;
+    top: 18px;
+    right: -1px;
+    height: 36px;
+    padding: 0 18px 0 26px;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #1677FF 0%, #6AAEFF 100%);
+    clip-path: polygon(14px 0, 100% 0, 100% 100%, 14px 100%, 0 50%);
+}
+
+/* Icon badge: small coloured tab overhanging the card's top-right edge */
+.page-ribbons .rb-badge {
+    position: absolute;
+    top: 18px;
+    right: -9px;
+    width: 58px;
+    height: 37px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.page-ribbons .rb-blue { background: linear-gradient(90deg, #1677FF 0%, #7AB6FF 100%); }
+.page-ribbons .rb-orange { background: linear-gradient(90deg, #E8961E 0%, #FFC978 100%); }
+.page-ribbons .rb-green { background: linear-gradient(90deg, #0DA54B 0%, #5FD38C 100%); }
+.page-ribbons .rb-red { background: linear-gradient(90deg, #E53935 0%, #FF6A6A 100%); }
+
+@media (max-width: 1199.98px) {
+    .page-ribbons .rb-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .page-ribbons #main #content {
+        padding: 16px;
+    }
+
+    .page-ribbons .rb-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-ribbons .rb-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.page-ribbons.dark-mode .rb-card {
+    background: #1F1F1F;
+    border-color: #3A3A3A;
+}
+
+.page-ribbons.dark-mode .rb-group-title,
+.page-ribbons.dark-mode .rb-num {
+    color: #FFFFFF;
+}
