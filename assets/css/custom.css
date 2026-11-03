@@ -13225,13 +13225,13 @@ footer.footer-fixed-position {
     color: #A3A3A3;
 }
 
-/* Bookmark ribbon: tag flush with the card's top-right edge, notched (bookmark) left end with a darker fold */
+/* Bookmark ribbon: flat tag flush with the card's top-right edge, V-notch cut into the left end (matches the reference) */
 .page-ribbons .rb-ribbon {
     position: absolute;
     top: 18px;
     right: 0;
     height: 36px;
-    padding: 0 18px 0 24px;
+    padding: 0 18px 0 28px;
     display: inline-flex;
     align-items: center;
     font-family: 'Metropolis';
@@ -13239,29 +13239,7 @@ footer.footer-fixed-position {
     font-weight: 600;
     color: #ffffff;
     background: linear-gradient(90deg, #1677FF 0%, #6AAEFF 100%);
-}
-
-.page-ribbons .rb-ribbon::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-left: 12px solid #ffffff;
-}
-
-.page-ribbons .rb-ribbon::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 12px;
-    height: 10px;
-    background: #0B4FB8;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 12px 50%);
 }
 
 /* Icon badge: small coloured tab overhanging the card's top-right edge */
@@ -13303,10 +13281,6 @@ footer.footer-fixed-position {
     .page-ribbons .rb-grid {
         grid-template-columns: minmax(0, 1fr);
     }
-}
-
-.page-ribbons.dark-mode .rb-ribbon::before {
-    border-left-color: #1F1F1F;
 }
 
 .page-ribbons.dark-mode .rb-card {
