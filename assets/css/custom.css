@@ -13658,3 +13658,16 @@ footer.footer-fixed-position {
     background: #1B3A5E;
     color: #FFFFFF;
 }
+
+/* Steps page: step columns by breakpoint - 1 per line below 576px, 2 per line from 576px to 991px, 6 on desktop */
+@media (max-width: 575.98px) {
+    .page-steps .st-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .page-steps .st-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
