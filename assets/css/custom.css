@@ -12513,3 +12513,8 @@ footer.footer-fixed-position {
     border-color: #3A3A3A;
     color: #BFBFBF;
 }
+
+/* Tooltips page z-index: lift the content wrapper above the sidebar (z-index 11) so the Left tooltip is not hidden. Scoped to this page only. */
+.page-tooltips #main {
+    z-index: 20 !important;
+}
