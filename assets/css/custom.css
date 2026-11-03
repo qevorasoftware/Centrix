@@ -12516,5 +12516,5 @@ footer.footer-fixed-position {
 
 /* Tooltips page z-index: lift the content wrapper above the sidebar (z-index 11) so the Left tooltip is not hidden. Scoped to this page only. */
 .page-tooltips #main {
-    z-index: 20 !important;
+    z-index: 20;
 }
