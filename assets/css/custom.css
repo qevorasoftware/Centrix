@@ -813,6 +813,7 @@ header.header-fixed-position {
 
 .expandable-sidebar header.header-fixed-position {
     left: 110px;
+    margin-left: 0;
 }
 
 .sidebar {
