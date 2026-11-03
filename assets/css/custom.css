@@ -12783,3 +12783,189 @@ footer.footer-fixed-position {
 .page-popovers.dark-mode .pp-tip-body {
     color: #BFBFBF;
 }
+
+/* ---------- Accordion page (pages/accordion.html) ---------- */
+.page-accordion #main #content {
+    padding: 26px;
+}
+
+.page-accordion .ac-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-accordion .ac-section-head {
+    padding: 16px 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+    border-radius: 8px 8px 0 0;
+}
+
+.page-accordion .ac-section-head h3 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.page-accordion .ac-section-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page-accordion .ac-card {
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.page-accordion .ac-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 18px;
+    background: #F6F6F6;
+}
+
+.page-accordion .ac-card-head h4 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-accordion .ac-tag {
+    font-family: 'Metropolis';
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.page-accordion .ac-card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-accordion .ac-boxed .ac-card-body {
+    gap: 10px;
+}
+
+.page-accordion .ac-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-accordion .ac-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 14px;
+    background: #ffffff;
+    border: 0;
+    text-align: left;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+}
+
+.page-accordion .ac-boxed .ac-head {
+    background: #F6F6F6;
+    border-radius: 6px;
+}
+
+.page-accordion .ac-flat .ac-item {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.page-accordion .ac-flat .ac-item:last-child {
+    border-bottom: 0;
+}
+
+.page-accordion .ac-flat .ac-head {
+    padding: 14px 14px;
+}
+
+.page-accordion .ac-chev {
+    flex: 0 0 auto;
+    color: #000000;
+    transition: transform 0.25s ease;
+}
+
+.page-accordion .ac-item.open .ac-chev {
+    transform: rotate(180deg);
+}
+
+.page-accordion .ac-panel {
+    display: none;
+    padding: 4px 14px 16px;
+}
+
+.page-accordion .ac-item.open .ac-panel {
+    display: block;
+}
+
+.page-accordion .ac-panel p {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 22px;
+    color: #B3B3B3;
+}
+
+@media (max-width: 991.98px) {
+    .page-accordion #main #content {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-accordion .ac-card-head {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px;
+        padding: 10px 14px;
+    }
+}
+
+.page-accordion.dark-mode .ac-section,
+.page-accordion.dark-mode .ac-card {
+    background: #1F1F1F;
+    border-color: #3A3A3A;
+}
+
+.page-accordion.dark-mode .ac-card-head {
+    background: #2A2A2A;
+}
+
+.page-accordion.dark-mode .ac-card-head h4,
+.page-accordion.dark-mode .ac-tag,
+.page-accordion.dark-mode .ac-head,
+.page-accordion.dark-mode .ac-chev {
+    color: #FFFFFF;
+}
+
+.page-accordion.dark-mode .ac-head {
+    background: #1F1F1F;
+}
+
+.page-accordion.dark-mode .ac-boxed .ac-head {
+    background: #2A2A2A;
+}
+
+.page-accordion.dark-mode .ac-flat .ac-item {
+    border-color: #3A3A3A;
+}
