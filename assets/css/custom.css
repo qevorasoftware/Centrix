@@ -12330,7 +12330,7 @@ footer.footer-fixed-position {
 }
 
 .page-tooltips .tt-card-body {
-    padding: 18px 18px 16px;
+    padding: 18px 17px 16px;
 }
 
 .page-tooltips .tt-two {
@@ -12365,11 +12365,11 @@ footer.footer-fixed-position {
 
 .page-tooltips .tt-tip {
     position: absolute;
-    width: 72px;
-    padding: 4px 6px;
+    width: 74px;
+    padding: 4px 4px;
     font-family: 'Metropolis';
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 11px;
+    line-height: 13px;
     text-align: center;
     color: #8C8C8C;
     background: #ffffff;
@@ -12388,7 +12388,7 @@ footer.footer-fixed-position {
 
 /* Left: to the left of the button */
 .page-tooltips .tt-tip-left {
-    right: calc(100% + 10px);
+    right: calc(100% + 9px);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -12404,7 +12404,7 @@ footer.footer-fixed-position {
 
 /* Right: to the right of the button */
 .page-tooltips .tt-tip-right {
-    left: calc(100% + 10px);
+    left: calc(100% + 9px);
     top: 50%;
     transform: translateY(-50%);
 }
@@ -12437,7 +12437,7 @@ footer.footer-fixed-position {
 /* Bottom: below the button */
 .page-tooltips .tt-tip-bottom {
     left: 50%;
-    top: calc(100% + 10px);
+    top: calc(100% + 8px);
     transform: translateX(-50%);
 }
 
@@ -12512,36 +12512,4 @@ footer.footer-fixed-position {
     background: #1F1F1F;
     border-color: #3A3A3A;
     color: #BFBFBF;
-}
-
-/* Tooltips page overlap fix: room around each card's tooltips so they never sit on other elements */
-.page-tooltips .tt-tip {
-    width: 88px;
-    white-space: normal;
-}
-
-.page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-card-body {
-    padding: 18px 110px 16px;
-}
-
-.page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-two {
-    gap: 40px;
-}
-
-.page-tooltips .tt-grid > .tt-card:nth-child(2) .tt-card-body {
-    padding: 56px 18px 56px;
-}
-
-@media (max-width: 767.98px) {
-    .page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-card-body {
-        padding: 56px 18px 16px;
-    }
-
-    .page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-two {
-        gap: 18px;
-    }
-
-    .page-tooltips .tt-grid > .tt-card:nth-child(2) .tt-card-body {
-        padding: 56px 18px 56px;
-    }
 }
