@@ -1,45 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" id="palette">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="title" content="Centrix - Mega Menu Normal">
-    <meta name="description" content="Normal mega menu in the header on Centrix.">
-    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
-    <meta name="author" content="Centrix">
-    <meta name=theme-color content="#000000">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="title" content="Centrix - Mega Menu Normal" />
+    <meta name="description" content="Normal mega menu in the header on Centrix." />
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates" />
+    <meta name="author" content="Centrix" />
+    <meta name="theme-color" content="#000000" />
     <title>Centrix - Mega Menu Normal</title>
-    <meta property=og:title content="Centrix - Mega Menu Normal">
-    <meta property=og:description content="Normal mega menu in the header on Centrix.">
-    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/custom.css?v=megamenu1">
-    <link rel="stylesheet" href="../assets/css/media.css?v=megamenu1">
-</head>
+    <meta property="og:title" content="Centrix - Mega Menu Normal" />
+    <meta property="og:description" content="Normal mega menu in the header on Centrix." />
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css?v=megamenu1" />
+    <link rel="stylesheet" href="../assets/css/media.css?v=megamenu1" />
+  </head>
 
-<body class="page-full-width page-mega-menu-normal light-mode" id="body">
+  <body class="page-full-width page-mega-menu-normal light-mode" id="body">
     <centrix-header></centrix-header>
     <div id="main" class="main-wrapper fullwidthlayout">
-        <!-- Hero banner: full-width .breadcrumb, kept OUTSIDE #content (same as Full Width) -->
-        <div class="breadcrumb fw-hero">
-            <h1>Mega Menu</h1>
-            <p>Elements</p>
-        </div>
+      <!-- Hero banner: full-width .breadcrumb, kept OUTSIDE #content (same as Full Width) -->
+      <div class="breadcrumb fw-hero">
+        <h1>Mega Menu</h1>
+        <p>Elements</p>
+      </div>
 
-        <div id="content" class="section-wrapper content">
-            <div class="body_part">
-                <div class="fw-wrap">
-                    <div class="mm-menu-card">
-                        <div class="mm-menu-head"><h4>Menu</h4></div>
-                        <div class="mm-menu-body">You can create mega menus in the header.</div>
-                    </div>
-                    <div class="mm-grid"><div class="mm-box mm-full">....</div><div class="mm-box mm-tall">....</div><div class="mm-box mm-c2">....</div><div class="mm-box mm-c2b">....</div><div class="mm-box mm-full mm-row4">....</div><div class="mm-box mm-l5">....</div><div class="mm-box mm-l6">....</div><div class="mm-box mm-tallr">....</div></div>
-                </div>
+      <div id="content" class="section-wrapper content">
+        <div class="body_part">
+          <div class="fw-wrap">
+            <div class="mm-menu-card">
+              <div class="mm-menu-head"><h4>Menu</h4></div>
+              <div class="mm-menu-body">You can create mega menus in the header.</div>
             </div>
+            <div class="mm-grid">
+              <div class="mm-box mm-full">....</div>
+              <div class="mm-box mm-tall">....</div>
+              <div class="mm-box mm-c2">....</div>
+              <div class="mm-box mm-c2b">....</div>
+              <div class="mm-box mm-full mm-row4">....</div>
+              <div class="mm-box mm-l5">....</div>
+              <div class="mm-box mm-l6">....</div>
+              <div class="mm-box mm-tallr">....</div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <centrix-footer></centrix-footer>
 
@@ -48,31 +59,44 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/extra.js"></script>
-<script>
-(function () {
-    var list = document.querySelector('.header-nav-list');
-    if (!list) { return; }
-    var li = document.createElement('li');
-    li.className = 'nav-item mm-topnav-item';
-    li.innerHTML = "<ul class=\"mm-topnav\"><li class=\"mm-item\"><button type=\"button\" class=\"mm-btn active\" aria-haspopup=\"true\" aria-expanded=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 11l9-8 9 8M5 10v10h14V10\"/></svg><span>Home</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9l6 6 6-6\"/></svg></button><div class=\"mm-panel\" role=\"menu\"><div class=\"mm-panel-head\"><h4>Home</h4></div><div class=\"mm-panel-body\"><a href=\"#\" class=\"mm-link active\" role=\"menuitem\">Blocks</a><a href=\"#\" class=\"mm-link\" role=\"menuitem\">Widgets</a><a href=\"#\" class=\"mm-link\" role=\"menuitem\">Layout</a><a href=\"#\" class=\"mm-link\" role=\"menuitem\">Elements</a><a href=\"#\" class=\"mm-link\" role=\"menuitem\">Tables</a><a href=\"#\" class=\"mm-link\" role=\"menuitem\">Forms</a></div></div></li><li class=\"mm-item\"><button type=\"button\" class=\"mm-btn\" aria-haspopup=\"true\" aria-expanded=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"13\" height=\"13\" rx=\"2\"/><path d=\"M8 20h11a2 2 0 0 0 2-2V8\"/></svg><span>Kit</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9l6 6 6-6\"/></svg></button><div class=\"mm-panel\" role=\"menu\"><div class=\"mm-panel-head\"><h4>Kit</h4></div><div class=\"mm-panel-body\"><p class=\"mm-placeholder\">Menu content will be added here.</p></div></div></li><li class=\"mm-item\"><button type=\"button\" class=\"mm-btn\" aria-haspopup=\"true\" aria-expanded=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M2 10h20\"/></svg><span>Project</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9l6 6 6-6\"/></svg></button><div class=\"mm-panel\" role=\"menu\"><div class=\"mm-panel-head\"><h4>Project</h4></div><div class=\"mm-panel-body\"><p class=\"mm-placeholder\">Menu content will be added here.</p></div></div></li><li class=\"mm-item\"><button type=\"button\" class=\"mm-btn\" aria-haspopup=\"true\" aria-expanded=\"false\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 12l4-4\"/></svg><span>Dashboard</span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 9l6 6 6-6\"/></svg></button><div class=\"mm-panel\" role=\"menu\"><div class=\"mm-panel-head\"><h4>Dashboard</h4></div><div class=\"mm-panel-body\"><p class=\"mm-placeholder\">Menu content will be added here.</p></div></div></li></ul>";
-    list.insertBefore(li, list.firstChild);
-    var btns = li.querySelectorAll('.mm-btn');
-    btns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
+    <script>
+      (function () {
+        var list = document.querySelector(".header-nav-list");
+        if (!list) {
+          return;
+        }
+        var li = document.createElement("li");
+        li.className = "nav-item mm-topnav-item";
+        li.innerHTML =
+          '<ul class="mm-topnav"><li class="mm-item"><button type="button" class="mm-btn active" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg><span>Home</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mm-panel" role="menu"><div class="mm-panel-head"><h4>Home</h4></div><div class="mm-panel-body"><a href="#" class="mm-link active" role="menuitem">Blocks</a><a href="#" class="mm-link" role="menuitem">Widgets</a><a href="#" class="mm-link" role="menuitem">Layout</a><a href="#" class="mm-link" role="menuitem">Elements</a><a href="#" class="mm-link" role="menuitem">Tables</a><a href="#" class="mm-link" role="menuitem">Forms</a></div></div></li><li class="mm-item"><button type="button" class="mm-btn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="13" height="13" rx="2"/><path d="M8 20h11a2 2 0 0 0 2-2V8"/></svg><span>Kit</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mm-panel" role="menu"><div class="mm-panel-head"><h4>Kit</h4></div><div class="mm-panel-body"><p class="mm-placeholder">Menu content will be added here.</p></div></div></li><li class="mm-item"><button type="button" class="mm-btn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span>Project</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mm-panel" role="menu"><div class="mm-panel-head"><h4>Project</h4></div><div class="mm-panel-body"><p class="mm-placeholder">Menu content will be added here.</p></div></div></li><li class="mm-item"><button type="button" class="mm-btn" aria-haspopup="true" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-4"/></svg><span>Dashboard</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><div class="mm-panel" role="menu"><div class="mm-panel-head"><h4>Dashboard</h4></div><div class="mm-panel-body"><p class="mm-placeholder">Menu content will be added here.</p></div></div></li></ul>';
+        list.insertBefore(li, list.firstChild);
+        var btns = li.querySelectorAll(".mm-btn");
+        btns.forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
             e.stopPropagation();
             var item = btn.parentElement;
-            var open = item.classList.contains('open');
-            li.querySelectorAll('.mm-item.open').forEach(function (i) { i.classList.remove('open'); i.querySelector('.mm-btn').setAttribute('aria-expanded', 'false'); });
-            item.classList.toggle('open', !open);
-            btn.setAttribute('aria-expanded', String(!open));
+            var open = item.classList.contains("open");
+            li.querySelectorAll(".mm-item.open").forEach(function (i) {
+              i.classList.remove("open");
+              i.querySelector(".mm-btn").setAttribute("aria-expanded", "false");
+            });
+            item.classList.toggle("open", !open);
+            btn.setAttribute("aria-expanded", String(!open));
+          });
         });
-    });
-    document.addEventListener('click', function () {
-        li.querySelectorAll('.mm-item.open').forEach(function (i) { i.classList.remove('open'); });
-    });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { li.querySelectorAll('.mm-item.open').forEach(function (i) { i.classList.remove('open'); }); } });
-})();
-</script>
-</body>
-
+        document.addEventListener("click", function () {
+          li.querySelectorAll(".mm-item.open").forEach(function (i) {
+            i.classList.remove("open");
+          });
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") {
+            li.querySelectorAll(".mm-item.open").forEach(function (i) {
+              i.classList.remove("open");
+            });
+          }
+        });
+      })();
+    </script>
+  </body>
 </html>
