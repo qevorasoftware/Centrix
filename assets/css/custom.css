@@ -12969,3 +12969,199 @@ footer.footer-fixed-position {
 .page-accordion.dark-mode .ac-flat .ac-item {
     border-color: #3A3A3A;
 }
+
+/* ---------- Modals page (pages/modals.html) ---------- */
+.page-modals #main #content {
+    padding: 26px;
+}
+
+.page-modals .md-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-modals .md-section-head {
+    padding: 16px 20px;
+    background: linear-gradient(90deg, #1677FF 0%, #5AA9FF 100%);
+    border-radius: 8px 8px 0 0;
+}
+
+.page-modals .md-section-head h3 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.page-modals .md-section-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.page-modals .md-card {
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.page-modals .md-card-head {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 18px;
+    background: #F6F6F6;
+}
+
+.page-modals .md-card-head h4 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-modals .md-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 18px;
+}
+
+.page-modals .md-card-body p {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.page-modals .md-actions {
+    display: flex;
+    gap: 18px;
+    flex: 0 0 auto;
+}
+
+.page-modals .md-btn {
+    min-width: 134px;
+    height: 40px;
+    padding: 0 16px;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 4px;
+    border: 2px solid #1677FF;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.page-modals .md-outline {
+    background: #ffffff;
+    color: #000000;
+}
+
+.page-modals .md-outline:hover {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-modals .md-solid {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-modals .md-solid:hover {
+    background: #0F62E0;
+    border-color: #0F62E0;
+}
+
+.page-modals .modal-content {
+    border: 0;
+    border-radius: 8px;
+    font-family: 'Metropolis';
+}
+
+.page-modals .modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.page-modals .modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-modals .modal-body p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.page-modals .modal-footer {
+    gap: 12px;
+    border-top: 1px solid #EDEDED;
+}
+
+.page-modals .modal-footer .md-btn {
+    min-width: 120px;
+}
+
+@media (max-width: 991.98px) {
+    .page-modals #main #content {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-modals .md-card-body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .page-modals .md-actions {
+        width: 100%;
+    }
+
+    .page-modals .md-actions .md-btn {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
+
+.page-modals.dark-mode .md-section,
+.page-modals.dark-mode .md-card,
+.page-modals.dark-mode .modal-content {
+    background: #1F1F1F;
+    border-color: #3A3A3A;
+}
+
+.page-modals.dark-mode .md-card-head {
+    background: #2A2A2A;
+}
+
+.page-modals.dark-mode .md-card-head h4,
+.page-modals.dark-mode .md-card-body p,
+.page-modals.dark-mode .modal-title,
+.page-modals.dark-mode .modal-body p {
+    color: #FFFFFF;
+}
+
+.page-modals.dark-mode .md-outline {
+    background: #1F1F1F;
+    color: #FFFFFF;
+}
+
+.page-modals.dark-mode .modal-header,
+.page-modals.dark-mode .modal-footer {
+    border-color: #3A3A3A;
+}

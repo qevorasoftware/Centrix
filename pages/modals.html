@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" id="palette">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="title" content="Centrix - Modals" />
+    <meta name="description" content="Button styles on Centrix." />
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates" />
+    <meta name="author" content="Centrix" />
+    <meta name="theme-color" content="#000000" />
+    <title>Centrix - Modals</title>
+    <meta property="og:title" content="Centrix - Modals" />
+    <meta property="og:description" content="Button styles on Centrix." />
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css?v=modals1" />
+    <link rel="stylesheet" href="../assets/css/media.css?v=modals1" />
+  </head>
+
+  <body class="page-full-width page-modals light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+        <!-- Hero banner: full-width .breadcrumb, kept OUTSIDE #content (same as Full Width) -->
+        <div class="breadcrumb fw-hero">
+            <h1>Modals</h1>
+            <p>Elements</p>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="fw-wrap">
+                    <div class="md-section">
+                        <div class="md-section-head">
+                            <h3>Modals Style</h3>
+                        </div>
+                        <div class="md-section-body">
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <h4>Normal</h4>
+                                </div>
+                                <div class="md-card-body">
+                                    <p>User can set modal size according to them content.</p>
+                                    <div class="md-actions">
+                                        <button type="button" class="md-btn md-outline" data-bs-toggle="modal" data-bs-target="#modal-normal">Default</button>
+                                        <button type="button" class="md-btn md-solid" data-bs-toggle="modal" data-bs-target="#modal-normal-block">Block</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <h4>Small</h4>
+                                </div>
+                                <div class="md-card-body">
+                                    <p>User can set modal size according to them content.</p>
+                                    <div class="md-actions">
+                                        <button type="button" class="md-btn md-outline" data-bs-toggle="modal" data-bs-target="#modal-small">Default</button>
+                                        <button type="button" class="md-btn md-solid" data-bs-toggle="modal" data-bs-target="#modal-small-block">Block</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <h4>Large</h4>
+                                </div>
+                                <div class="md-card-body">
+                                    <p>User can set modal size according to them content.</p>
+                                    <div class="md-actions">
+                                        <button type="button" class="md-btn md-outline" data-bs-toggle="modal" data-bs-target="#modal-large">Default</button>
+                                        <button type="button" class="md-btn md-solid" data-bs-toggle="modal" data-bs-target="#modal-large-block">Block</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md-card">
+                                <div class="md-card-head">
+                                    <h4>Extra Large</h4>
+                                </div>
+                                <div class="md-card-body">
+                                    <p>User can set modal size according to them content.</p>
+                                    <div class="md-actions">
+                                        <button type="button" class="md-btn md-outline" data-bs-toggle="modal" data-bs-target="#modal-xl">Default</button>
+                                        <button type="button" class="md-btn md-solid" data-bs-toggle="modal" data-bs-target="#modal-xl-block">Block</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-normal" tabindex="-1" aria-labelledby="modal-normal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-normal-label">Normal Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-normal-block" tabindex="-1" aria-labelledby="modal-normal-block-label" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-normal-block-label">Normal Modal (Block)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-small" tabindex="-1" aria-labelledby="modal-small-label" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-small-label">Small Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-small-block" tabindex="-1" aria-labelledby="modal-small-block-label" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-small-block-label">Small Modal (Block)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-large" tabindex="-1" aria-labelledby="modal-large-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-large-label">Large Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-large-block" tabindex="-1" aria-labelledby="modal-large-block-label" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-large-block-label">Large Modal (Block)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-xl" tabindex="-1" aria-labelledby="modal-xl-label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-xl-label">Extra Large Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-xl-block" tabindex="-1" aria-labelledby="modal-xl-block-label" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-xl-block-label">Extra Large Modal (Block)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="md-btn md-outline" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="md-btn md-solid" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+</body>
+
+</html>
