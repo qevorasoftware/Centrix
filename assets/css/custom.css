@@ -13258,10 +13258,10 @@ footer.footer-fixed-position {
     position: absolute;
     left: 0;
     top: 100%;
-    width: 0;
-    height: 0;
-    border-top: 8px solid #0B4FB8;
-    border-right: 12px solid transparent;
+    width: 12px;
+    height: 10px;
+    background: #0B4FB8;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
 /* Icon badge: small coloured tab overhanging the card's top-right edge */
