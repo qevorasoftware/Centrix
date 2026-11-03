@@ -13292,3 +13292,369 @@ footer.footer-fixed-position {
 .page-ribbons.dark-mode .rb-num {
     color: #FFFFFF;
 }
+
+/* ---------- Steps page (pages/steps.html) ---------- */
+.page-steps #main #content {
+    padding: 26px;
+}
+
+.page-steps .st-page {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.page-steps .st-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-steps .st-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 18px;
+    background: #F6F6F6;
+    border-radius: 8px 8px 0 0;
+}
+
+.page-steps .st-section-head h3 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-steps .st-tag {
+    font-family: 'Metropolis';
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.page-steps .st-section-body {
+    padding: 28px 24px 30px;
+}
+
+/* Shared step row: six equal columns, connectors run from one step centre to the next */
+.page-steps .st-row {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.page-steps .st-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Metropolis';
+}
+
+.page-steps .st-step p {
+    max-width: 190px;
+    margin: 12px 0 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.page-steps .st-step.is-todo p {
+    color: #000000;
+}
+
+.page-steps .st-top {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+/* connectors */
+.page-steps .st-step.link-solid::after,
+.page-steps .st-step.link-dashed::after {
+    content: '';
+    position: absolute;
+    left: calc(50% + 20px);
+    width: calc(100% - 40px);
+    height: 2px;
+}
+
+.page-steps .st-step.link-solid::after {
+    background: #1677FF;
+}
+
+.page-steps .st-step.link-dashed::after {
+    background-image: repeating-linear-gradient(90deg, #1677FF 0 8px, transparent 8px 14px);
+}
+
+/* Variation 1: numbered circles */
+.page-steps .st-row-dots .st-step::after {
+    top: 52px;
+}
+
+.page-steps .st-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.page-steps .is-done .st-dot {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-steps .is-current .st-dot {
+    background: #ffffff;
+    border: 2px solid #1677FF;
+    color: #1677FF;
+}
+
+.page-steps .is-todo .st-dot {
+    background: #ffffff;
+    border: 2px solid #BDBDBD;
+    color: #BDBDBD;
+}
+
+/* Variation 2: pills */
+.page-steps .st-row-pills .st-step::after {
+    top: 53px;
+}
+
+.page-steps .st-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 96px;
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 19px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.page-steps .is-done .st-pill {
+    background: #1677FF;
+    color: #ffffff;
+    border: 2px solid #1677FF;
+}
+
+.page-steps .is-current .st-pill {
+    background: #ffffff;
+    color: #1677FF;
+    border: 2px solid #1677FF;
+}
+
+.page-steps .is-todo .st-pill {
+    background: #ffffff;
+    color: #BDBDBD;
+    border: 2px solid #BDBDBD;
+}
+
+/* Variation 3: icon circles */
+.page-steps .st-row-icons .st-step::after {
+    top: 84px;
+}
+
+.page-steps .st-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.page-steps .st-icon-svg {
+    display: block;
+}
+
+.page-steps .is-done .st-icon {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-steps .is-current .st-icon {
+    background: #ffffff;
+    border: 2px solid #1677FF;
+    color: #1677FF;
+}
+
+.page-steps .is-todo .st-icon {
+    background: #ffffff;
+    border: 2px solid #BDBDBD;
+    color: #BDBDBD;
+}
+
+/* Variation 4: chevron bar */
+.page-steps .st-chevrons {
+    display: flex;
+    align-items: stretch;
+    height: 46px;
+}
+
+.page-steps .st-chev {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    font-family: 'Metropolis';
+    font-size: 16px;
+    font-weight: 500;
+    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%, 16px 50%);
+}
+
+.page-steps .st-chev span {
+    white-space: nowrap;
+}
+
+.page-steps .st-chev.is-done {
+    background: #1677FF;
+    color: #ffffff;
+}
+
+.page-steps .st-chev.is-current {
+    background: #D6E8FF;
+    color: #000000;
+}
+
+.page-steps .st-chev.is-todo {
+    background: #F3F3F3;
+    color: #C4C4C4;
+}
+
+/* Variation 5: timeline with dots */
+.page-steps .st-track {
+    position: relative;
+    padding: 0 16px;
+}
+
+.page-steps .st-track-line {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #1677FF 0%, #6AAEFF 45%, #EAF3FF 100%);
+}
+
+.page-steps .st-track-steps {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-steps .st-track-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+    font-family: 'Metropolis';
+}
+
+.page-steps .st-track-dot {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 4px solid #1677FF;
+    box-sizing: border-box;
+}
+
+.page-steps .st-track-label {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.page-steps .st-track-step.is-todo .st-track-dot {
+    border-color: #C9C9C9;
+}
+
+.page-steps .st-track-step.is-todo .st-track-label {
+    color: #000000;
+}
+
+.page-steps .st-track-step.is-current-dot .st-track-dot {
+    border: 4px solid #000000;
+}
+
+@media (max-width: 991.98px) {
+    .page-steps #main #content {
+        padding: 16px;
+    }
+
+    .page-steps .st-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 28px;
+    }
+
+    .page-steps .st-step::after {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-steps .st-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .page-steps .st-chevrons {
+        overflow-x: auto;
+    }
+
+    .page-steps .st-chev {
+        min-width: 130px;
+        font-size: 14px;
+    }
+}
+
+.page-steps.dark-mode .st-section,
+.page-steps.dark-mode .st-section-head {
+    background: #1F1F1F;
+}
+
+.page-steps.dark-mode .st-section-head h3,
+.page-steps.dark-mode .st-tag,
+.page-steps.dark-mode .st-step p,
+.page-steps.dark-mode .st-top,
+.page-steps.dark-mode .st-track-label {
+    color: #FFFFFF;
+}
+
+.page-steps.dark-mode .is-todo .st-dot,
+.page-steps.dark-mode .is-todo .st-pill,
+.page-steps.dark-mode .is-todo .st-icon {
+    background: #1F1F1F;
+}
+
+.page-steps.dark-mode .st-chev.is-todo {
+    background: #2A2A2A;
+}
+
+.page-steps.dark-mode .st-chev.is-current {
+    background: #1B3A5E;
+    color: #FFFFFF;
+}
