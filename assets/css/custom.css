@@ -13394,7 +13394,7 @@ footer.footer-fixed-position {
 
 /* Variation 1: numbered circles */
 .page-steps .st-row-dots .st-step::after {
-    top: 52px;
+    top: 47px;
 }
 
 .page-steps .st-dot {
@@ -13430,7 +13430,7 @@ footer.footer-fixed-position {
 
 /* Variation 2: pills */
 .page-steps .st-row-pills .st-step::after {
-    top: 53px;
+    top: 48px;
 }
 
 .page-steps .st-pill {
@@ -13469,7 +13469,7 @@ footer.footer-fixed-position {
 
 /* Variation 3: icon circles */
 .page-steps .st-row-icons .st-step::after {
-    top: 84px;
+    top: 60px;
 }
 
 .page-steps .st-icon {
@@ -13550,9 +13550,9 @@ footer.footer-fixed-position {
 
 .page-steps .st-track-line {
     position: absolute;
-    left: 24px;
-    right: 24px;
-    top: 8px;
+    left: 61px;
+    right: 61px;
+    top: 5px;
     height: 8px;
     border-radius: 4px;
     background: linear-gradient(90deg, #1677FF 0%, #6AAEFF 45%, #EAF3FF 100%);
