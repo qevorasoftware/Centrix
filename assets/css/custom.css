@@ -12513,3 +12513,35 @@ footer.footer-fixed-position {
     border-color: #3A3A3A;
     color: #BFBFBF;
 }
+
+/* Tooltips page overlap fix: room around each card's tooltips so they never sit on other elements */
+.page-tooltips .tt-tip {
+    width: 88px;
+    white-space: normal;
+}
+
+.page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-card-body {
+    padding: 18px 110px 16px;
+}
+
+.page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-two {
+    gap: 40px;
+}
+
+.page-tooltips .tt-grid > .tt-card:nth-child(2) .tt-card-body {
+    padding: 56px 18px 56px;
+}
+
+@media (max-width: 767.98px) {
+    .page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-card-body {
+        padding: 56px 18px 16px;
+    }
+
+    .page-tooltips .tt-grid > .tt-card:nth-child(1) .tt-two {
+        gap: 18px;
+    }
+
+    .page-tooltips .tt-grid > .tt-card:nth-child(2) .tt-card-body {
+        padding: 56px 18px 56px;
+    }
+}
