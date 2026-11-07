@@ -14181,3 +14181,294 @@ footer.footer-fixed-position {
 .page-tables-responsive.dark-mode .tr-card-info p {
     color: #FFFFFF;
 }
+
+/* ---------- Tables Helpers page (pages/tables-helpers.html) ---------- */
+.page-tables-helpers #main #content {
+    padding: 26px;
+}
+
+.page-tables-helpers .th-page {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.page-tables-helpers .th-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-tables-helpers .th-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 18px;
+    background: #F6F6F6;
+    border-radius: 8px 8px 0 0;
+}
+
+.page-tables-helpers .th-section-head h3 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.page-tables-helpers .th-code {
+    font-family: 'Metropolis';
+    font-size: 15px;
+    color: #E53935;
+}
+
+.page-tables-helpers .th-section-body {
+    padding: 13px 18px 17px;
+}
+
+.page-tables-helpers .th-table-wrap {
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+.page-tables-helpers .th-table {
+    width: 100%;
+    min-width: 720px;
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-family: 'Metropolis';
+}
+
+.page-tables-helpers .th-table thead th {
+    height: 48px;
+    padding: 0 18px;
+    background: #F6F6F6;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    vertical-align: middle;
+    border: 0;
+}
+
+.page-tables-helpers .th-table tbody td {
+    height: 56px;
+    padding: 0 18px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    vertical-align: middle;
+    border: 0;
+}
+
+.page-tables-helpers .th-center {
+    text-align: center;
+}
+
+.page-tables-helpers .th-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* Checkbox */
+.page-tables-helpers .th-check {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background: #ffffff;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+}
+
+.page-tables-helpers .th-check:checked {
+    background: #1677FF;
+    border-color: #1677FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-6.5'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page-tables-helpers .th-check:indeterminate {
+    background: #1677FF;
+    border-color: #1677FF;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-size: 10px 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-tables-helpers .th-check:focus-visible {
+    outline: 2px solid #9CC6FF;
+    outline-offset: 2px;
+}
+
+.page-tables-helpers .th-checkbox-table tbody tr {
+    border-bottom: 0;
+}
+
+/* Status pill */
+.page-tables-helpers .th-status {
+    display: inline-block;
+    min-width: 78px;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-tables-helpers .th-status.is-active {
+    background: #12A150;
+}
+
+.page-tables-helpers .th-status.is-inactive {
+    background: #E53935;
+}
+
+/* Action icons */
+.page-tables-helpers .th-act {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 6px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.page-tables-helpers .th-edit {
+    color: #1677FF;
+}
+
+.page-tables-helpers .th-delete {
+    color: #E53935;
+}
+
+.page-tables-helpers .th-act:hover {
+    background: #EAF3FF;
+}
+
+/* Accordion table */
+.page-tables-helpers .th-accordion-table tbody.th-group {
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.page-tables-helpers .th-accordion-table tbody.th-group:last-child {
+    border-bottom: 0;
+}
+
+.page-tables-helpers .th-group-main {
+    cursor: pointer;
+}
+
+.page-tables-helpers .th-group-main:not(.has-sub-row):hover td {
+    background: transparent;
+}
+
+.page-tables-helpers .th-group-main:focus-visible {
+    outline: 2px solid #9CC6FF;
+    outline-offset: -2px;
+}
+
+.page-tables-helpers .th-group:not(.has-sub) .th-group-main {
+    cursor: default;
+}
+
+.page-tables-helpers .th-text.is-active {
+    color: #12A150;
+}
+
+.page-tables-helpers .th-text.is-inactive {
+    color: #E53935;
+}
+
+.page-tables-helpers .th-chev-cell {
+    text-align: right;
+}
+
+.page-tables-helpers .th-chev {
+    display: inline-flex;
+    color: #8A8A8A;
+    transition: transform 0.2s ease;
+}
+
+.page-tables-helpers .th-group.is-open .th-chev {
+    transform: rotate(90deg);
+    color: #1677FF;
+}
+
+.page-tables-helpers .th-group:not(.has-sub) .th-chev {
+    color: #8A8A8A;
+}
+
+.page-tables-helpers .th-sub {
+    display: none;
+}
+
+.page-tables-helpers .th-group.is-open .th-sub {
+    display: table-row;
+}
+
+.page-tables-helpers .th-sub td {
+    height: 42px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page-tables-helpers .th-sub-name {
+    padding-left: 30px !important;
+}
+
+.page-tables-helpers .th-accordion-table thead th:last-child {
+    width: 4%;
+}
+
+/* Dark mode */
+.page-tables-helpers.dark-mode .th-section,
+.page-tables-helpers.dark-mode .th-section-head {
+    background: #1F1F1F;
+}
+
+.page-tables-helpers.dark-mode .th-section-head h3,
+.page-tables-helpers.dark-mode .th-table tbody td,
+.page-tables-helpers.dark-mode .th-table thead th {
+    color: #FFFFFF;
+}
+
+.page-tables-helpers.dark-mode .th-table thead th {
+    background: #262626;
+}
+
+.page-tables-helpers.dark-mode .th-check {
+    background: #1F1F1F;
+    border-color: #FFFFFF;
+}
+
+.page-tables-helpers.dark-mode .th-accordion-table tbody.th-group {
+    border-bottom-color: #3A3A3A;
+}
+
+@media (max-width: 991.98px) {
+    .page-tables-helpers #main #content {
+        padding: 16px;
+    }
+}
