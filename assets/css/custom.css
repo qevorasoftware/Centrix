@@ -14472,6 +14472,25 @@ footer.footer-fixed-position {
     border-color: #FFFFFF;
 }
 
+.page-tables-helpers.dark-mode .th-check:checked,
+.page-tables-helpers.dark-mode .th-check:indeterminate {
+    background-color: #1677FF;
+    border-color: #1677FF;
+}
+
+.page-tables-helpers.dark-mode .th-check:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3 6-6.5'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page-tables-helpers.dark-mode .th-check:indeterminate {
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-size: 10px 2px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .page-tables-helpers.dark-mode .th-accordion-table tbody.th-group {
     border-bottom-color: #3A3A3A;
 }
