@@ -14500,3 +14500,44 @@ footer.footer-fixed-position {
         padding: 16px;
     }
 }
+
+
+/* Tables Helpers responsive fixes */
+.page-tables-helpers .th-table-wrap {
+    position: relative;
+    max-width: 100%;
+}
+
+.page-tables-helpers .th-table thead th {
+    position: relative;
+}
+
+@media (max-width: 767.98px) {
+    .page-tables-helpers .th-table {
+        min-width: 0;
+    }
+
+    .page-tables-helpers .th-checkbox-table {
+        table-layout: auto;
+    }
+
+    .page-tables-helpers .th-checkbox-table col {
+        width: auto !important;
+    }
+
+    .page-tables-helpers .th-checkbox-table th:nth-child(3),
+    .page-tables-helpers .th-checkbox-table th:nth-child(4),
+    .page-tables-helpers .th-checkbox-table td:nth-child(3),
+    .page-tables-helpers .th-checkbox-table td:nth-child(4) {
+        display: none;
+    }
+
+    .page-tables-helpers .th-table thead th,
+    .page-tables-helpers .th-table tbody td {
+        padding: 0 10px;
+    }
+
+    .page-tables-helpers .th-sub-name {
+        padding-left: 22px !important;
+    }
+}
