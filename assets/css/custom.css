@@ -14868,6 +14868,10 @@ footer.footer-fixed-position {
     color: #FFFFFF;
 }
 
+.page-forms-elements.dark-mode .fe-person.is-selected {
+    border-color: #1677FF;
+}
+
 .page-forms-elements.dark-mode .fe-chip {
     background: #1B3A5E;
     color: #FFFFFF;
