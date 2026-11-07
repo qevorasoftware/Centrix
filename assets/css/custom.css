@@ -14648,6 +14648,7 @@ footer.footer-fixed-position {
 /* Multiple selection dropdown */
 .page-forms-elements .fe-multi {
     position: relative;
+    cursor: pointer;
     display: flex;
     align-items: center;
     min-height: 46px;
@@ -14664,8 +14665,11 @@ footer.footer-fixed-position {
 .page-forms-elements .fe-chips {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 auto;
     gap: 6px;
     min-width: 0;
+    min-height: 32px;
+    align-items: center;
 }
 
 .page-forms-elements .fe-chip {
