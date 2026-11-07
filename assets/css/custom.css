@@ -15022,3 +15022,273 @@ footer.footer-fixed-position {
         gap: 12px;
     }
 }
+
+/* ---------- Account flows page (pages/account.html) ---------- */
+.page-account-flows #main #content {
+    padding: 26px;
+}
+
+.page-account-flows .ak-page {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.page-account-flows .ak-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.page-account-flows .ak-section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 18px;
+    background: linear-gradient(90deg, #1677FF 0%, #5BA6FF 100%);
+    border-radius: 8px 8px 0 0;
+}
+
+.page-account-flows .ak-section-head h3 {
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.page-account-flows .ak-tag {
+    font-family: 'Metropolis';
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.page-account-flows .ak-section-body {
+    padding: 36px 24px 40px;
+}
+
+.page-account-flows .ak-cell {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.page-account-flows .ak-cell:last-child {
+    margin-bottom: 0;
+}
+
+.page-account-flows .ak-form {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: 'Metropolis';
+}
+
+.page-account-flows .ak-logo {
+    display: block;
+    width: 130px;
+    margin: 0 auto 14px;
+}
+
+.page-account-flows .ak-title {
+    margin: 0 0 24px;
+    font-family: 'Metropolis';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.page-account-flows .ak-desc {
+    margin: -14px 0 22px;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #8A8A8A;
+}
+
+.page-account-flows .ak-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.page-account-flows .ak-field label,
+.page-account-flows .ak-h > label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.page-account-flows .ak-field label {
+    margin-bottom: 6px;
+}
+
+.page-account-flows .ak-h {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.page-account-flows .ak-h > label {
+    flex: 0 0 96px;
+    padding-top: 11px;
+}
+
+.page-account-flows .ak-h-control {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-account-flows .ak-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #BDBDBD;
+    border-radius: 6px;
+    background: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+.page-account-flows .ak-input::placeholder {
+    color: #B0B0B0;
+}
+
+.page-account-flows .ak-input:focus {
+    border-color: #1677FF;
+    box-shadow: 0 0 0 3px rgba(22, 119, 255, 0.15);
+}
+
+.page-account-flows .ak-pass {
+    position: relative;
+}
+
+.page-account-flows .ak-pass .ak-input {
+    padding-right: 40px;
+}
+
+.page-account-flows .ak-eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #1677FF;
+}
+
+.page-account-flows .ak-error {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    margin: 6px 0 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E53935;
+}
+
+.page-account-flows .ak-h .ak-error {
+    justify-content: flex-start;
+}
+
+.page-account-flows .ak-link {
+    align-self: flex-end;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1677FF;
+    text-decoration: none;
+}
+
+.page-account-flows .ak-link:hover {
+    text-decoration: underline;
+}
+
+.page-account-flows .ak-btn {
+    width: 100%;
+    height: 42px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 6px;
+    background: #1677FF;
+    color: #ffffff;
+    font-family: 'Metropolis';
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.page-account-flows .ak-btn:hover {
+    background: #0F63E0;
+}
+
+.page-account-flows .ak-foot {
+    margin: 14px 0 0;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #8A8A8A;
+}
+
+.page-account-flows .ak-foot a {
+    color: #1677FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+    .page-account-flows #main #content {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-account-flows .ak-h {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .page-account-flows .ak-h > label {
+        flex: 0 0 auto;
+        padding-top: 0;
+    }
+}
+
+/* Dark mode */
+.page-account-flows.dark-mode .ak-section {
+    background: #1F1F1F;
+}
+
+.page-account-flows.dark-mode .ak-title,
+.page-account-flows.dark-mode .ak-field label,
+.page-account-flows.dark-mode .ak-h > label {
+    color: #FFFFFF;
+}
+
+.page-account-flows.dark-mode .ak-input {
+    background: #262626;
+    border-color: #3A3A3A;
+    color: #FFFFFF;
+}
+
+.page-account-flows.dark-mode .ak-logo {
+    filter: brightness(0) invert(1);
+}

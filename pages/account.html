@@ -1,44 +1,389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" id="palette">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="title" content="Centrix - Account" />
+    <meta name="description" content="Login, sign up and forgot password flows on Centrix." />
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates" />
+    <meta name="author" content="Centrix" />
+    <meta name="theme-color" content="#000000" />
+    <title>Centrix - Account</title>
+    <meta property="og:title" content="Centrix - Account" />
+    <meta property="og:description" content="Login, sign up and forgot password flows on Centrix." />
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/media.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="title" content="Centrix">
-    <meta name="description"
-        content="Dive into the seamless realm of Centrix, where efficiency meets elegance. Elevate your administrative tasks with intuitive design, powerful features, and unparalleled customization options.">
-    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates">
-    <meta name="author" content="Centrix">
-    <meta name=theme-color content="#000000">
-    <title>Centrix</title>
-    <meta property=og:title content="Centrix">
-    <meta property=og:description
-        content="Dive into the seamless realm of Centrix, where efficiency meets elegance. Elevate your administrative tasks with intuitive design, powerful features, and unparalleled customization options.">
-    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
-    <link rel="stylesheet" href="../assets/css/media.css">
-</head>
-
-<body class="light-mode" id="body">
+  <body class="page-full-width page-account-flows light-mode" id="body">
     <centrix-header></centrix-header>
     <div id="main" class="main-wrapper fullwidthlayout">
-        <div id="content" class="section-wrapper content">
+        <!-- Hero banner: full-width .breadcrumb, kept OUTSIDE #content (same as Full Width) -->
+        <div class="breadcrumb fw-hero">
+            <h1>Forms</h1>
+            <p>Account</p>
+        </div>
 
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="fw-wrap">
+                    <div class="ak-page">
+                        <div class="ak-section">
+                            <div class="ak-section-head">
+                                <h3>Login Flow</h3>
+                                <span class="ak-tag">Variation 1</span>
+                            </div>
+                            <div class="ak-section-body">
+                                <div class="row">
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Login</h2>
+                                <div class="ak-field">
+                                    <label for="fe-email">Email Address</label>
+                                    <input type="email" id="fe-email" class="ak-input" placeholder="Enter email address" />
+                                </div>
+                                <div class="ak-field">
+                                    <label for="fe-pass">Password</label>
+                                    <div class="ak-pass"><input type="password" id="fe-pass" class="ak-input" placeholder="Enter password" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    <a href="#" class="ak-link">Forgot Password?</a>
+                                </div>
+                                <button type="button" class="ak-btn">Login</button>
+                                <p class="ak-foot">Don't have an Account? <a href="#">Sign Up</a></p>
+                            </div>
+                                    </div>
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Login</h2>
+                                <div class="ak-field">
+                                    <label for="fe-email">Email Address</label>
+                                    <input type="email" id="fe-email" class="ak-input" placeholder="Enter email address" value="test.email@mail.com" />
+                                    <p class="ak-error"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>Invalid Email address</span></p>
+                                </div>
+                                <div class="ak-field">
+                                    <label for="fe-pass">Password</label>
+                                    <div class="ak-pass"><input type="text" id="fe-pass" class="ak-input" placeholder="Enter password" value="Username1234" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    <a href="#" class="ak-link">Forgot Password?</a>
+                                </div>
+                                <button type="button" class="ak-btn">Login</button>
+                                <p class="ak-foot">Don't have an Account? <a href="#">Sign Up</a></p>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ak-section">
+                            <div class="ak-section-head">
+                                <h3>Login Flow</h3>
+                                <span class="ak-tag">Variation 2</span>
+                            </div>
+                            <div class="ak-section-body">
+                                <div class="row">
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Login</h2>
+                                <div class="ak-h">
+                                    <label for="fe-email">Email Address</label>
+                                    <div class="ak-h-control">
+                                        <input type="email" id="fe-email" class="ak-input" placeholder="Enter email address" />
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="fe-pass">Password</label>
+                                    <div class="ak-h-control">
+                                        <div class="ak-pass"><input type="password" id="fe-pass" class="ak-input" placeholder="Enter password" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    <a href="#" class="ak-link">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="ak-btn">Login</button>
+                                <p class="ak-foot">Don't have an Account? <a href="#">Sign Up</a></p>
+                            </div>
+                                    </div>
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Login</h2>
+                                <div class="ak-h">
+                                    <label for="fe-email">Email Address</label>
+                                    <div class="ak-h-control">
+                                        <input type="email" id="fe-email" class="ak-input" placeholder="Enter email address" value="test.email@mail.com" />
+                                    <p class="ak-error"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>Invalid Email address</span></p>
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="fe-pass">Password</label>
+                                    <div class="ak-h-control">
+                                        <div class="ak-pass"><input type="text" id="fe-pass" class="ak-input" placeholder="Enter password" value="Username1234" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    <a href="#" class="ak-link">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="ak-btn">Login</button>
+                                <p class="ak-foot">Don't have an Account? <a href="#">Sign Up</a></p>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ak-section">
+                            <div class="ak-section-head">
+                                <h3>Sign Up Flow</h3>
+                                <span class="ak-tag">Variation 1</span>
+                            </div>
+                            <div class="ak-section-body">
+                                <div class="row">
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Sign Up</h2>
+                                <div class="ak-field">
+                                    <label for="su-first">First Name</label>
+                                    <input type="text" id="su-first" class="ak-input" placeholder="Enter first name" />
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-last">Last Name</label>
+                                    <input type="text" id="su-last" class="ak-input" placeholder="Enter last name" />
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-email">Email Address</label>
+                                    <input type="email" id="su-email" class="ak-input" placeholder="Enter email address" />
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-pass">Password</label>
+                                    <div class="ak-pass"><input type="password" id="su-pass" class="ak-input" placeholder="Enter password" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-confirm">Confirm Password</label>
+                                    <div class="ak-pass"><input type="password" id="su-confirm" class="ak-input" placeholder="Enter password" /><button type="button" class="ak-eye" aria-label="Show Confirm Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                </div>
+                                <button type="button" class="ak-btn">Sign Up</button>
+                                <p class="ak-foot">Already have an Account? <a href="#">Login</a></p>
+                            </div>
+                                    </div>
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Sign Up</h2>
+                                <div class="ak-field">
+                                    <label for="su-first">First Name</label>
+                                    <input type="text" id="su-first" class="ak-input" placeholder="Enter first name" value="John" />
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-last">Last Name</label>
+                                    <input type="text" id="su-last" class="ak-input" placeholder="Enter last name" value="Doe" />
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-email">Email Address</label>
+                                    <input type="email" id="su-email" class="ak-input" placeholder="Enter email address" value="test.email@mail.com" />
+                                    <p class="ak-error"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>Email address is already in use</span></p>
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-pass">Password</label>
+                                    <div class="ak-pass"><input type="text" id="su-pass" class="ak-input" placeholder="Enter password" value="Username1234" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                </div>
+                                <div class="ak-field">
+                                    <label for="su-confirm">Confirm Password</label>
+                                    <div class="ak-pass"><input type="password" id="su-confirm" class="ak-input" placeholder="Enter password" value="************" /><button type="button" class="ak-eye" aria-label="Show Confirm Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                </div>
+                                <button type="button" class="ak-btn">Sign Up</button>
+                                <p class="ak-foot">Already have an Account? <a href="#">Login</a></p>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ak-section">
+                            <div class="ak-section-head">
+                                <h3>Sign Up Flow</h3>
+                                <span class="ak-tag">Variation 2</span>
+                            </div>
+                            <div class="ak-section-body">
+                                <div class="row">
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Sign Up</h2>
+                                <div class="ak-h">
+                                    <label for="su-first">First Name</label>
+                                    <div class="ak-h-control">
+                                        <input type="text" id="su-first" class="ak-input" placeholder="Enter first name" />
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-last">Last Name</label>
+                                    <div class="ak-h-control">
+                                        <input type="text" id="su-last" class="ak-input" placeholder="Enter last name" />
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-email">Email Address</label>
+                                    <div class="ak-h-control">
+                                        <input type="email" id="su-email" class="ak-input" placeholder="Enter email address" />
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-pass">Password</label>
+                                    <div class="ak-h-control">
+                                        <div class="ak-pass"><input type="password" id="su-pass" class="ak-input" placeholder="Enter password" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-confirm">Confirm Password</label>
+                                    <div class="ak-h-control">
+                                        <div class="ak-pass"><input type="password" id="su-confirm" class="ak-input" placeholder="Enter password" /><button type="button" class="ak-eye" aria-label="Show Confirm Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    </div>
+                                </div>
+                                <button type="button" class="ak-btn">Sign Up</button>
+                                <p class="ak-foot">Already have an Account? <a href="#">Login</a></p>
+                            </div>
+                                    </div>
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Sign Up</h2>
+                                <div class="ak-h">
+                                    <label for="su-first">First Name</label>
+                                    <div class="ak-h-control">
+                                        <input type="text" id="su-first" class="ak-input" placeholder="Enter first name" value="John" />
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-last">Last Name</label>
+                                    <div class="ak-h-control">
+                                        <input type="text" id="su-last" class="ak-input" placeholder="Enter last name" value="Doe" />
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-email">Email Address</label>
+                                    <div class="ak-h-control">
+                                        <input type="email" id="su-email" class="ak-input" placeholder="Enter email address" value="test.email@mail.com" />
+                                    <p class="ak-error"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>Email address is already in use</span></p>
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-pass">Password</label>
+                                    <div class="ak-h-control">
+                                        <div class="ak-pass"><input type="text" id="su-pass" class="ak-input" placeholder="Enter password" value="Username1234" /><button type="button" class="ak-eye" aria-label="Show Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    </div>
+                                </div>
+                                <div class="ak-h">
+                                    <label for="su-confirm">Confirm Password</label>
+                                    <div class="ak-h-control">
+                                        <div class="ak-pass"><input type="password" id="su-confirm" class="ak-input" placeholder="Enter password" value="************" /><button type="button" class="ak-eye" aria-label="Show Confirm Password"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+                                    </div>
+                                </div>
+                                <button type="button" class="ak-btn">Sign Up</button>
+                                <p class="ak-foot">Already have an Account? <a href="#">Login</a></p>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ak-section">
+                            <div class="ak-section-head">
+                                <h3>Forgot Password Flow</h3>
+                                <span class="ak-tag">Variation 1</span>
+                            </div>
+                            <div class="ak-section-body">
+                                <div class="row">
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Forgot Password</h2>
+                                <p class="ak-desc">Please enter registered email, we will sent reset password link to your email</p>
+                                <div class="ak-field">
+                                    <label for="fp-email">Email Address</label>
+                                    <input type="email" id="fp-email" class="ak-input" placeholder="Enter email address" />
+                                </div>
+                                <button type="button" class="ak-btn">Proceed</button>
+                            </div>
+                                    </div>
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Forgot Password</h2>
+                                <p class="ak-desc">Please enter registered email, we will sent reset password link to your email</p>
+                                <div class="ak-field">
+                                    <label for="fp-email">Email Address</label>
+                                    <input type="email" id="fp-email" class="ak-input" placeholder="Enter email address" value="test.email@mail.com" />
+                                    <p class="ak-error"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>Invalid Email address</span></p>
+                                </div>
+                                <button type="button" class="ak-btn">Proceed</button>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ak-section">
+                            <div class="ak-section-head">
+                                <h3>Forgot Password Flow</h3>
+                                <span class="ak-tag">Variation 2</span>
+                            </div>
+                            <div class="ak-section-body">
+                                <div class="row">
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Forgot Password</h2>
+                                <p class="ak-desc">Please enter registered email, we will sent reset password link to your email</p>
+                                <div class="ak-h">
+                                    <label for="fp-email">Email Address</label>
+                                    <div class="ak-h-control">
+                                        <input type="email" id="fp-email" class="ak-input" placeholder="Enter email address" />
+                                    </div>
+                                </div>
+                                <button type="button" class="ak-btn">Proceed</button>
+                            </div>
+                                    </div>
+                                    <div class="col-md-6 ak-cell">
+                            <div class="ak-form">
+                                <img class="ak-logo" src="../assets/images/icon/logo.svg" alt="Centrix" />
+                                <h2 class="ak-title">Forgot Password</h2>
+                                <p class="ak-desc">Please enter registered email, we will sent reset password link to your email</p>
+                                <div class="ak-h">
+                                    <label for="fp-email">Email Address</label>
+                                    <div class="ak-h-control">
+                                        <input type="email" id="fp-email" class="ak-input" placeholder="Enter email address" value="test.email@mail.com" />
+                                    <p class="ak-error"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>Invalid Email address</span></p>
+                                    </div>
+                                </div>
+                                <button type="button" class="ak-btn">Proceed</button>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <centrix-footer></centrix-footer>
+
     <script src="../components/js/header-footer-themeoptions.js"></script>
     <script src="../assets/js/jquery.min.js"></script>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/extra.js"></script>
+    <script>
+        // Show or hide password text with the eye button.
+        document.querySelectorAll('.ak-eye').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var input = btn.parentNode.querySelector('input');
+                var show = input.type === 'password';
+                input.type = show ? 'text' : 'password';
+                btn.setAttribute('aria-pressed', show ? 'true' : 'false');
+            });
+        });
+    </script>
 </body>
 
 </html>
