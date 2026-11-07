@@ -15300,6 +15300,10 @@ footer.footer-fixed-position {
     color: #FFFFFF;
 }
 
+.page-account-flows.dark-mode .ak-logo {
+    filter: brightness(0) invert(1);
+}
+
 .page-account-flows.dark-mode .ak-input {
     background: #262626;
     border-color: #3A3A3A;
