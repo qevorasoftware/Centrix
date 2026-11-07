@@ -14987,3 +14987,23 @@ footer.footer-fixed-position {
 .page-forms-layouts.dark-mode .fe-h > label {
     color: #FFFFFF;
 }
+
+/* Forms responsive width fix: half cards share the row width and can shrink, so nothing runs past the right edge */
+.page-forms-elements .fe-col {
+    min-width: 0;
+}
+
+.page-forms-elements .fe-col > .fe-card-half {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 100%;
+}
+
+.page-forms-layouts .fe-h > .fe-input {
+    width: 100%;
+    min-width: 0;
+}
+
+.page-forms-layouts .fe-h > .fe-multi {
+    min-width: 0;
+}
