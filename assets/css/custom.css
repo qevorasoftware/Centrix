@@ -14282,11 +14282,20 @@ footer.footer-fixed-position {
 .page-tables-helpers .th-check {
     appearance: none;
     -webkit-appearance: none;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 0 0 20px;
     width: 20px;
+    min-width: 20px;
+    max-width: 20px;
     height: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    padding: 0;
     margin: 0;
     border: 2px solid #000000;
     border-radius: 4px;
+    box-shadow: none;
     background: #ffffff;
     cursor: pointer;
     vertical-align: middle;
