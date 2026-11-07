@@ -14880,3 +14880,110 @@ footer.footer-fixed-position {
 .page-forms-elements.dark-mode .fe-option:hover {
     background: #262626;
 }
+
+/* ---------- Forms Layouts page (pages/layouts.html) ---------- */
+/* Vertical form: keep the gap between stacked fields (overrides the half-card rule above) */
+.page-forms-layouts .fe-card-half .fe-field {
+    margin-bottom: 18px;
+}
+
+.page-forms-layouts .fe-card-half .fe-field:last-child {
+    margin-bottom: 0;
+}
+
+/* Horizontal form: label on the left, field on the right */
+.page-forms-layouts .fe-h {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.page-forms-layouts .fe-h:last-child {
+    margin-bottom: 0;
+}
+
+.page-forms-layouts .fe-h > label {
+    flex: 0 0 150px;
+    margin: 0;
+    font-family: 'Metropolis';
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.page-forms-layouts .fe-h > .fe-input,
+.page-forms-layouts .fe-h > .fe-select,
+.page-forms-layouts .fe-h > .fe-multi {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+}
+
+.page-forms-layouts .fe-h > .fe-select {
+    position: relative;
+}
+
+.page-forms-layouts .fe-h > .fe-select .fe-input {
+    width: 100%;
+}
+
+/* Horizontal box selection: avatar above name, blue bar along the bottom when selected */
+.page-forms-layouts #ly-boxes .fe-col {
+    margin-bottom: 12px;
+}
+
+.page-forms-layouts .fe-person-v {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    min-height: 160px;
+    padding: 22px 12px;
+    text-align: center;
+}
+
+.page-forms-layouts .fe-person-v .fe-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+}
+
+.page-forms-layouts .fe-person-v .fe-person-text {
+    align-items: center;
+}
+
+.page-forms-layouts .fe-person-v .fe-person-name {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.page-forms-layouts .fe-person-v .fe-person-role {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.page-forms-layouts .fe-person-v.is-selected::after {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 5px;
+}
+
+@media (max-width: 575.98px) {
+    .page-forms-layouts .fe-h {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .page-forms-layouts .fe-h > label {
+        flex: 0 0 auto;
+    }
+}
+
+.page-forms-layouts.dark-mode .fe-h > label {
+    color: #FFFFFF;
+}

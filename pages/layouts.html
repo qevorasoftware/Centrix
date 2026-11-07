@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" id="palette">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="title" content="Centrix - Forms Layouts" />
+    <meta name="description" content="Form layouts on Centrix." />
+    <meta name="keywords" content="Admin Panel, Dashboard, Centrix Dashboard, AdminTemplates" />
+    <meta name="author" content="Centrix" />
+    <meta name="theme-color" content="#000000" />
+    <title>Centrix - Forms Layouts</title>
+    <meta property="og:title" content="Centrix - Forms Layouts" />
+    <meta property="og:description" content="Form layouts on Centrix." />
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon/favicon.svg" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/media.css" />
+  </head>
+
+  <body class="page-full-width page-forms-elements page-forms-layouts light-mode" id="body">
+    <centrix-header></centrix-header>
+    <div id="main" class="main-wrapper fullwidthlayout">
+        <!-- Hero banner: full-width .breadcrumb, kept OUTSIDE #content (same as Full Width) -->
+        <div class="breadcrumb fw-hero">
+            <h1>Forms</h1>
+            <p>Layouts</p>
+        </div>
+
+        <div id="content" class="section-wrapper content">
+            <div class="body_part">
+                <div class="fw-wrap">
+                    <div class="fe-page">
+
+                        <!-- Vertical and horizontal text field forms -->
+                        <div class="row">
+                            <div class="col-lg-6 fe-col">
+                                <div class="fe-card fe-card-half">
+                                    <h3>Basis Text fields - Vertical Form</h3>
+                                    <div class="fe-field">
+                                        <label for="ly-first">First Name</label>
+                                        <input type="text" id="ly-first" class="fe-input" placeholder="Enter first name" />
+                                    </div>
+                                    <div class="fe-field">
+                                        <label for="ly-last">Last Name</label>
+                                        <input type="text" id="ly-last" class="fe-input" placeholder="Enter last name" />
+                                    </div>
+                                    <div class="fe-field">
+                                        <label for="ly-company">Company Name</label>
+                                        <input type="text" id="ly-company" class="fe-input" placeholder="Enter company name" />
+                                    </div>
+                                    <div class="fe-field">
+                                        <label for="ly-email">Email Address</label>
+                                        <input type="email" id="ly-email" class="fe-input" placeholder="Enter email address" />
+                                    </div>
+                                    <div class="fe-field">
+                                        <label for="ly-password">Password</label>
+                                        <input type="password" id="ly-password" class="fe-input" placeholder="Enter password" />
+                                    </div>
+                                    <div class="fe-field">
+                                        <label for="ly-note">Note</label>
+                                        <input type="text" id="ly-note" class="fe-input" placeholder="Enter note" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 fe-col">
+                                <div class="fe-card fe-card-half">
+                                    <h3>Basis Text fields - Horizontal Form</h3>
+                                    <div class="fe-h">
+                                        <label for="ly-h-first">First Name</label>
+                                        <input type="text" id="ly-h-first" class="fe-input" placeholder="Enter first name" />
+                                    </div>
+                                    <div class="fe-h">
+                                        <label for="ly-h-last">Last Name</label>
+                                        <input type="text" id="ly-h-last" class="fe-input" placeholder="Enter last name" />
+                                    </div>
+                                    <div class="fe-h">
+                                        <label for="ly-h-company">Company Name</label>
+                                        <input type="text" id="ly-h-company" class="fe-input" placeholder="Enter company name" />
+                                    </div>
+                                    <div class="fe-h">
+                                        <label for="ly-h-email">Email Address</label>
+                                        <input type="email" id="ly-h-email" class="fe-input" placeholder="Enter email address" />
+                                    </div>
+                                    <div class="fe-h">
+                                        <label for="ly-h-password">Password</label>
+                                        <input type="password" id="ly-h-password" class="fe-input" placeholder="Enter password" />
+                                    </div>
+                                    <div class="fe-h">
+                                        <label for="ly-h-note">Note</label>
+                                        <input type="text" id="ly-h-note" class="fe-input" placeholder="Enter note" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Horizontal dropdowns -->
+                        <div class="row">
+                            <div class="col-lg-6 fe-col">
+                                <div class="fe-card fe-card-half">
+                                    <h3>Dropdown fields - Horizontal Form</h3>
+                                    <div class="fe-h">
+                                        <label for="ly-category">Category</label>
+                                        <div class="fe-select">
+                                            <select id="ly-category" class="fe-input">
+                                                <option selected>Web Design</option>
+                                                <option>Logo Design</option>
+                                                <option>Ui/Ux Design</option>
+                                                <option>Marketing Expert</option>
+                                            </select>
+                                            <span class="fe-chevron" aria-hidden="true">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 fe-col">
+                                <div class="fe-card fe-card-half">
+                                    <h3>Dropdown fields - Multiple selection - Horizontal Form</h3>
+                                    <div class="fe-h">
+                                        <label>Category</label>
+                                        <div class="fe-multi" id="ly-multi">
+                                            <div class="fe-chips" id="ly-chips"></div>
+                                            <button type="button" class="fe-multi-toggle" id="ly-multi-toggle" aria-expanded="false" aria-label="Open categories">
+                                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+                                            </button>
+                                            <div class="fe-menu" id="ly-menu" role="listbox" aria-multiselectable="true">
+                                                <button type="button" class="fe-option" role="option" data-value="Web Design" aria-selected="true">Web Design</button>
+                                                <button type="button" class="fe-option" role="option" data-value="Logo Design" aria-selected="true">Logo Design</button>
+                                                <button type="button" class="fe-option" role="option" data-value="Ui/Ux Design" aria-selected="false">Ui/Ux Design</button>
+                                                <button type="button" class="fe-option" role="option" data-value="Marketing Expert" aria-selected="false">Marketing Expert</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Horizontal box selection -->
+                        <div class="fe-card">
+                            <h3>Box Selection - Horizontal</h3>
+                            <div class="row" id="ly-boxes" role="radiogroup" aria-label="Box selection - horizontal">
+                                <div class="col-6 col-md-4 col-lg-2 fe-col">
+                                    <div class="fe-person fe-person-v is-selected" role="radio" tabindex="0" aria-checked="true">
+                                        <span class="fe-avatar" style="background:#B98C6A;">JW</span>
+                                        <span class="fe-person-text">
+                                            <span class="fe-person-name">Janet Woodham</span>
+                                            <span class="fe-person-role">Web Designer</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 fe-col">
+                                    <div class="fe-person fe-person-v" role="radio" tabindex="-1" aria-checked="false">
+                                        <span class="fe-avatar" style="background:#6C7A89;">AM</span>
+                                        <span class="fe-person-text">
+                                            <span class="fe-person-name">Allen Mata</span>
+                                            <span class="fe-person-role">Logo Designer</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 fe-col">
+                                    <div class="fe-person fe-person-v" role="radio" tabindex="-1" aria-checked="false">
+                                        <span class="fe-avatar" style="background:#A07BB0;">PC</span>
+                                        <span class="fe-person-text">
+                                            <span class="fe-person-name">Paula Chapman</span>
+                                            <span class="fe-person-role">Ui/Ux Design</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 fe-col">
+                                    <div class="fe-person fe-person-v" role="radio" tabindex="-1" aria-checked="false">
+                                        <span class="fe-avatar" style="background:#5E8C6A;">IA</span>
+                                        <span class="fe-person-text">
+                                            <span class="fe-person-name">Ian Adams</span>
+                                            <span class="fe-person-role">Marketing Expert</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 fe-col">
+                                    <div class="fe-person fe-person-v" role="radio" tabindex="-1" aria-checked="false">
+                                        <span class="fe-avatar" style="background:#C2766E;">EW</span>
+                                        <span class="fe-person-text">
+                                            <span class="fe-person-name">Elaine West</span>
+                                            <span class="fe-person-role">Marketing Expert</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-2 fe-col">
+                                    <div class="fe-person fe-person-v" role="radio" tabindex="-1" aria-checked="false">
+                                        <span class="fe-avatar" style="background:#7E9CC4;">SK</span>
+                                        <span class="fe-person-text">
+                                            <span class="fe-person-name">Shay Kelly</span>
+                                            <span class="fe-person-role">Ui/Ux Design</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <centrix-footer></centrix-footer>
+
+    <script src="../components/js/header-footer-themeoptions.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/extra.js"></script>
+    <script>
+        (function () {
+            // Multiple selection dropdown: chips mirror the checked options.
+            var multi = document.getElementById('ly-multi');
+            var menu = document.getElementById('ly-menu');
+            var chips = document.getElementById('ly-chips');
+            var toggle = document.getElementById('ly-multi-toggle');
+            var options = menu.querySelectorAll('.fe-option');
+
+            function renderChips() {
+                chips.innerHTML = '';
+                options.forEach(function (opt) {
+                    if (opt.getAttribute('aria-selected') !== 'true') return;
+                    var value = opt.getAttribute('data-value');
+                    var chip = document.createElement('span');
+                    chip.className = 'fe-chip';
+                    chip.textContent = value;
+                    var x = document.createElement('button');
+                    x.type = 'button';
+                    x.className = 'fe-chip-remove';
+                    x.setAttribute('aria-label', 'Remove ' + value);
+                    x.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+                    x.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        opt.setAttribute('aria-selected', 'false');
+                        renderChips();
+                    });
+                    chip.appendChild(x);
+                    chips.appendChild(chip);
+                });
+            }
+
+            function setOpen(open) {
+                multi.classList.toggle('is-open', open);
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+
+            // Clicking anywhere on the field (chips area, empty space or arrow) opens or closes the menu.
+            multi.addEventListener('click', function (e) {
+                if (e.target.closest('.fe-menu') || e.target.closest('.fe-chip-remove')) return;
+                setOpen(!multi.classList.contains('is-open'));
+            });
+
+            options.forEach(function (opt) {
+                opt.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    opt.setAttribute('aria-selected', opt.getAttribute('aria-selected') === 'true' ? 'false' : 'true');
+                    renderChips();
+                });
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!multi.contains(e.target)) setOpen(false);
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') setOpen(false);
+            });
+            renderChips();
+
+            // Box selection: one box is selected at a time.
+            var boxes = document.querySelectorAll('#ly-boxes .fe-person');
+            function select(box) {
+                boxes.forEach(function (b) {
+                    var on = b === box;
+                    b.classList.toggle('is-selected', on);
+                    b.setAttribute('aria-checked', on ? 'true' : 'false');
+                    b.setAttribute('tabindex', on ? '0' : '-1');
+                });
+                box.focus();
+            }
+            boxes.forEach(function (box) {
+                box.addEventListener('click', function () { select(box); });
+                box.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        select(box);
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>
