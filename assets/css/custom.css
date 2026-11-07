@@ -15007,3 +15007,18 @@ footer.footer-fixed-position {
 .page-forms-layouts .fe-h > .fe-multi {
     min-width: 0;
 }
+
+/* Forms tablet fit: chips stay on one line and the horizontal label column is narrower in half cards */
+.page-forms-elements .fe-chip {
+    white-space: nowrap;
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+    .page-forms-layouts .fe-h > label {
+        flex: 0 0 110px;
+    }
+
+    .page-forms-layouts .fe-h {
+        gap: 12px;
+    }
+}
